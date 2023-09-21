@@ -34,7 +34,7 @@ function Tool({
 
 export const metadata = {
   title: 'Uses',
-  description: 'Software I use, gadgets I love, and other things I recommend.',
+  description: 'Software I use, my preference, things my favorite.',
 }
 
 export default function Uses() {

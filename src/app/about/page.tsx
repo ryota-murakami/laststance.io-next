@@ -12,6 +12,11 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'A indipendent organization for OSS activity.',
+}
+
 function SocialLink({
   children,
   className,
@@ -45,12 +50,6 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       />
     </svg>
   )
-}
-
-export const metadata: Metadata = {
-  title: 'About',
-  description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
 }
 
 export default function About() {

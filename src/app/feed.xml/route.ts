@@ -11,8 +11,8 @@ export async function GET(req: Request) {
   }
 
   const author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Laststance.io',
+    email: 'contact@laststance.io',
   }
 
   const feed = new Feed({
@@ -20,7 +20,7 @@ export async function GET(req: Request) {
     title: author.name,
     author,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
-    description: 'Your blog description',
+    description: 'Laststance.io Blog',
     favicon: `${siteUrl}/favicon.ico`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
