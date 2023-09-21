@@ -9,7 +9,8 @@ import { useTheme } from 'next-themes'
 import { Fragment, useEffect, useRef, useState } from 'react'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+
+import avatarImage from '../images/logo.png'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
