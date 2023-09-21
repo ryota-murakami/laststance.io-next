@@ -148,11 +148,11 @@ function MobileNavigation(
   )
 }
 
-interface NavItemProps extends ComponentProps<'a'> {
-  href: string
-}
-
-const NavItem: React.FC<NavItemProps> = ({ children, href, ...rest }) => {
+const NavItem: React.FC<ComponentProps<'a'>> = ({
+  children,
+  href,
+  ...rest
+}) => {
   const isActive = usePathname() === href
 
   return (
