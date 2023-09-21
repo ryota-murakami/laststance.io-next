@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
+import type { ComponentProps } from 'react'
 import { Fragment, useEffect, useRef, useState } from 'react'
 
 import { Container } from '@/components/Container'
@@ -147,13 +148,11 @@ function MobileNavigation(
   )
 }
 
-function NavItem({
-  children,
-  href,
-}: {
-  children: React.ReactNode
+interface NavItemProps extends ComponentProps<'a'> {
   href: string
-}) {
+}
+
+const NavItem: React.FC<NavItemProps> = ({ children, href, ...rest }) => {
   const isActive = usePathname() === href
 
   return (
@@ -166,6 +165,7 @@ function NavItem({
             ? 'text-teal-500 dark:text-teal-400'
             : 'hover:text-teal-500 dark:hover:text-teal-400',
         )}
+        {...rest}
       >
         {children}
         {isActive && (
@@ -183,7 +183,9 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
+        <NavItem href="https://nsx.malloc.tokyo/" target="_blank">
+          ReadList
+        </NavItem>
         <NavItem href="/uses">Uses</NavItem>
       </ul>
     </nav>

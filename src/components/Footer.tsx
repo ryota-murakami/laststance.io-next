@@ -1,23 +1,21 @@
 import Link from 'next/link'
+import type { ComponentProps } from 'react'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
-function NavLink({
+const NavLink: React.FC<ComponentProps<'a'>> = ({
   children,
   href,
-}: {
-  children: React.ReactNode
-  href: string
-}) {
-  return (
-    <Link
-      href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
-    >
-      {children}
-    </Link>
-  )
-}
+  ...rest
+}) => (
+  <Link
+    {...rest}
+    href={href}
+    className="transition hover:text-teal-500 dark:hover:text-teal-400"
+  >
+    {children}
+  </Link>
+)
 
 export function Footer() {
   return (
@@ -29,11 +27,13 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
+                <NavLink href="https://nsx.malloc.tokyo/" target="_blank">
+                  ReadList
+                </NavLink>
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Laststance.io. All rights
                 reserved.
               </p>
             </div>
