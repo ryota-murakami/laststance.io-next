@@ -37,7 +37,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
     "@types/mdx": "^2.0.7",
-    "@types/node": "20.4.7",
+    "@types/node": "20.6.3",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "@types/webpack-env": "^1.18.1",
