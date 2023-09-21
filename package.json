@@ -15,7 +15,7 @@
     "validate": "./scripts/validate"
   },
   "browserslist": [
-    "defaults, not ie <= 11"
+    "last 1 version"
   ],
   "dependencies": {
     "@headlessui/react": "^1.7.13",
