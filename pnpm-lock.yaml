@@ -18,8 +18,8 @@ dependencies:
     specifier: ^2.3.0
     version: 2.3.0(react@18.2.0)
   '@next/eslint-plugin-next':
-    specifier: ^13.5.2
-    version: 13.5.2
+    specifier: ^13.5.3
+    version: 13.5.3
   '@next/mdx':
     specifier: 13.5.2
     version: 13.5.2(@mdx-js/loader@2.3.0)(@mdx-js/react@2.3.0)
@@ -420,8 +420,8 @@ packages:
     resolution: {integrity: sha512-dUseBIQVax+XtdJPzhwww4GetTjlkRSsXeQnisIJWBaHsnxYcN2RGzsPHi58D6qnkATjnhuAtQTJmR1hKYQQPg==}
     dev: false
 
-  /@next/eslint-plugin-next@13.5.2:
-    resolution: {integrity: sha512-Ew8DOUerJYGRo8pI84SVwn9wxxx8sH92AanCXSkkLJM2W0RJEWy+BqWSCfrlA/3ZIczEl4l4o4lOeTGBPYfBJg==}
+  /@next/eslint-plugin-next@13.5.3:
+    resolution: {integrity: sha512-lbZOoEjzSuTtpk9UgV9rOmxYw+PsSfNR+00mZcInqooiDMZ1u+RqT1YQYLsEZPW1kumZoQe5+exkCBtZ2xn0uw==}
     dependencies:
       glob: 7.1.7
     dev: false
