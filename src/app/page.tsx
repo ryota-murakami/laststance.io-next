@@ -230,10 +230,6 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
     </div>
   )
 }
@@ -282,8 +278,13 @@ export default async function Home() {
             Keep Straightforward Web Application Development.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Ryota Murakami who live in Tokyo. Currently working as a
-            fleelance React/Node/TypeScirpt developer.
+            I'm{' '}
+            <a href="https://ryota-murakami.github.io/" target="_blank">
+              Ryota Murakami
+            </a>{' '}
+            who live in Tokyo. Currently working as a fleelance
+            React/Node/TypeScirpt developer. Here is my invididual OSS
+            organization.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -318,7 +319,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* @TODO currently unable <Newsletter /> */}
             <Resume />
           </div>
         </div>
