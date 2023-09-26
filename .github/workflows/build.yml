@@ -39,5 +39,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - run: mv env.local.sample .env.local
+      - run: |
+          echo "NEXT_PUBLIC_SITE_URL=${{ secrets.NEXT_PUBLIC_SITE_URL }}" >> .env
+          echo "PERSONAL_ACCESS_TOKEN=${{ secrets.PERSONAL_ACCESS_TOKEN }}" >> .env
       - run: pnpm build
