@@ -27,6 +27,7 @@ export function Button({
   )
 
   return typeof props.href === 'undefined' ? (
+    // @ts-expect-error @FIXME
     <button className={className} {...props} />
   ) : (
     <Link className={className} {...props} />

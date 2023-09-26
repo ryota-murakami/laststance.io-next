@@ -7,4 +7,3 @@ updates:
       interval: 'daily'
     ignore:
       - dependency-name: 'remark-gfm'
-        versions: ['3.x']
