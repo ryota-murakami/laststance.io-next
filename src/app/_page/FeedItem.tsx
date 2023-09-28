@@ -4,7 +4,7 @@ interface Props {
   feed: Feed
 }
 
-export const Item: React.FC<Props> = ({ feed }) => (
+export const FeedItem: React.FC<Props> = ({ feed }) => (
   <li className="flex gap-4">
     <dl className="flex flex-auto flex-wrap gap-x-2">
       <dt className="sr-only">Content</dt>

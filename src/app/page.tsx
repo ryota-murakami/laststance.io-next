@@ -20,7 +20,7 @@ import { formatDate } from '@/lib/formatDate'
 
 import { fetchGithubFeedList } from '../lib/octokit'
 
-import { Item } from './_page/FeedItem'
+import { FeedItem } from './_page/FeedItem'
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -84,7 +84,7 @@ async function GithubFeedList() {
       </h2>
       <ol className="mt-6 space-y-4">
         {githubFeedList.map((feed, i) => (
-          <Item key={i} feed={feed} />
+          <FeedItem key={i} feed={feed} />
         ))}
       </ol>
     </div>
