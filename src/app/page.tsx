@@ -20,7 +20,7 @@ import { formatDate } from '@/lib/formatDate'
 
 import { fetchGithubFeedList } from '../lib/octokit'
 
-import { Item } from './_FeedItem'
+import { Item } from './_page/FeedItem'
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
