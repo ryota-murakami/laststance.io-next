@@ -13,6 +13,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  .d-flex.flex-column.width-full {
+    border: none;
+    box-shadow: none;
+  }
 
   .flex-items-baseline {
     align-items: baseline;
@@ -70,7 +74,6 @@
     border-radius: 8px;
     margin-top: 10px;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   /* Miscellaneous styling */
