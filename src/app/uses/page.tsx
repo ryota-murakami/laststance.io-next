@@ -1,4 +1,4 @@
-import { Card } from '@/components/Card'
+import { Card, CardTitle, CardDescription } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
@@ -24,10 +24,10 @@ function Tool({
 }) {
   return (
     <Card as="li">
-      <Card.Title as="h3" href={href}>
+      <CardTitle as="h3" href={href}>
         {title}
-      </Card.Title>
-      <Card.Description>{children}</Card.Description>
+      </CardTitle>
+      <CardDescription>{children}</CardDescription>
     </Card>
   )
 }

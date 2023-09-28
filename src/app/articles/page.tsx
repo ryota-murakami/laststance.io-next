@@ -1,6 +1,12 @@
 import { type Metadata } from 'next'
 
-import { Card } from '@/components/Card'
+import {
+  Card,
+  CardTitle,
+  CardEyebrow,
+  CardDescription,
+  CardCta,
+} from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
@@ -14,27 +20,27 @@ function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <Card.Title href={`/articles/${article.slug}`}>
+        <CardTitle href={`/articles/${article.slug}`}>
           {article.title}
-        </Card.Title>
-        <Card.Eyebrow
+        </CardTitle>
+        <CardEyebrow
           as="time"
           dateTime={article.date}
           className="md:hidden"
           decorate
         >
           {formatDate(article.date)}
-        </Card.Eyebrow>
-        <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        </CardEyebrow>
+        <CardDescription>{article.description}</CardDescription>
+        <CardCta>Read article</CardCta>
       </Card>
-      <Card.Eyebrow
+      <CardEyebrow
         as="time"
         dateTime={article.date}
         className="mt-1 hidden md:block"
       >
         {formatDate(article.date)}
-      </Card.Eyebrow>
+      </CardEyebrow>
     </article>
   )
 }

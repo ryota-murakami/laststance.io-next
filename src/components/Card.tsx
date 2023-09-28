@@ -33,7 +33,7 @@ export function Card<T extends React.ElementType = 'div'>({
   )
 }
 
-Card.Link = function CardLink({
+export function CardLink({
   children,
   ...props
 }: React.ComponentPropsWithoutRef<typeof Link>) {
@@ -48,7 +48,7 @@ Card.Link = function CardLink({
   )
 }
 
-Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
+export function CardTitle<T extends React.ElementType = 'h2'>({
   as,
   children,
   href,
@@ -60,16 +60,12 @@ Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
 
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-      {href ? <Card.Link href={href}>{children}</Card.Link> : children}
+      {href ? <CardLink href={href}>{children}</CardLink> : children}
     </Component>
   )
 }
 
-Card.Description = function CardDescription({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export function CardDescription({ children }: { children: React.ReactNode }) {
   return (
     <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
       {children}
@@ -77,7 +73,7 @@ Card.Description = function CardDescription({
   )
 }
 
-Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
+export function CardCta({ children }: { children: React.ReactNode }) {
   return (
     <div
       aria-hidden="true"
@@ -89,7 +85,7 @@ Card.Cta = function CardCta({ children }: { children: React.ReactNode }) {
   )
 }
 
-Card.Eyebrow = function CardEyebrow<T extends React.ElementType = 'p'>({
+export function CardEyebrow<T extends React.ElementType = 'p'>({
   as,
   children,
   className,
