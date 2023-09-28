@@ -1,5 +1,6 @@
 import process from 'node:process'
 
+import { parse } from 'node-html-parser'
 import { Octokit } from 'octokit'
 import { parseStringPromise } from 'xml2js'
 
@@ -17,7 +18,22 @@ export const fetchGithubFeedList = async (): Promise<Feed[]> => {
     },
   )
   const xml = await parseStringPromise(res.data)
-  const feedList = xml['feed']['entry']
+  const feedList = xml['feed']['entry'].map((f: Feed) => {
+    // Parse the HTML content
+    const root = parse(f.content[0]._)
+
+    // Update all href attributes
+    root.querySelectorAll('a').forEach((link) => {
+      const href = link.getAttribute('href')
+      if (href && !href.startsWith('http')) {
+        link.setAttribute('href', `https://github.com${href}`)
+      }
+    })
+
+    // Return the updated HTML content as a string
+    f.content[0]._ = root.toString()
+    return f
+  })
 
   return feedList
 }
