@@ -1,8 +1,7 @@
 import clsx from 'clsx'
-import Image, { type ImageProps } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
-//import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -11,10 +10,6 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -23,28 +18,9 @@ import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
-//function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-//  return (
-//    <svg
-//      viewBox="0 0 24 24"
-//      fill="none"
-//      strokeWidth="1.5"
-//      strokeLinecap="round"
-//      strokeLinejoin="round"
-//      aria-hidden="true"
-//      {...props}
-//    >
-//      <path
-//        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-//        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-//      />
-//      <path
-//        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-//        className="stroke-zinc-400 dark:stroke-zinc-500"
-//      />
-//    </svg>
-//  )
-//}
+import { fetchGithubFeedList } from '../lib/octokit'
+
+import { Item } from './_FeedItem'
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -68,19 +44,6 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   )
 }
-
-//function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-//  return (
-//    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-//      <path
-//        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-//        strokeWidth="1.5"
-//        strokeLinecap="round"
-//        strokeLinejoin="round"
-//      />
-//    </svg>
-//  )
-//}
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
@@ -109,125 +72,19 @@ function SocialLink({
     </Link>
   )
 }
-// @TODO currently unable
-//function Newsletter() {
-//  return (
-//    <form
-//      action="/thank-you"
-//      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-//    >
-//      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-//        <MailIcon className="h-6 w-6 flex-none" />
-//        <span className="ml-3">Stay up to date</span>
-//      </h2>
-//      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-//        Get notified when I publish something new, and unsubscribe at any time.
-//      </p>
-//      <div className="mt-6 flex">
-//        <input
-//          type="email"
-//          placeholder="Email address"
-//          aria-label="Email address"
-//          required
-//          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
-//        />
-//        <Button type="submit" className="ml-4 flex-none">
-//          Join
-//        </Button>
-//      </div>
-//    </form>
-//  )
-//}
 
-interface RoleType {
-  title: string
-  company: string
-  end: string | { dateTime: string; label: string }
-  logo: ImageProps['src']
-  start: string | { dateTime: string; label: string }
-}
-
-function Role({ role }: { role: RoleType }) {
-  const startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  const startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
-
-  const endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  const endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
-
-  return (
-    <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-      </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
-        <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
-        </dd>
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
-        >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
-        </dd>
-      </dl>
-    </li>
-  )
-}
-
-function Resume() {
-  const resume: Array<RoleType> = [
-    {
-      title: 'CEO',
-      company: 'Planetaria',
-      end: {
-        dateTime: new Date().getFullYear().toString(),
-        label: 'Present',
-      },
-      logo: logoPlanetaria,
-      start: '2019',
-    },
-    {
-      title: 'Product Designer',
-      company: 'Airbnb',
-      end: '2019',
-      logo: logoAirbnb,
-      start: '2014',
-    },
-    {
-      title: 'iOS Software Engineer',
-      company: 'Facebook',
-      end: '2014',
-      logo: logoFacebook,
-      start: '2011',
-    },
-    {
-      title: 'Shift Supervisor',
-      company: 'Starbucks',
-      end: '2011',
-      logo: logoStarbucks,
-      start: '2008',
-    },
-  ]
+async function GithubFeedList() {
+  const githubFeedList = await fetchGithubFeedList()
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Github Feed</span>
       </h2>
       <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} />
+        {githubFeedList.map((feed, i) => (
+          <Item key={i} feed={feed} />
         ))}
       </ol>
     </div>
@@ -320,10 +177,76 @@ export default async function Home() {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             {/* @TODO currently unable <Newsletter /> */}
-            <Resume />
+            <GithubFeedList />
           </div>
         </div>
       </Container>
     </>
   )
 }
+
+// @TODO currently unable
+//function Newsletter() {
+//  return (
+//    <form
+//      action="/thank-you"
+//      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
+//    >
+//      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+//        <MailIcon className="h-6 w-6 flex-none" />
+//        <span className="ml-3">Stay up to date</span>
+//      </h2>
+//      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+//        Get notified when I publish something new, and unsubscribe at any time.
+//      </p>
+//      <div className="mt-6 flex">
+//        <input
+//          type="email"
+//          placeholder="Email address"
+//          aria-label="Email address"
+//          required
+//          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+//        />
+//        <Button type="submit" className="ml-4 flex-none">
+//          Join
+//        </Button>
+//      </div>
+//    </form>
+//  )
+//}
+
+//function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+//  return (
+//    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
+//      <path
+//        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+//        strokeWidth="1.5"
+//        strokeLinecap="round"
+//        strokeLinejoin="round"
+//      />
+//    </svg>
+//  )
+//}
+
+//function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+//  return (
+//    <svg
+//      viewBox="0 0 24 24"
+//      fill="none"
+//      strokeWidth="1.5"
+//      strokeLinecap="round"
+//      strokeLinejoin="round"
+//      aria-hidden="true"
+//      {...props}
+//    >
+//      <path
+//        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+//        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+//      />
+//      <path
+//        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
+//        className="stroke-zinc-400 dark:stroke-zinc-500"
+//      />
+//    </svg>
+//  )
+//}
