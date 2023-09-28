@@ -1,6 +1,6 @@
 import { fetchGithubFeedList } from '../../lib/octokit'
 
-import { BriefcaseIcon } from './briefcaseIcon'
+import { BriefcaseIcon } from './BriefcaseIcon'
 import { FeedItem } from './FeedItem'
 
 export async function GithubFeedList() {
