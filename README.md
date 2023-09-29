@@ -1,32 +1,31 @@
-# Spotlight
+# Laststance.io
 
-Spotlight is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Laststance.io website built using [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
 ## Getting started
 
-To get started with this template, first install the npm dependencies:
+First, [Node@20.x.x](https://nodejs.org/en) required and install the dependencies with [pnpm](https://pnpm.io/installation):
 
 ```bash
-npm install
+pnpm install
 ```
 
-Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` variable to your site's public URL:
+Next, create a `.env.local` file in the root of your project and set the `NEXT_PUBLIC_SITE_URL` and variable to your site's public URL.  
+And set the `PERSONAL_ACCESS_TOKEN` and [github personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) created by your Github account.
 
 ```
 NEXT_PUBLIC_SITE_URL=https://example.com
+PERSONAL_ACCESS_TOKEN=ghp_i{|i$AY%kt&)>p$Y@7:C[KC$anpxfJ
+
 ```
 
 Next, run the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
-## Customizing
-
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
 
 ## License
 
