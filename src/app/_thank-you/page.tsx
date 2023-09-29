@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: 'Thanks for subscribing to my newsletter.',
 }
 
+// @TODO Currently unable newsletter.
 export default function ThankYou() {
   return (
     <SimpleLayout
