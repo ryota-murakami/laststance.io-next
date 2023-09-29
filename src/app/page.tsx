@@ -17,7 +17,7 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="mt-9">
+      <Container className="mt-9 max-h-[936px]">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Go Straightforward Web Application Development.
