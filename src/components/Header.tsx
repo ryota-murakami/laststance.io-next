@@ -143,6 +143,7 @@ function MobileNavigation(
                   ReadList
                 </MobileNavItem>
                 <MobileNavItem href="/uses">Uses</MobileNavItem>
+                <MobileNavItem href="/keybinds">Keybinds</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -191,6 +192,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
           ReadList
         </NavItem>
         <NavItem href="/uses">Uses</NavItem>
+        <NavItem href="/keybinds">Keybinds</NavItem>
       </ul>
     </nav>
   )

@@ -31,6 +31,7 @@ export function Footer() {
                   ReadList
                 </NavLink>
                 <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/keybinds">Keybinds</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Laststance.io. All rights
