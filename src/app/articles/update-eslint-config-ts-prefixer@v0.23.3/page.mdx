@@ -1,10 +1,10 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 
 export const article = {
-  auhtor: "Ryota Murakami",
+  auhtor: 'Ryota Murakami',
   title: 'Update eslint-config-ts-prefixer@v0.23.3',
   date: '2023-08-17',
-  description: 'Further update async/await/Promise rules.'
+  description: 'Further update async/await/Promise rules.',
 }
 
 export const metadata = {
@@ -32,7 +32,7 @@ This rule enforces that constructors within classes are marked with the `new` ke
 ```typescript
 // Bad
 interface Foo {
-  new (): Foo;
+  new (): Foo
 }
 
 // Good
@@ -48,13 +48,13 @@ This rule avoids using promises in places not designed to handle them.
 ```typescript
 // Bad
 addEventListener('click', async () => {
-  await doSomethingAsync();
-});
+  await doSomethingAsync()
+})
 
 // Good
 addEventListener('click', () => {
-  doSomethingAsync();
-});
+  doSomethingAsync()
+})
 ```
 
 ### 3. [@typescript-eslint/promise-function-async](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/promise-function-async.md)
@@ -64,12 +64,12 @@ This rule requires any function or method that returns a Promise to be marked as
 ```typescript
 // Bad
 function foo(): Promise<void> {
-  return Promise.resolve();
+  return Promise.resolve()
 }
 
 // Good
 async function foo(): Promise<void> {
-  return;
+  return
 }
 ```
 

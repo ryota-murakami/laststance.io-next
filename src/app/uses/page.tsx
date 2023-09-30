@@ -18,7 +18,7 @@ function Tool({
   children,
   href,
 }: {
-  title: string
+  title: React.ReactNode
   children: React.ReactNode
   href?: string
 }) {
@@ -40,79 +40,214 @@ export const metadata = {
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title={
+        <>
+          Hardware, Software I use. <br />
+          And I love other things.
+        </>
+      }
+      intro="Stay comfortable, Here’s a big list of all of my favorite stuff."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+        <ToolsSection title="Hardware">
+          <Tool
+            title="16” MacBook Pro, 2.6 GHz 6-Core Intel Core i7, 16GB RAM (2019)"
+            href="https://www.theverge.com/2019/11/21/20974649/apple-macbook-pro-16-inch-laptop-review-keyboard-test-specs-price-features"
+          >
+            Probably the last model with Touch Bar, only ESC key is easy to use
+            with physical keys. The keyboard layout is US. Honestly I should
+            probably replace the Intel chip with the latest ARM chip soon, but
+            it's still woking powerful and recent MacBook Pro models are too
+            expensive, so I can't easily change models. <br /> To maintain a
+            comfortable posture, I run my MacBook Pro in a clamshell mode mode
+            with an external monitor, keyboard, and trackpad (described below)
+            connected to the computer. I often run my MacBook Pro in a clamshell
+            mode with an external monitor, keyboard, and trackpad connected to
+            maintain a comfortable posture.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool
+            title="Apple Magic Keyboard - US English"
+            href="https://www.apple.com/shop/product/MK2A3LL/A/magic-keyboard-us-english"
+          >
+            I am not particularly particular about keyboards, so I use the Apple
+            original one. It is an ordinary keyboard with no special features,
+            and I think the price is high compared to the performance.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
+          <Tool
+            title="Apple Magic Trackpad - Black Multi-Touch Surface"
+            href="https://www.apple.com/shop/product/MK2D3AM/A/magic-trackpad-white-multi-touch-surface"
+          >
+            I use a black color one. It feels exactly like the one on my Macbook
+            Pro and is the most complete pointing device compared to other
+            laptop products. I think the performance of the product is balanced
+            against the price, which is rare for Apple.
           </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
+          <Tool
+            title="eXpress Keyboard Platform"
+            href="https://bullettrain.com/products/express-keyboard-platform?variant=3508308246568"
+          >
+            This is a gadget for placing an external Apple Magic Keyboard and
+            Apple Magic Trackpad in a layout similar to that of a Macbook Pro.
+            If you simply place the Trackpad under the keyboard without using
+            this product, the height difference is too great and it is difficult
+            to operate the keyboard properly. Thanks to this gadget, you can
+            smoothly switch between the clamshell mode of the Macbook Pro and
+            the normal laptop mode.
           </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool
+            title="LG 24 UltraGear FHD IPS 1ms 144Hz HDR Monitor"
+            href="https://www.amazon.com/LG-24GN650-B-Ultragear-FreeSync-Adjustable/dp/B08V85XBFZ?th=1"
+          >
+            My memory is a little fuzzy but I bought this external monitor
+            because it was on sale at Amazon at a discount, It is connected in
+            Clamshell mode. <br />
+            The good thing about this monitor is that I don't feel any display
+            delay at all (who can detect a 1ms delay?). <br /> The good thing
+            about this monitor is that you don't feel any delay at all, The
+            monitor can be set to a refresh rate of up to 144Hz, which makes
+            scrolling on the web site very smooth. (On my Macbook Pro, I set the
+            refresh rate to 120Hz because the screen turns green when set to
+            144Hz.) <br /> The difference in smoothness between 60Hz and 120Hz
+            is clearly visible even to the average non-gadget geek, <br /> so I
+            honestly think the 120Hz support on the iPhone 15 Pro was a more
+            important update than USB-C.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+          <Tool
+            title="WebStorm(JetBrains IDE)"
+            href="https://www.jetbrains.com/webstorm/"
+          >
+            First of all, I am a big fan of JetBrains. Since my first use of
+            PHPStorm for a project in the PHP Symfony framework, I have been
+            impressed by its powerful refactoring features that understand the
+            type and context of the code and automatically rewirte all affected
+            parts to make sure that the code is properly Code Complete. I think
+            this is similar to the feeling that JavaScirpt developers had when
+            they switched from SublimeText to VSCode back in the day when there
+            was no culture of using IDEs. I use WebStorm, VScode, and Cursor as
+            my three IDEs. The best features of WebStorm are Auto Import,
+            IntelliSense, refactoring accuracy, ESLint autofix execution speed,
+            and I think the Project Tree is the easiest to use. There are almost
+            no situations where I have to manually write import statements, so I
+            would choose WebStorm first when writing a normal program.
+            Translated with www.DeepL.com/Translator (free version)
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
+          <Tool title="Cursor" href="https://www.cursor.so/">
+            Forked from VScode, it is the IDE with the best AI I know. It can
+            import and learn library documents and answer questions based on its
+            knowledge of the entire codebase, making it a powerful tool for
+            real-world products. Since it is a Fork of VScode, it references
+            VScode's keybinding.json and settings.json, so it can easily be used
+            with VSCode.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool
+            title="Visual Studio Code"
+            href="https://code.visualstudio.com/"
+          >
+            The best TypeScirpt LSP ,`Pretty TypeScript Errors` and
+            `ts-type-expand` extensions available vs typescript gymnastics
+            weapons. Other times, when you want to use Github Copilot, or when
+            you want to use the extensions that are useful for JS/TS IDEs, as
+            they tend to appear due to their overwhelming market share. Pretty
+            TypeScriptErrors` was made available as a WebStorm first-party
+            feature with the help of Extension authors and voted by WebStorm
+            users, However, we fear for WebStorm's survival unless a mechanism
+            is created to easily migrate VSCode extensions and first-party
+            features to the JetBrains IDE, otherwise the free VSCode will be
+            clearly superior to the paid JetBtrains product. WebStorm's survival
+            is in jeopardy.
+          </Tool>
+          <Tool
+            title="Terminal(Mac OSX Default)"
+            href="https://github.com/ryota-murakami/dotfiles/blob/master/mysetting.terminal"
+          >
+            Maybe I just don't know the advanced features of other terminal
+            apps, but I like the default terminal because it is stable enough to
+            do what I want to do. I don't use the split screen at all, so maybe
+            I don't feel inconvenienced by the default Terminal. When I launch
+            multiple processes, I use tabs to manage them.
+          </Tool>{' '}
+          <Tool
+            title="Fish Shell"
+            href="https://github.com/ryota-murakami/dotfiles/blob/master/.config/fish/config.fish"
+          >
+            When I was a programming novice, I switched from bash to fish when I
+            saw a blog about a customized zsh-like useful feature with almost
+            zero configuration. But at first, fish was not compatible with
+            bash/zsh and it was inconvenient that I could not execute
+            ShellScript I found on Stackoverflow and so on as is. Now that fish
+            has become a major shell, it supports installation scripts for
+            various CLI tools, and also supports adding paths to `config.fish`,
+            so it is easier to use than before. However, I don't know how to use
+            the `abbr` command, which is one of the features of fish, and I use
+            alias all the time...
+          </Tool>
+          <Tool title="Volta" href="https://volta.sh/">
+            Volta is a Node.js version control tool, it would be an alternative
+            to nvm. It has a simple API and a `volta pin` command that records
+            the Node.js version of the project in package.json and automatically
+            switches the Node.js version when you move to a directory.
+          </Tool>
+          <Tool title="pnpm" href="https://pnpm.io/">
+            I use pnpm as package manager for all my JS/TS projects. It saves a
+            lot of storage space, and it has very straight forward module
+            resolution that <br /> imported package from the end application
+            must be written the top level package.json's
+            dependency/devDependency. <br /> I think it is a great package
+            manager with a very straight forward and trouble free module
+            resolution rule. <br /> I also use Bun from time to time, which can
+            run TS directly and ise often a faster runtime than Node.js.
+          </Tool>
+          <Tool title="LocatorJS" href="https://www.locatorjs.com/">
+            This is very useful when dealing with unfamiliar code bases, as it
+            allows you to open the source code of the React Component you
+            clicked on in an instant.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
-          <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
+          <Tool title="Figma" href="https://www.figma.com/">
+            Bridging the gap between design data and implementation code in
+            component-oriented front-end development, <br /> the designer skills
+            and design tool skills needed when developing GUI applications on a
+            solo basis, and the emergence of VSCode and Storybook's Figma
+            Extension, developers also I have seen an increasing number of
+            situations in recent years where I feel that it is better to be
+            equipped with design tool skills. <br />I think that the designer's
+            ability is also included in the interest of full-stack developers.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
+        <ToolsSection title="Utility">
+          <Tool title="Clipy" href="https://github.com/Clipy/Clipy">
+            This is a clipboard history saving application. The shortcut is set
+            to `CMD + 0(zero)`. <br /> Is it modern now that many people do the
+            same thing with Raycast?
           </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
+          <Tool
+            title="Spotlight (Mac OSX Default)"
+            href="https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac"
+          >
+            I use Spotlight and Raycast together. Spotlight is set to exclude
+            GUI applications in LaunchPad from its search target, and is
+            specialized for launching GUI applications such as Chrome, Notion,
+            and 1Password. The shortcut key is `Option + Space`.
           </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
+          <Tool title="Raycast" href="https://www.raycast.com/">
+            I am not good at remembering the spelling of English words, so what
+            I use Raycast for the most is the dictionary function. <br /> I also
+            use Github repository search, kill process, bing search, and
+            floating note. I would like to try various extensions when I have
+            time, as I am sure there are many useful ways to use them that I am
+            not aware of yet. <br /> I am using the free plan because I couldn't
+            find any situation where I want to ask AI questions in the context
+            of Raycast.
           </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="iStat Menu" href="https://bjango.com/mac/istatmenus/">
+            It is an application that displays every stat of the machine in the
+            menu bar like Activitiy Monitor. <br />
+            It is fun to see the CPU temperature and fan speed in the Censer tab
+            and to change the fan speed to 100% and try to see how far you can
+            cool the CPU.
           </Tool>
         </ToolsSection>
       </div>
