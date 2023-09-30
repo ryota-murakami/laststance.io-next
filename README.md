@@ -4,7 +4,7 @@
 
 # Laststance.io
 
-Laststance.io website built using [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+The [Laststance.io](https://www.laststance.io/) website built using [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
 ## Getting started
 
@@ -20,7 +20,6 @@ And set the `PERSONAL_ACCESS_TOKEN` and [github personal access token](https://d
 ```
 NEXT_PUBLIC_SITE_URL=https://example.com
 PERSONAL_ACCESS_TOKEN=ghp_i{|i$AY%kt&)>p$Y@7:C[KC$anpxfJ
-
 ```
 
 Next, run the development server:
