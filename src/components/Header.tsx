@@ -77,13 +77,14 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function MobileNavItem({
   children,
   href,
+  ...rest
 }: {
   children: React.ReactNode
   href: string
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <Popover.Button as={Link} href={href} {...rest} className="block py-2">
         {children}
       </Popover.Button>
     </li>
@@ -137,7 +138,10 @@ function MobileNavigation(
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/articles">Articles</MobileNavItem>
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
+                {/* @ts-expect-error There is no time for type gymnastics. */}
+                <MobileNavItem href="https://nsx.malloc.tokyo/" target="_blank">
+                  ReadList
+                </MobileNavItem>
                 <MobileNavItem href="/uses">Uses</MobileNavItem>
               </ul>
             </nav>
