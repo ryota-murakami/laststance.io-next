@@ -42,7 +42,11 @@ const WhatNew: React.FC<{}> = () => {
         <ScrollArea className="mt-4 space-y-4">
           <List
             date="2023-10-07"
-            li={["Add What's New?", 'Change shacdn "baseColor": "zinc"']}
+            li={[
+              "Add What's New?",
+              'Change shacdn "baseColor": "zinc"',
+              'Fix GithubFeed Style',
+            ]}
           />
         </ScrollArea>
       </DialogContent>
