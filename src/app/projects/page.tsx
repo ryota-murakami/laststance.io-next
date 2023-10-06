@@ -81,6 +81,15 @@ const projects = [
     },
     logo: chromeLogo,
   },
+  {
+    name: 'prettier-husky-lint-staged-installer',
+    description: 'Setup prettier fortmat staged files at precommit.',
+    link: {
+      href: 'prettier-husky-lint-staged-installer',
+      label: 'prettier-husky-lint-staged-installer',
+    },
+    logo: npmLogo,
+  },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
