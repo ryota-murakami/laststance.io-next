@@ -1075,8 +1075,6 @@ packages:
         optional: true
       '@types/react-dom':
         optional: true
-      react:
-        optional: true
     dependencies:
       '@babel/runtime': 7.22.15
       '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.25)(react@18.2.0)

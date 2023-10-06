@@ -40,7 +40,10 @@ const WhatNew: React.FC<{}> = () => {
           <DialogTitle>What's New?</DialogTitle>
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
-          <List date="2023-10-07" li={["Add What's New?"]} />
+          <List
+            date="2023-10-07"
+            li={["Add What's New?", 'Change shacdn "baseColor": "zinc"']}
+          />
         </ScrollArea>
       </DialogContent>
     </Dialog>
