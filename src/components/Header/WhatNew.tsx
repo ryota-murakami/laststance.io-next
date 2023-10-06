@@ -6,55 +6,42 @@ import { Button } from '../ui/button'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from '../ui/dialog'
-import { Input } from '../ui/input'
-import { Label } from '../ui/label'
+import { ScrollArea } from '../ui/scroll-area'
+import { Separator } from '../ui/separator'
 
-interface Props {}
+interface Props {
+  date: DateString
+  li: string[]
+}
+const List: React.FC<Props> = ({ date, li }) => (
+  <>
+    <Separator className="mb-4" />
+    <h3 className="font-bold text-lg">{date}</h3>
+    <ul className="mt-4 ml-6 list-disc text-base">
+      {li.map((v) => (
+        <li>{v}</li>
+      ))}
+    </ul>
+  </>
+)
 
-const WhatNew: React.FC<Props> = () => {
+const WhatNew: React.FC<{}> = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="ghost">Waht's New？</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] sm:min-h-[425px] scroll-auto">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
-          </DialogDescription>
+          <DialogTitle>What's New?</DialogTitle>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input
-              id="name"
-              defaultValue="Pedro Duarte"
-              className="col-span-3"
-            />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input
-              id="username"
-              defaultValue="@peduarte"
-              className="col-span-3"
-            />
-          </div>
-        </div>
-        <DialogFooter>
-          <Button type="submit">Save changes</Button>
-        </DialogFooter>
+        <ScrollArea className="mt-4 space-y-4">
+          <List date="2023-10-07" li={["Add What's New?"]} />
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   )
