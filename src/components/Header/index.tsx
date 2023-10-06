@@ -11,6 +11,7 @@ import { AvatarContainer } from './AvatarContainer'
 import { DesktopNavigation } from './DesktopNavigation'
 import { MobileNavigation } from './MobileNavigation'
 import { ThemeToggle } from './ThemeToggle'
+import WhatNew from './WhatNew'
 
 export function Header() {
   const isHomePage = usePathname() === '/'
@@ -193,7 +194,10 @@ export function Header() {
                 <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
-              <div className="flex justify-end md:flex-1">
+              <div className="flex justify-end gap-x-[15%] md:flex-1">
+                <div className="pointer-events-auto">
+                  <WhatNew />
+                </div>
                 <div className="pointer-events-auto">
                   <ThemeToggle />
                 </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { memo } from 'react'
+import React from 'react'
 
 import { Button } from '../ui/button'
 import {
@@ -17,11 +17,11 @@ import { Label } from '../ui/label'
 
 interface Props {}
 
-const WhatNew: React.FC<Props> = memo(() => {
+const WhatNew: React.FC<Props> = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <Button variant="ghost">Waht's New？</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
@@ -58,7 +58,6 @@ const WhatNew: React.FC<Props> = memo(() => {
       </DialogContent>
     </Dialog>
   )
-})
-WhatNew.displayName = 'WhatNew'
+}
 
 export default WhatNew
