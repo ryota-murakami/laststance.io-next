@@ -46,6 +46,7 @@ const WhatNew: React.FC<{}> = () => {
               "Add What's New?",
               'Change shacdn "baseColor": "zinc"',
               'Fix GithubFeed Style',
+              'Add 8icon Credit at Projects page',
             ]}
           />
         </ScrollArea>

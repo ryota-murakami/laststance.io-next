@@ -9,6 +9,7 @@ import reactLogo from '@/images/logos/icons8-react-a-javascript-library-for-buil
 import reduxLogo from '@/images/logos/icons8-redux-48.png'
 import viteLogo from '@/images/logos/icons8-vite-48.png'
 
+import { Container } from '../../components/Container'
 import { LinkIcon } from '../../components/icons/inkIcon'
 
 // @TODO credit <a target="_blank" href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
@@ -134,6 +135,63 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
+      <Container className="grid place-content-center mt-32">
+        <h2 className="text-3xl pb-2 ml-[-0.75rem]">Icon8 Credit</h2>
+        <ul className="list-disc">
+          <li>
+            <a target="_blank" href="https://icons8.com/icon/24895/npm">
+              NPM
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://icons8.com/icon/63785/chrome">
+              Chrome
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/9vlfB9hjA1lX/react-a-javascript-library-for-building-user-interfaces"
+            >
+              React a JavaScript library for building user interfaces
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://icons8.com/icon/YO3YqSaTOu5K/vite">
+              Vite
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/3VGtaw5gCc8T/redux-an-open-source-javascript-library-for-managing-application-state"
+            >
+              Redux an open-source JavaScript library for managing application
+              state
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+        </ul>
+      </Container>
     </SimpleLayout>
   )
 }
