@@ -29,7 +29,7 @@ const List: React.FC<Props> = ({ date, li }) => (
   </>
 )
 
-const WhatNew: React.FC<{}> = () => {
+const WhatNew: React.FC = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
