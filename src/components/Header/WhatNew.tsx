@@ -18,15 +18,15 @@ interface Props {
   li: string[]
 }
 const List: React.FC<Props> = ({ date, li }) => (
-  <>
+  <div className="mt-4">
     <Separator className="mb-4" />
     <h3 className="font-bold text-lg">{date}</h3>
     <ul className="mt-4 ml-6 list-disc text-base">
       {li.map((v) => (
-        <li>{v}</li>
+        <li key={v}>{v}</li>
       ))}
     </ul>
-  </>
+  </div>
 )
 
 const WhatNew: React.FC = () => {
@@ -41,6 +41,12 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            key="2023-10-16"
+            date="2023-10-16"
+            li={['Fix Keybinds page typography.']}
+          />
+          <List
+            key="2023-10-07"
             date="2023-10-07"
             li={[
               "Add What's New?",

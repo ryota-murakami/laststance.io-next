@@ -13,7 +13,7 @@ export default function Keybinds() {
         title={<>My Editor Keybinds.</>}
         intro="For share setting across 3 Editor and prevent forget."
       >
-        <div className="space-y-20 w-96 mx-auto">
+        <div className="w-[400px] mx-auto">
           <table className="min-w-full border-collapse">
             <thead className="border-b-2 border-gray-300">
               <tr>
@@ -22,7 +22,7 @@ export default function Keybinds() {
               </tr>
             </thead>
             <tbody>
-              <tr className="">
+              <tr>
                 <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                   Move Cursor
                 </td>
@@ -90,7 +90,6 @@ export default function Keybinds() {
               </tr>
               <tr>
                 <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
-                  {' '}
                   Selection
                 </td>
                 <td className="border-b border-gray-300"></td>
@@ -404,8 +403,7 @@ export default function Keybinds() {
               </tr>
 
               <tr>
-                <td className="py-2 px-4 border-b border-gray-300">
-                  {' '}
+                <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                   Code Jump
                 </td>
                 <td className="border-b border-gray-300"></td>
@@ -589,7 +587,9 @@ export default function Keybinds() {
               </tr>
 
               <tr>
-                <td className="py-2 px-4 border-b border-gray-300"> Git</td>
+                <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
+                  Git
+                </td>
                 <td className="border-b border-gray-300"></td>
               </tr>
               <tr>
