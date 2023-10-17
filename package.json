@@ -24,7 +24,7 @@
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/eslint-plugin-next": "^13.5.5",
-    "@next/mdx": "13.5.4",
+    "@next/mdx": "13.5.5",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-scroll-area": "^1.0.5",
