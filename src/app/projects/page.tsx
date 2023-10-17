@@ -4,9 +4,11 @@ import Image from 'next/image'
 import { Card, CardLink, CardDescription } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import chromeLogo from '@/images/logos/icons8-chrome-48.png'
+import nextLogo from '@/images/logos/icons8-nextjs-48.png'
 import npmLogo from '@/images/logos/icons8-npm-48.png'
 import reactLogo from '@/images/logos/icons8-react-a-javascript-library-for-building-user-interfaces-32.png'
 import reduxLogo from '@/images/logos/icons8-redux-48.png'
+import shellLogo from '@/images/logos/icons8-shell-40.png'
 import viteLogo from '@/images/logos/icons8-vite-48.png'
 
 import { Container } from '../../components/Container'
@@ -21,11 +23,20 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: 'eslint-config-ts-prefixer',
-    description: 'Make Your Linter as Close to Prettier as Possible.',
+    name: 'Laststance.io',
+    description: 'This website codebase',
     link: {
-      href: 'https://github.com/laststance/eslint-config-ts-prefixer',
-      label: 'eslint-config-ts-prefixer',
+      href: 'https://github.com/laststance/laststance.io',
+      label: 'laststance.io',
+    },
+    logo: nextLogo,
+  },
+  {
+    name: 'prettier-husky-lint-staged-installer',
+    description: 'Setup prettier fortmat staged files at precommit.',
+    link: {
+      href: 'prettier-husky-lint-staged-installer',
+      label: 'prettier-husky-lint-staged-installer',
     },
     logo: npmLogo,
   },
@@ -92,13 +103,13 @@ const projects = [
     logo: chromeLogo,
   },
   {
-    name: 'prettier-husky-lint-staged-installer',
-    description: 'Setup prettier fortmat staged files at precommit.',
+    name: 'dotfiles',
+    description: '👨‍💻 My Mac OS X setup manual.',
     link: {
-      href: 'prettier-husky-lint-staged-installer',
-      label: 'prettier-husky-lint-staged-installer',
+      href: 'https://github.com/ryota-murakami/dotfiles',
+      label: 'dotfiles',
     },
-    logo: npmLogo,
+    logo: shellLogo,
   },
 ]
 
@@ -184,6 +195,30 @@ export default function Projects() {
             >
               Redux an open-source JavaScript library for managing application
               state
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/yUdJlcKanVbh/next.js"
+            >
+              Nextjs
+            </a>{' '}
+            icon by{' '}
+            <a target="_blank" href="https://icons8.com">
+              Icons8
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/nuPce-GYYZeC/console"
+            >
+              Shell
             </a>{' '}
             icon by{' '}
             <a target="_blank" href="https://icons8.com">
