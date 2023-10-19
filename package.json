@@ -55,7 +55,7 @@
     "@types/react": "18.2.29",
     "@types/react-dom": "18.2.14",
     "@types/webpack-env": "^1.18.3",
-    "@types/xml2js": "^0.4.12",
+    "@types/xml2js": "^0.4.13",
     "@typescript-eslint/eslint-plugin": "^6.8.0",
     "@typescript-eslint/parser": "^6.8.0",
     "eslint": "^8.51.0",
