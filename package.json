@@ -52,7 +52,7 @@
     "@tailwindcss/typography": "^0.5.4",
     "@types/mdx": "^2.0.9",
     "@types/node": "20.8.7",
-    "@types/react": "18.2.29",
+    "@types/react": "18.2.30",
     "@types/react-dom": "18.2.14",
     "@types/webpack-env": "^1.18.3",
     "@types/xml2js": "^0.4.13",
