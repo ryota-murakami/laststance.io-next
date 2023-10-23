@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0
   '@argos-ci/playwright':
-    specifier: ^0.0.7
-    version: 0.0.7
+    specifier: ^1.0.0
+    version: 1.0.0
   '@headlessui/react':
     specifier: ^1.7.17
     version: 1.7.17(react-dom@18.2.0)(react@18.2.0)
@@ -193,6 +193,11 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
+  /@argos-ci/browser@1.0.0:
+    resolution: {integrity: sha512-v2Oi5+qX3hkBPgIeRbpUOBRL6M8QtDYFcOaK2krWzTy2Njrh8CPu+JHhnXpQTTrg7r12NJWtc3TEPAhYWJdh0A==}
+    engines: {node: '>=16.0.0'}
+    dev: false
+
   /@argos-ci/cli@1.0.0:
     resolution: {integrity: sha512-AiWxK55Xh6dYZP+K+2RY0uSkatCX/h8JmUvCC/z8LEF+ZJBQusGU1ecIRbOQeuOPbLBdCqiH701jF9a4SfwHbQ==}
     engines: {node: '>=16.0.0'}
@@ -221,9 +226,15 @@ packages:
       - supports-color
     dev: false
 
-  /@argos-ci/playwright@0.0.7:
-    resolution: {integrity: sha512-E+v943CBVrw0HhX3yI36fUqHbyBoWDpxSM0wsU4D5NMijnlL5sA9LVqHz6pfTJ8JbFaA4zBtbiVMHK9xCuPObg==}
-    engines: {node: '>=16'}
+  /@argos-ci/playwright@1.0.0:
+    resolution: {integrity: sha512-k/4eQPnPtupdOUS4HU8AV50JK0so6Zift5tCa2PUOXtVJGNtfkHBG8qwPLUlqjgXKQ3+HzSEA2l4SoWRKZLl0Q==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/browser': 1.0.0
+      '@argos-ci/core': 1.0.0
+      '@argos-ci/util': 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@argos-ci/util@1.0.0:
