@@ -19,7 +19,7 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
-    "@argos-ci/cli": "^0.6.0",
+    "@argos-ci/cli": "^1.0.0",
     "@argos-ci/playwright": "^0.0.7",
     "@headlessui/react": "^1.7.17",
     "@mapbox/rehype-prism": "^0.8.0",
@@ -55,7 +55,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.9",
     "@types/node": "20.8.7",
-    "@types/react": "18.2.30",
+    "@types/react": "18.2.31",
     "@types/react-dom": "18.2.14",
     "@types/webpack-env": "^1.18.3",
     "@types/xml2js": "^0.4.13",
