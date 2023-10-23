@@ -7,7 +7,7 @@ import { test } from '@playwright/test'
 import { extractSitemapPathnames, pathnameToArgosName } from './utils'
 
 const siteUrl = 'http://localhost:3000'
-const sitemapPath = './build/sitemap.xml'
+const sitemapURL = 'http://localhost:3000/sitemap.xml'
 const stylesheetPath = './screenshot.css'
 const stylesheet = fs.readFileSync(stylesheetPath).toString()
 
@@ -20,8 +20,8 @@ function screenshotPathname(pathname: string) {
   })
 }
 
-test.describe('Laststance.io site screenshots', () => {
-  const pathnames = extractSitemapPathnames(sitemapPath)
+test.describe('Laststance.io site screenshots', async () => {
+  const pathnames = await extractSitemapPathnames(sitemapURL)
   console.log('Pathnames to screeshot:', pathnames)
   pathnames.forEach(screenshotPathname)
 })
