@@ -12,6 +12,8 @@ export const metadata = {
   description: article.description,
 }
 
+export default (props) => <ArticleLayout article={article} {...props} />
+
 I've published [eslint-config-ts-prefixer@v0.23.3](https://github.com/laststance/eslint-config-ts-prefixer).
 
 eslint-config-ts-prefixer is ESLint rule set that integrated prettier as one of ESLint rule and specialized fixable rule set.
