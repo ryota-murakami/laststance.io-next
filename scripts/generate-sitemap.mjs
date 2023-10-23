@@ -1,19 +1,21 @@
-const fs = require('fs')
-const globby = require('globby')
+import fs from 'node:fs'
 
-;(async () => {
-  const pages = await globby([
-    'src/pages/**/*.tsx',
-    '!src/pages/_*.tsx',
-    '!src/pages/api',
-  ])
+import { globby } from 'globby'
 
-  const sitemap = `
+const pages = await globby([
+  'src/app/**/*.tsx',
+  '!src/app/_*.tsx',
+  '!src/app/_**/*',
+  '!src/app/api',
+  '!src/app/feed.xml',
+])
+
+const sitemap = `
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${pages
         .map((page) => {
           const path = page
-            .replace('src/pages', '')
+            .replace('src/app', '')
             .replace('.tsx', '')
             .replace('/index', '')
           return `
@@ -26,5 +28,4 @@ const globby = require('globby')
     </urlset>
   `
 
-  fs.writeFileSync('public/sitemap.xml', sitemap)
-})()
+fs.writeFileSync('public/sitemap.xml', sitemap)

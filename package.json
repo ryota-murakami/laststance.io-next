@@ -16,7 +16,7 @@
     "prettier": "prettier --ignore-unknown --write .",
     "typecheck": "tsc --noEmit",
     "validate": "./scripts/validate",
-    "generate:sitemap": "node generate-sitemap.js"
+    "generate:sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@argos-ci/cli": "^0.6.0",

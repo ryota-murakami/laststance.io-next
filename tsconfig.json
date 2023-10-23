@@ -30,6 +30,7 @@
     "./**.mjs",
     "next-env.d.ts",
     "**/*.ts",
+    "**/*.js",
     "**/*.tsx",
     "**/*/*.d.ts",
     ".next/types/**/*.ts"
