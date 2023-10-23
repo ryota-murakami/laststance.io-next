@@ -1,5 +1,3 @@
-'use client'
-
 import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
