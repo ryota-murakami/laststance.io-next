@@ -8,7 +8,7 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Laststance.io - A indipendent organization for OSS activity.',
+    default: 'Laststance.io',
     template: '%s - Laststance.io',
   },
   alternates: {
@@ -16,7 +16,14 @@ export const metadata: Metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
-  description: 'Laststance.io - A indipendent organization for OSS activity.',
+  description: 'A individual OSS organization for code things.',
+  openGraph: {
+    title: 'Laststance.io',
+    description: 'A individual OSS organization for a code things.',
+  },
+  twitter: {
+    card: 'summary',
+  },
 }
 
 export default function RootLayout({
