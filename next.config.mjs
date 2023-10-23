@@ -5,27 +5,6 @@ import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // @FIXME SyntaxError: "undefined" is not valid JSON
-  // experimental: {
-  //   turbo: {
-  //     rules: {
-  //       '*.mdx': [
-  //         function (code) {
-  //           const prevGetOptions = this.getOptions.bind(this)
-  //           this.getOptions = function getOptions(...args) {
-  //             return {
-  //               ...prevGetOptions(...args),
-  //               rehypePlugins: [rehypePrism],
-  //               remarkPlugins: [remarkGfm],
-  //             }
-  //           }
-  //
-  //           mdxLoader.call(this, code)
-  //         },
-  //       ],
-  //     },
-  //   },
-  // },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
