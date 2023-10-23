@@ -14,9 +14,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,jsx,cjs,mjs",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx,cjs,mjs --fix",
     "prettier": "prettier --ignore-unknown --write .",
-    "typecheck": "tsc --noEmit",
-    "validate": "./scripts/validate",
-    "generate:sitemap": "node scripts/generate-sitemap.mjs"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@argos-ci/cli": "^1.0.0",
