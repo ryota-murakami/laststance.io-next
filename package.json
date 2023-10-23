@@ -19,7 +19,7 @@
     "generate:sitemap": "node generate-sitemap.js"
   },
   "dependencies": {
-    "@argos-ci/cli": "^0.6.0",
+    "@argos-ci/cli": "^1.0.0",
     "@argos-ci/playwright": "^0.0.7",
     "@headlessui/react": "^1.7.13",
     "@mapbox/rehype-prism": "^0.8.0",
