@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@argos-ci/cli": "^1.0.0",
-    "@argos-ci/playwright": "^1.0.0",
+    "@argos-ci/playwright": "^1.0.1",
     "@headlessui/react": "^1.7.17",
     "@mapbox/rehype-prism": "^0.8.0",
     "@mdx-js/loader": "^2.3.0",
