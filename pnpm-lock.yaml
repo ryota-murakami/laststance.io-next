@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0
   '@argos-ci/playwright':
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.0.1
+    version: 1.0.1
   '@headlessui/react':
     specifier: ^1.7.17
     version: 1.7.17(react-dom@18.2.0)(react@18.2.0)
@@ -211,8 +211,8 @@ packages:
       - supports-color
     dev: false
 
-  /@argos-ci/playwright@1.0.0:
-    resolution: {integrity: sha512-k/4eQPnPtupdOUS4HU8AV50JK0so6Zift5tCa2PUOXtVJGNtfkHBG8qwPLUlqjgXKQ3+HzSEA2l4SoWRKZLl0Q==}
+  /@argos-ci/playwright@1.0.1:
+    resolution: {integrity: sha512-mBQI5dsO8Y/Abj0JPsckshPwWtZ7ib7Pmf13oBckh0rdBF6QOgAbJ2vHs893pNU9zbc3Y8Jtofj+2KOmSwufzA==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/browser': 1.0.0
