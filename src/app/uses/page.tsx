@@ -32,9 +32,14 @@ function Tool({
   )
 }
 
+const title = 'Uses'
 export const metadata = {
-  title: 'Uses',
+  title: title,
   description: 'Software I use, my preference, things my favorite.',
+  openGraph: {
+    title,
+    images: [`/api/og?title=${title}`],
+  },
 }
 
 export default function Uses() {

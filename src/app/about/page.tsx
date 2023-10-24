@@ -12,9 +12,14 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/gonnahell.jpeg'
 
+const title = 'About'
 export const metadata: Metadata = {
-  title: 'About',
+  title: title,
   description: 'A indipendent organization for OSS activity.',
+  openGraph: {
+    title,
+    images: [`/api/og?title=${title}`],
+  },
 }
 
 function SocialLink({

@@ -10,6 +10,10 @@ export const article = {
 export const metadata = {
   title: article.title,
   description: article.description,
+  openGraph: {
+    title: article.title,
+    images: [`/api/og?title=${article.title}`],
+  },
 }
 
 export default (props) => <ArticleLayout article={article} {...props} />

@@ -11,10 +11,15 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
+const title = 'Articles'
 export const metadata: Metadata = {
-  title: 'Articles',
+  title: title,
   description:
     'All of my long-form thoughts on JavaScript OSS, new product, and more, collected in chronological order.',
+  openGraph: {
+    title,
+    images: [`/api/og?title=${title}`],
+  },
 }
 function Article({ article }: { article: ArticleWithSlug }) {
   return (

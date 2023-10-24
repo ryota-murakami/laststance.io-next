@@ -12,17 +12,20 @@ export const metadata: Metadata = {
     template: '%s - Laststance.io',
   },
   alternates: {
+    canonical: '/',
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
   description: 'A individual OSS organization for code things.',
+  metadataBase: new URL('https://laststance.io/'),
   openGraph: {
     title: 'Laststance.io',
     description: 'A individual OSS organization for a code things.',
+    images: [`/api/og?title=Laststance.io`],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
   },
 }
 

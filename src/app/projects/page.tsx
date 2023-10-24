@@ -14,11 +14,15 @@ import viteLogo from '@/images/logos/icons8-vite-48.png'
 import { Container } from '../../components/Container'
 import { LinkIcon } from '../../components/icons/inkIcon'
 
-// @TODO credit <a target="_blank" href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+const title = 'Projects'
 
 export const metadata: Metadata = {
-  title: 'Projects',
+  title: title,
   description: 'Laststance.io Github repositories.',
+  openGraph: {
+    title,
+    images: [`/api/og?title=${title}`],
+  },
 }
 
 const projects = [

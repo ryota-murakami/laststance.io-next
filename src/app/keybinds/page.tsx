@@ -1,8 +1,13 @@
 import { SimpleLayout } from '@/components/SimpleLayout'
 
+const title = 'Keybinds'
 export const metadata = {
-  title: 'Keybinds',
+  title: title,
   description: 'My Editor Keybinds.',
+  openGraph: {
+    title,
+    images: [`/api/og?title=${title}`],
+  },
 }
 
 export default function Keybinds() {
