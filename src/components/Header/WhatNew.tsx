@@ -41,6 +41,10 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2023-10-24"
+            li={['Fix broken blog post body style.', 'Add og image']}
+          />
+          <List
             date="2023-10-17"
             li={['Add Laststance.io and Dotfiles in Projects.']}
           />
