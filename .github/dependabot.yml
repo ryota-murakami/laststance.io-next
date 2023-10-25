@@ -7,3 +7,4 @@ updates:
       interval: 'daily'
     ignore:
       - dependency-name: 'remark-gfm'
+      - dependency-name: '@mdx-js/loader'

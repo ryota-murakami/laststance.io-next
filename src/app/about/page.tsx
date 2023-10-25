@@ -87,9 +87,11 @@ export default function About() {
                 Ryota Murakami live in Tokyo,
               </a>
               here is website of my personal Github organization.
-              <br />, Initially, Laststance.io was just a Github organization
-              created for use to name a NPM scoped name, such as "@foo/mylib",
-              prevent new package name already used others.
+              <br />
+              <br />
+              Initially, Laststance.io was just a Github organization created
+              for use to name a NPM scoped name, such as "@foo/mylib", prevent
+              new package name already used others.
             </p>
             <p>
               But now it has become an important hub for me to co-locate all OSS
