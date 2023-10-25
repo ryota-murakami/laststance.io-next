@@ -72,8 +72,8 @@ dependencies:
     specifier: ^0.2.1
     version: 0.2.1(next@13.5.6)(react-dom@18.2.0)(react@18.2.0)
   node-html-parser:
-    specifier: ^6.1.10
-    version: 6.1.10
+    specifier: ^6.1.11
+    version: 6.1.11
   octokit:
     specifier: ^3.1.1
     version: 3.1.1
@@ -1417,12 +1417,6 @@ packages:
     dependencies:
       '@types/node': 20.8.8
     dev: true
-
-  /@types/node@20.8.7:
-    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
-    dependencies:
-      undici-types: 5.25.3
-    dev: false
 
   /@types/node@20.8.8:
     resolution: {integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==}
@@ -4563,7 +4557,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.8.7
+      '@types/node': 20.8.8
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -5691,8 +5685,8 @@ packages:
   /node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
 
-  /node-html-parser@6.1.10:
-    resolution: {integrity: sha512-6/uWdWxjQWQ7tMcFK2wWlrflsQUzh1HsEzlIf2j5+TtzfhT2yUvg3DwZYAmjEHeR3uX74ko7exjHW69J0tOzIg==}
+  /node-html-parser@6.1.11:
+    resolution: {integrity: sha512-FAgwwZ6h0DSDWxfD0Iq1tsDcBCxdJB1nXpLPPxX8YyVWzbfCjKWEzaynF4gZZ/8hziUmp7ZSaKylcn0iKhufUQ==}
     dependencies:
       css-select: 5.1.0
       he: 1.2.0
