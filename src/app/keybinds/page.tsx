@@ -200,18 +200,6 @@ export default function Keybinds() {
               </tr>
               <tr>
                 <td className="py-2 px-4 border-b border-gray-300">
-                  Scroll Down 1 Page with Cursor
-                </td>
-                <td className="py-2 px-4 border-b border-gray-300">^ + F</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b border-gray-300">
-                  Scroll Up 1 Page with Cursor
-                </td>
-                <td className="py-2 px-4 border-b border-gray-300">M + F</td>
-              </tr>
-              <tr>
-                <td className="py-2 px-4 border-b border-gray-300">
                   Scroll to Top
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
@@ -576,7 +564,9 @@ export default function Keybinds() {
                 <td className="py-2 px-4 border-b border-gray-300">
                   Go to Symbol
                 </td>
-                <td className="py-2 px-4 border-b border-gray-300">CMD + 2</td>
+                <td className="py-2 px-4 border-b border-gray-300">
+                  CMD + Shift + O
+                </td>
               </tr>
               <tr>
                 <td className="py-2 px-4 border-b border-gray-300">
