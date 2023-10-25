@@ -35,7 +35,7 @@ const WhatNew: React.FC = () => {
       <DialogTrigger asChild>
         <Button variant="ghost">Waht's New？</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] sm:min-h-[425px] scroll-auto">
+      <DialogContent className="sm:max-w-[425px] sm:min-h-[425px] max-h-[600px] overflow-y-scroll">
         <DialogHeader>
           <DialogTitle>What's New?</DialogTitle>
         </DialogHeader>
