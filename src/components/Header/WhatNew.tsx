@@ -41,6 +41,13 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2023-10-25"
+            li={[
+              'Update "Go to symbol" keybind to "CMD + Shift + O"',
+              'Remove incorrect keybinds',
+            ]}
+          />
+          <List
             date="2023-10-24"
             li={['Fix broken blog post body style.', 'Add og image']}
           />
