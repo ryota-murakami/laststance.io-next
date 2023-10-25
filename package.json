@@ -22,7 +22,7 @@
     "@argos-ci/playwright": "^1.0.1",
     "@headlessui/react": "^1.7.17",
     "@mapbox/rehype-prism": "^0.8.0",
-    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/loader": "^3.0.0",
     "@next/eslint-plugin-next": "^13.5.6",
     "@next/mdx": "13.5.6",
     "@radix-ui/react-dialog": "^1.0.5",
