@@ -33,7 +33,8 @@
     "**/*.js",
     "**/*.tsx",
     "**/*/*.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "scripts/generate-blog-templete.mjs"
   ],
   "exclude": ["node_modules"]
 }
