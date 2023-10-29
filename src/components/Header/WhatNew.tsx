@@ -1,7 +1,9 @@
 'use client'
 
+import type { ReactNode } from 'react'
 import React from 'react'
 
+import Link from '../Link'
 import { Button } from '../ui/button'
 import {
   Dialog,
@@ -15,15 +17,15 @@ import { Separator } from '../ui/separator'
 
 interface Props {
   date: DateString
-  li: string[]
+  li: ReactNode[]
 }
 const List: React.FC<Props> = ({ date, li }) => (
   <div className="mt-4">
     <Separator className="mb-4" />
     <h3 className="font-bold text-lg">{date}</h3>
     <ul className="mt-4 ml-6 list-disc text-base">
-      {li.map((v) => (
-        <li key={v}>{v}</li>
+      {li.map((v, i) => (
+        <li key={i}>{v}</li>
       ))}
     </ul>
   </div>
@@ -40,6 +42,18 @@ const WhatNew: React.FC = () => {
           <DialogTitle>What's New?</DialogTitle>
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
+          <List
+            date="2023-10-29"
+            li={[
+              <>
+                add post{` `}
+                <Link href="articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120">
+                  Dropped eslint-plugin-sort-keys-custom-order from
+                  eslint-config-ts-prefixer@v1.12.0
+                </Link>
+              </>,
+            ]}
+          />
           <List
             date="2023-10-25"
             li={[

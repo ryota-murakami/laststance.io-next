@@ -3,6 +3,12 @@
 @import './prism.css';
 @import 'tailwindcss/utilities';
 
+@layer utilities {
+  .link-hover {
+    @apply hover:text-teal-500 dark:hover:text-teal-400;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
