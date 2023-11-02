@@ -8,7 +8,7 @@ const octokit = new Octokit({
   auth: process.env.PERSONAL_ACCESS_TOKEN,
 })
 
-export const fetchGithubFeedList = async (): Promise<Feed[]> => {
+export const fetchGithubFeedList = async (): Promise<Array<Feed | null>> => {
   const res = await octokit.request(
     'GET https://github.com/ryota-murakami.private.actor.atom?token=ABJ7CVE5QRNVWWSAQKCSV3ODEDT2G',
     {
@@ -21,6 +21,9 @@ export const fetchGithubFeedList = async (): Promise<Feed[]> => {
   const feedList = xml['feed']['entry'].map((f: Feed) => {
     // Parse the HTML content
     const root = parse(f.content[0]._)
+
+    // filter private content
+    if (root.innerText.includes('hayashima')) return null
 
     // Update all href attributes
     root.querySelectorAll('a').forEach((link) => {
