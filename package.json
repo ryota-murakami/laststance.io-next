@@ -16,7 +16,17 @@
     "prettier": "prettier --ignore-unknown --write .",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf .next node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
-    "generate-blog-templete": "node ./scripts/generate-blog-templete.mjs"
+    "generate-blog-templete": "node ./scripts/generate-blog-templete.mjs",
+    "validate": "./scripts/validate",
+    "playwright:test": "exec playwright test",
+    "playwright:test:ui": "exec playwright test --ui",
+    "playwright:test:chromium": "exec playwright test --project=chromium",
+    "playwright:test:chromium:headed": "exec playwright test --headed --project=chromium",
+    "playwright:test:Safari": "exec playwright test --project=Desktop Safari",
+    "playwright:test:MobileSafari": "exec playwright test --project=Mobile Safari",
+    "playwright:test:MobileChrome": "exec playwright test --project=Mobile Chrome",
+    "playwright:test:debug": "exec playwright test --debug",
+    "playwright:codegen": "exec playwright codegen"
   },
   "dependencies": {
     "@argos-ci/cli": "^1.0.0",
@@ -51,6 +61,7 @@
   },
   "devDependencies": {
     "@clack/prompts": "^0.7.0",
+    "@playwright/test": "^1.39.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.9",
     "@types/node": "20.8.10",
