@@ -27,7 +27,7 @@ jobs:
       - name: Run Playwright tablet tests
         run: pnpm playwright:tablet
       - name: Run Playwright mobile tests
-        run: pnpm playwright:moble
+        run: pnpm playwright:mobile
       - uses: actions/upload-artifact@v3
         if: always()
         with:
