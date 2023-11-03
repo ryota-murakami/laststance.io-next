@@ -1,9 +1,5 @@
 import { argosScreenshot } from '@argos-ci/playwright'
-import { test, expect, devices } from '@playwright/test'
-
-test.use({
-  ...devices['iPhone 14'],
-})
+import { test, expect } from '@playwright/test'
 
 test('toppage', async ({ page }) => {
   await page.goto('http://localhost:3000/')
