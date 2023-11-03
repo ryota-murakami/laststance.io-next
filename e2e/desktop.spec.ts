@@ -13,12 +13,12 @@ test('toppage', async ({ page }) => {
     page.getByText('© 2023 Laststance.io. All rights reserved.'),
   ).toBeVisible()
 
+  await argosScreenshot(page, 'toppage')
+
   await page
     .getByRole('navigation')
     .getByRole('link', { name: 'About' })
     .click()
-
-  await argosScreenshot(page, 'toppage')
 
   await expect(page).toHaveURL('/about')
   await expect(
