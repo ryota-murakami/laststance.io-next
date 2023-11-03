@@ -1,3 +1,4 @@
+import { argosScreenshot } from '@argos-ci/playwright'
 import { test, expect } from '@playwright/test'
 
 test('toppage', async ({ page }) => {
@@ -17,10 +18,14 @@ test('toppage', async ({ page }) => {
     .getByRole('link', { name: 'About' })
     .click()
 
+  await argosScreenshot(page, 'toppage')
+
   await expect(page).toHaveURL('/about')
   await expect(
     page.getByText(
       'Laststance.io is my experimental laboratory for eliminate like this. ➡️',
     ),
   ).toBeVisible()
+
+  await argosScreenshot(page, 'about')
 })
