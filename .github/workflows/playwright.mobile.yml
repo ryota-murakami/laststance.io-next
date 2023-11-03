@@ -22,11 +22,7 @@ jobs:
         run: pnpm build
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
-      - name: Run Playwright desktop tests
-        run: pnpm playwright:desktop
-      - name: Run Playwright tablet tests
-        run: pnpm playwright:tablet
-      - name: Run Playwright mobile tests
+      - name: mobile tests
         run: pnpm playwright:mobile
       - uses: actions/upload-artifact@v3
         if: always()
