@@ -10,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test'
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './e2e',
+  testDir: './e2e/tablet',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -36,57 +36,13 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'iPad Pro 11',
+      use: { ...devices['iPad Pro 11'] },
     },
-
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      name: 'iPad Pro 11',
+      use: { ...devices['iPad Pro 11 landscape'] },
     },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-
-    /* Test against mobile viewports. */
-    //{
-    //  name: 'Mobile Chrome',
-    //  use: { ...devices['Pixel 5'] },
-    //},
-    //{
-    //  name: 'Mobile Safari',
-    //  use: { ...devices['iPhone 12'] },
-    //},
-
-    /* Test against tabret viewports. */
-    //{
-    //  name: 'iPad (gen 7)',
-    //  use: { ...devices['iPad (gen 7)'] },
-    //},
-    //{
-    //  name: 'iPad (gen 7) landscape',
-    //  use: { ...devices['iPad (gen 7) landscape'] },
-    //},
-    //{
-    //  name: 'iPad Pro 11',
-    //  use: { ...devices['iPad Pro 11'] },
-    //},
-    //{
-    //  name: 'iPad Pro 11',
-    //  use: { ...devices['iPad Pro 11 landscape'] },
-    //},
-
-    /* Test against branded browsers. */
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
   ],
 
   /* Run your local dev server before starting the tests */
