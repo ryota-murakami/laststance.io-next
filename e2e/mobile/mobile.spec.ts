@@ -6,7 +6,7 @@ test.use({
 })
 
 test('toppage', async ({ page }) => {
-  await page.goto('http://localhost:3000/')
+  await page.goto('http://localhost:3002/')
   await expect(
     page.getByRole('heading', {
       name: 'Go Straightforward Web Application Development.',
