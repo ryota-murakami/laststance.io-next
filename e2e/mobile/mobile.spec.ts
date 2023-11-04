@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test'
 test.beforeAll(async () => {
   // fix for https://github.com/laststance/laststance.io/actions/runs/6754591078/job/18362267611#step:8:24
   // Wait for 5 seconds before starting the tests
-  await new Promise((resolve) => setTimeout(resolve, 5000))
+  await new Promise((resolve) => setTimeout(resolve, 10000))
 })
 
 test('toppage', async ({ page }) => {
