@@ -8,7 +8,7 @@ The [Laststance.io](https://www.laststance.io/) website built using [Tailwind UI
 
 ## Getting started
 
-First, [Node@20.x.x](https://nodejs.org/en) required and install the dependencies with [pnpm](https://pnpm.io/installation):
+First, [Node@18.x.x](https://nodejs.org/en) required and install the dependencies with [pnpm](https://pnpm.io/installation):
 
 ```bash
 pnpm install
