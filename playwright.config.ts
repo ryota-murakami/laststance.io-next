@@ -10,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test'
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './e2e/tablet',
+  testDir: './e2e',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -29,19 +29,52 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     launchOptions: {
-      slowMo: isHeadedMode() ? 2000 : undefined,
+      slowMo: isHeadedOrUIMode() ? 2500 : undefined,
     },
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'iPad Pro 11',
-      use: { ...devices['iPad Pro 11'] },
+      name: 'Chrome',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /desktop\/.*spec.ts/,
+    },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      testMatch: /desktop\/.*spec.ts/,
+    },
+
+    {
+      name: 'Safari',
+      use: { ...devices['Desktop Safari'] },
+      testMatch: /desktop\/.*spec.ts/,
+    },
+    {
+      name: 'Firefox',
+      use: { ...devices['Desktop Firefox'] },
+      testMatch: /desktop\/.*spec.ts/,
     },
     {
       name: 'iPad Pro 11',
+      use: { ...devices['iPad Pro 11'] },
+      testMatch: /tablet\/.*spec.ts/,
+    },
+    {
+      name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
+      testMatch: /tablet\/.*spec.ts/,
+    },
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+      testMatch: /mobile\/.*spec.ts/,
+    },
+    {
+      name: 'Mobile Chrome landscape',
+      use: { ...devices['Pixel 5 landscape'] },
+      testMatch: /tablet\/.*spec.ts/,
     },
   ],
 
@@ -53,8 +86,9 @@ export default defineConfig({
   },
 })
 
-function isHeadedMode() {
+function isHeadedOrUIMode() {
   // important to use env var - for workers
-  if (process.argv.includes('--headed')) process.env.HEADED_MODE = '1'
+  if (process.argv.includes('--headed') || process.argv.includes('--ui'))
+    process.env.HEADED_MODE = '1'
   return Boolean(process.env.HEADED_MODE)
 }

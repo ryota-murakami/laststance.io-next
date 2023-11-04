@@ -1,11 +1,11 @@
-name: Playwright Mobile Tests
+name: Playwright Desktop Tests
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  mobile-test:
+  desktop-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -22,8 +22,8 @@ jobs:
         run: pnpm build
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
-      - name: mobile tests
-        run: pnpm playwright:mobile
+      - name: Playwright tests
+        run: pnpm playwright:test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
