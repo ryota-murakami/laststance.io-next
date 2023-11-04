@@ -23,7 +23,6 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    viewport: { width: 393, height: 767 },
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'http://localhost:3000',
 
@@ -40,28 +39,28 @@ export default defineConfig({
     //  name: 'Mobile Chrome',
     //  use: { ...devices['Pixel 5'] },
     //},
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
-
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
     //{
-    //  name: 'iPhone 13 Pro',
-    //  use: { ...devices['iPhone 13 Pro'] },
+    //  name: 'chromium',
+    //  use: { ...devices['Desktop Chrome'] },
     //},
+    //
     //{
-    //  name: 'iPhone 13 Pro landscape',
-    //  use: { ...devices['iPhone 13 Pro landscape'] },
+    //  name: 'firefox',
+    //  use: { ...devices['Desktop Firefox'] },
     //},
+    //
+    //{
+    //  name: 'webkit',
+    //  use: { ...devices['Desktop Safari'] },
+    //},
+    {
+      name: 'iPhone 13 Pro',
+      use: { ...devices['iPhone 13 Pro'] },
+    },
+    {
+      name: 'iPhone 13 Pro landscape',
+      use: { ...devices['iPhone 13 Pro landscape'] },
+    },
   ],
 
   /* Run your local dev server before starting the tests */
