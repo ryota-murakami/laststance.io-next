@@ -40,8 +40,12 @@ export default defineConfig({
     //  use: { ...devices['Pixel 5'] },
     //},
     {
-      name: 'iPhone 14',
-      use: { ...devices['iPhone 14'] },
+      name: 'iPhone 13 Pro',
+      use: { ...devices['iPhone 13 Pro'] },
+    },
+    {
+      name: 'iPhone 13 Pro landscape',
+      use: { ...devices['iPhone 13 Pro landscape'] },
     },
   ],
 
