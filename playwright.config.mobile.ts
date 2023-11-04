@@ -40,13 +40,27 @@ export default defineConfig({
     //  use: { ...devices['Pixel 5'] },
     //},
     {
-      name: 'iPhone 13 Pro',
-      use: { ...devices['iPhone 13 Pro'] },
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
     },
+
     {
-      name: 'iPhone 13 Pro landscape',
-      use: { ...devices['iPhone 13 Pro landscape'] },
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
     },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },
+    //{
+    //  name: 'iPhone 13 Pro',
+    //  use: { ...devices['iPhone 13 Pro'] },
+    //},
+    //{
+    //  name: 'iPhone 13 Pro landscape',
+    //  use: { ...devices['iPhone 13 Pro landscape'] },
+    //},
   ],
 
   /* Run your local dev server before starting the tests */
