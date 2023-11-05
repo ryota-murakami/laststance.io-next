@@ -11,9 +11,6 @@ dependencies:
   '@mapbox/rehype-prism':
     specifier: ^0.9.0
     version: 0.9.0
-  '@next/eslint-plugin-next':
-    specifier: ^14.0.1
-    version: 14.0.1
   '@next/mdx':
     specifier: 14.0.1
     version: 14.0.1(@mdx-js/loader@2.3.0)
@@ -94,6 +91,9 @@ devDependencies:
   '@mdx-js/loader':
     specifier: ^2.3.0
     version: 2.3.0(webpack@5.89.0)
+  '@next/eslint-plugin-next':
+    specifier: ^14.0.1
+    version: 14.0.1
   '@playwright/test':
     specifier: ^1.39.0
     version: 1.39.0
@@ -530,7 +530,7 @@ packages:
     resolution: {integrity: sha512-bLjJMwXdzvhnQOnxvHoTTUh/+PYk6FF/DCgHi4BXwXCINer+o1ZYfL9aVeezj/oI7wqGJOqwGIXrlBvPbAId3w==}
     dependencies:
       glob: 7.1.7
-    dev: false
+    dev: true
 
   /@next/mdx@14.0.1(@mdx-js/loader@2.3.0):
     resolution: {integrity: sha512-9hikFxx1XQOReOp5SBO1o3fGs1Z1GT1flKm1wrjFOwOTNI0M4x9CuQsUx5KJwvbt0FejCS5bsuNGXqxHchcMCQ==}
@@ -3352,7 +3352,7 @@ packages:
       minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
-    dev: false
+    dev: true
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
