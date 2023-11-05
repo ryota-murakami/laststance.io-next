@@ -41,12 +41,6 @@ export default defineConfig({
       testMatch: /desktop\/.*spec.ts/,
     },
     {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-      testMatch: /desktop\/.*spec.ts/,
-    },
-
-    {
       name: 'Safari',
       use: { ...devices['Desktop Safari'] },
       testMatch: /desktop\/.*spec.ts/,
@@ -59,23 +53,28 @@ export default defineConfig({
     {
       name: 'iPad Pro 11',
       use: { ...devices['iPad Pro 11'] },
-      testMatch: /tablet\/.*spec.ts/,
+      testMatch: /desktop\/.*spec.ts/,
     },
     {
       name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
-      testMatch: /tablet\/.*spec.ts/,
+      testMatch: /desktop\/.*spec.ts/,
+    },
+    {
+      name: 'Microsoft Edge',
+      use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      testMatch: /desktop\/.*spec.ts/,
     },
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
       testMatch: /mobile\/.*spec.ts/,
     },
-    {
-      name: 'Mobile Chrome landscape',
-      use: { ...devices['Pixel 5 landscape'] },
-      testMatch: /tablet\/.*spec.ts/,
-    },
+    //{
+    //  name: 'Mobile Chrome landscape',
+    //  use: { ...devices['Pixel 5 landscape'] },
+    //  testMatch: /mobile\/.*spec.ts/,
+    //},
   ],
 
   /* Run your local dev server before starting the tests */

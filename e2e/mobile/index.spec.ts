@@ -23,5 +23,4 @@ test('toppage', async ({ page }) => {
 
   // http://localhost:8000/about
   await expect(page).toHaveURL('/about')
-  await argosScreenshot(page, 'mobile_about')
 })

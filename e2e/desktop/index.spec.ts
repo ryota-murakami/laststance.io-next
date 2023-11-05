@@ -26,6 +26,4 @@ test('toppage', async ({ page }) => {
       'Laststance.io is my experimental laboratory for eliminate like this. ➡️',
     ),
   ).toBeVisible()
-
-  await argosScreenshot(page, 'desktop: about')
 })
