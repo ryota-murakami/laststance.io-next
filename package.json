@@ -11,8 +11,7 @@
     "*": "prettier --ignore-unknown --write"
   },
   "browserslist": [
-    "last 1 version",
-    "node 18"
+    "last 1 version"
   ],
   "scripts": {
     "dev": "next dev",
