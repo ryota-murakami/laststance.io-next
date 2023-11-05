@@ -9,7 +9,7 @@ test('toppage', async ({ page }) => {
     }),
   ).toBeVisible()
 
-  await argosScreenshot(page, 'toppage')
+  await argosScreenshot(page, 'mobile_toppage')
 
   // <MobileMenu />
   await page.getByRole('button', { name: 'Menu' }).click()
@@ -23,5 +23,5 @@ test('toppage', async ({ page }) => {
 
   // http://localhost:8000/about
   await expect(page).toHaveURL('/about')
-  await argosScreenshot(page, 'about')
+  await argosScreenshot(page, 'mobile_about')
 })

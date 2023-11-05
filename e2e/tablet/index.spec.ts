@@ -13,7 +13,7 @@ test('toppage', async ({ page }) => {
     page.getByText('© 2023 Laststance.io. All rights reserved.'),
   ).toBeVisible()
 
-  await argosScreenshot(page, 'toppage')
+  await argosScreenshot(page, 'tablet_toppage')
 
   await page
     .getByRole('navigation')
@@ -27,5 +27,5 @@ test('toppage', async ({ page }) => {
     ),
   ).toBeVisible()
 
-  await argosScreenshot(page, 'about')
+  await argosScreenshot(page, 'tablet_about')
 })
