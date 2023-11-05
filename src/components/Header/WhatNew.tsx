@@ -43,6 +43,12 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2023-11-05"
+            li={[
+              'projects: fix prettier-husky-lint-staged-installer broken link',
+            ]}
+          />
+          <List
             date="2023-10-29"
             li={[
               <>
