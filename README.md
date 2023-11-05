@@ -1,6 +1,7 @@
 [![Build](https://github.com/ryota-murakami/laststance.io/actions/workflows/build.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/build.yml)
 [![Typecheck](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml)
 [![Lint](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml)
+[![Playwright E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright.yml)
 
 # Laststance.io [![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/ryota-murakami/laststance.io/reference)
 
