@@ -11,6 +11,7 @@ test('toppage', async ({ page }) => {
 
   await argosScreenshot(page, 'mobile_toppage')
 
+  // TODO split as a functional test
   // <MobileMenu />
   await page.getByRole('button', { name: 'Menu' }).click()
   await expect(page.getByRole('heading', { name: 'Navigation' })).toBeVisible()

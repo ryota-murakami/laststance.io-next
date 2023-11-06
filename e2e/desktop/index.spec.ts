@@ -15,6 +15,7 @@ test('toppage', async ({ page }) => {
 
   await argosScreenshot(page, 'desktop_toppage')
 
+  // TODO split as a functional test
   await page
     .getByRole('navigation')
     .getByRole('link', { name: 'About' })
