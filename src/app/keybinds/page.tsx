@@ -200,6 +200,20 @@ export default function Keybinds() {
               </tr>
               <tr>
                 <td className="py-2 px-4 border-b border-gray-300">
+                  Scroll Up
+                </td>
+                <td className="py-2 px-4 border-b border-gray-300">^ + V</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b border-gray-300">
+                  Scroll Down
+                </td>
+                <td className="py-2 px-4 border-b border-gray-300">
+                  Option + V
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b border-gray-300">
                   Scroll to Top
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
