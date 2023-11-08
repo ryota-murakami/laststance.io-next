@@ -113,8 +113,8 @@ devDependencies:
     specifier: 18.2.14
     version: 18.2.14
   '@types/webpack-env':
-    specifier: ^1.18.3
-    version: 1.18.3
+    specifier: ^1.18.4
+    version: 1.18.4
   '@types/xml2js':
     specifier: ^0.4.14
     version: 0.4.14
@@ -1475,8 +1475,8 @@ packages:
   /@types/unist@2.0.9:
     resolution: {integrity: sha512-zC0iXxAv1C1ERURduJueYzkzZ2zaGyc+P2c95hgkikHPr3z8EdUZOlgEQ5X0DRmwDZn+hekycQnoeiiRVrmilQ==}
 
-  /@types/webpack-env@1.18.3:
-    resolution: {integrity: sha512-v4CH6FLBCftYGFAswDhzFLjKgucXsOkIf5Mzl8ZZhEtC6oye9whFInNPKszNB9AvX7JEZMtpXxWctih6addP+Q==}
+  /@types/webpack-env@1.18.4:
+    resolution: {integrity: sha512-I6e+9+HtWADAWeeJWDFQtdk4EVSAbj6Rtz4q8fJ7mSr1M0jzlFcs8/HZ+Xb5SHzVm1dxH7aUiI+A8kA8Gcrm0A==}
     dev: true
 
   /@types/wrap-ansi@3.0.0:
