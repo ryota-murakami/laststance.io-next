@@ -64,7 +64,7 @@
     "@mdx-js/loader": "^2.3.0",
     "@next/eslint-plugin-next": "^14.0.3",
     "@next/mdx": "14.0.2",
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.40.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.10",
     "@types/node": "20.9.1",
