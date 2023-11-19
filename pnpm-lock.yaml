@@ -101,8 +101,8 @@ devDependencies:
     specifier: ^14.0.3
     version: 14.0.3
   '@next/mdx':
-    specifier: 14.0.2
-    version: 14.0.2(@mdx-js/loader@2.3.0)
+    specifier: 14.0.3
+    version: 14.0.3(@mdx-js/loader@2.3.0)
   '@playwright/test':
     specifier: ^1.40.0
     version: 1.40.0
@@ -572,8 +572,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /@next/mdx@14.0.2(@mdx-js/loader@2.3.0):
-    resolution: {integrity: sha512-MFjfSeGDmjwLLRHojlyaDIs2dQz5kFBQh/jcTIb57VIlbOvRjJsgnwLTH3DzUT25dUaX0QaR6t+ITNcdyfwozQ==}
+  /@next/mdx@14.0.3(@mdx-js/loader@2.3.0):
+    resolution: {integrity: sha512-RhiANppBndB7ELjPc3SEdEywLWgsy69Vj1bJtfDWqCl8yIVX9aps1D7kwby1pBAweHvZVpiI91Xu/78citVQrQ==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '>=0.15.0'
@@ -1682,12 +1682,6 @@ packages:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
       '@types/node': 20.9.1
-    dev: true
-
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.9.1:
@@ -4326,7 +4320,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.9.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
