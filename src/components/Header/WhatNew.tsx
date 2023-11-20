@@ -44,6 +44,10 @@ const WhatNew: React.FC = () => {
         <ScrollArea className="mt-4 space-y-4">
           <List
             date="2023-11-05"
+            li={['add article: Trying less energy coding']}
+          />
+          <List
+            date="2023-11-05"
             li={[
               'projects: fix prettier-husky-lint-staged-installer broken link',
             ]}
