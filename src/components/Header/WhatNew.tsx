@@ -43,7 +43,7 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
-            date="2023-11-05"
+            date="2023-11-20"
             li={['add article: Trying less energy coding']}
           />
           <List
