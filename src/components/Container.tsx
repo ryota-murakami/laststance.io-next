@@ -18,6 +18,7 @@ export const ContainerInner = forwardRef<
 >(function InnerContainer({ children, className, ...props }, ref) {
   return (
     <div
+      id="mobile-side-padding-container"
       ref={ref}
       className={clsx('relative px-4 sm:px-8 lg:px-12', className)}
       {...props}

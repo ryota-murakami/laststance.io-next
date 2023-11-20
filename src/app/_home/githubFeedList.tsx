@@ -7,12 +7,12 @@ export async function GithubFeedList() {
   const githubFeedList = await fetchGithubFeedList()
 
   return (
-    <div className="w-[380px] rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="max-xs:w-[360px] w-[380px] max-lg:m-auto rounded-2xl border border-zinc-100 lg:p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Github Feed</span>
       </h2>
-      <ol className="mt-2 space-y-4 flex flex-col h-[730px] overflow-y-scroll overflow-x-crip">
+      <ol className="mt-2 space-y-4 flex flex-col max-xs:max-w-[340px] h-[730px] overflow-y-scroll overflow-x-crip">
         {githubFeedList.map(
           (feed, i) => feed && <FeedItem key={i} feed={feed} />,
         )}
