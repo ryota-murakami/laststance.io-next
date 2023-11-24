@@ -86,8 +86,8 @@ dependencies:
 
 devDependencies:
   '@argos-ci/cli':
-    specifier: ^1.0.3
-    version: 1.0.3
+    specifier: ^1.0.4
+    version: 1.0.4
   '@argos-ci/playwright':
     specifier: ^1.3.0
     version: 1.3.0
@@ -195,12 +195,12 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: true
 
-  /@argos-ci/cli@1.0.3:
-    resolution: {integrity: sha512-/CWgHEdP6q0QfnQ8JqTDkHUozYyffnuIyBzb6hoTarAZG3zlsb2+2yVlVRxrlNOAxeABdhn4BY6RFKkPw2rTBg==}
+  /@argos-ci/cli@1.0.4:
+    resolution: {integrity: sha512-wcaUFzDJ04ODCGeDG3CGfmkZXbNvHRMhKGglR9bcKO47T9vUP0enJQ0CKsGe1278Kht77ZBlByfu8Or5L+WZKA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 1.2.1
+      '@argos-ci/core': 1.3.0
       commander: 11.1.0
       ora: 7.0.1
       update-notifier: 6.0.2
@@ -210,6 +210,21 @@ packages:
 
   /@argos-ci/core@1.2.1:
     resolution: {integrity: sha512-mutWqVyL7ffduFznkPZiFirusx9dLsHzdxnmmh2HARrkQlqfKFwMYgRedY87ifZrOLdoPYBDB+RwRImU9ZQX3w==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.1.0
+      axios: 1.6.1(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/core@1.3.0:
+    resolution: {integrity: sha512-f/8oMNeaj5iraZppdbi4SR9tzxuWvTrtiNyQZUVndaL8AuSjMk2tMrnHK/XEAin7ki64cwCNaa0FEMLKrKbgzA==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/util': 1.1.0
@@ -1682,12 +1697,6 @@ packages:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
       '@types/node': 20.9.4
-    dev: true
-
-  /@types/node@20.9.3:
-    resolution: {integrity: sha512-nk5wXLAXGBKfrhLB0cyHGbSqopS+nz0BUgZkUQqSHSSgdee0kssp1IAqlQOu333bW+gMNs2QREx7iynm19Abxw==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.9.4:
@@ -4326,7 +4335,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.9.3
+      '@types/node': 20.9.4
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
