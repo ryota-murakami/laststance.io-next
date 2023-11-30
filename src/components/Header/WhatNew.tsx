@@ -44,7 +44,15 @@ const WhatNew: React.FC = () => {
         <ScrollArea className="mt-4 space-y-4">
           <List
             date="2023-11-20"
-            li={['add article: Trying less energy coding']}
+            li={[
+              <>
+                add article:{' '}
+                <Link href="https://laststance.io/articles/Trying-less-energy-coding">
+                  Trying less energy coding
+                </Link>
+                '
+              </>,
+            ]}
           />
           <List
             date="2023-11-05"
