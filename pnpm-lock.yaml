@@ -113,8 +113,8 @@ devDependencies:
     specifier: ^2.0.10
     version: 2.0.10
   '@types/node':
-    specifier: 20.10.0
-    version: 20.10.0
+    specifier: 20.10.1
+    version: 20.10.1
   '@types/react':
     specifier: 18.2.33
     version: 18.2.33
@@ -385,7 +385,7 @@ packages:
     dependencies:
       '@inquirer/type': 1.1.5
       '@types/mute-stream': 0.0.2
-      '@types/node': 20.10.0
+      '@types/node': 20.10.1
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
@@ -1663,7 +1663,7 @@ packages:
   /@types/jsonwebtoken@9.0.4:
     resolution: {integrity: sha512-8UYapdmR0QlxgvJmyE8lP7guxD0UGVMfknsdtCFZh4ovShdBl3iOI4zdvqBHrB/IS+xUj3PSx73Qkey1fhWz+g==}
     dependencies:
-      '@types/node': 20.10.0
+      '@types/node': 20.10.1
     dev: false
 
   /@types/mdast@3.0.14:
@@ -1681,11 +1681,17 @@ packages:
   /@types/mute-stream@0.0.2:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
-      '@types/node': 20.10.0
+      '@types/node': 20.10.1
     dev: true
 
   /@types/node@20.10.0:
     resolution: {integrity: sha512-D0WfRmU9TQ8I9PFx9Yc+EBHw+vSpIub4IDvQivcp26PtPrdMGAq5SDcpXEo/epqa/DXotVpekHiLNTg3iaKXBQ==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: true
+
+  /@types/node@20.10.1:
+    resolution: {integrity: sha512-T2qwhjWwGH81vUEx4EXmBKsTJRXFXNZTL4v0gi01+zyBmCwzE6TyHszqX01m+QHTEq+EZNo13NeJIdEqf+Myrg==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1725,7 +1731,7 @@ packages:
   /@types/xml2js@0.4.14:
     resolution: {integrity: sha512-4YnrRemBShWRO2QjvUin8ESA41rH+9nQGLUGZV/1IDhi3SL9OhdpNC/MrulTWuptXKwhx/aDxE7toV0f/ypIXQ==}
     dependencies:
-      '@types/node': 20.10.0
+      '@types/node': 20.10.1
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.54.0)(typescript@5.3.2):
