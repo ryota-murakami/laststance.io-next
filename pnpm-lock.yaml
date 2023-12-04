@@ -140,8 +140,8 @@ devDependencies:
     specifier: ^8.55.0
     version: 8.55.0
   eslint-config-ts-prefixer:
-    specifier: ^1.12.5
-    version: 1.12.5(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2)
+    specifier: ^1.12.6
+    version: 1.12.6(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2)
   eslint-import-resolver-typescript:
     specifier: ^3.6.1
     version: 3.6.1(@typescript-eslint/parser@6.13.1)(eslint-plugin-import@2.29.0)(eslint@8.55.0)
@@ -1887,12 +1887,6 @@ packages:
       '@types/node': 20.10.3
     dev: true
 
-  /@types/node@20.10.1:
-    resolution: {integrity: sha512-T2qwhjWwGH81vUEx4EXmBKsTJRXFXNZTL4v0gi01+zyBmCwzE6TyHszqX01m+QHTEq+EZNo13NeJIdEqf+Myrg==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: true
-
   /@types/node@20.10.3:
     resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
     dependencies:
@@ -3251,8 +3245,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  /eslint-config-ts-prefixer@1.12.5(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-YjDXyVm4Dn58z1BEwqq7WTvxPvckkJYk/4rndcG9Nn4TpqEWQ2hH5ma9jY484Kn3N4tqzh3DVajTY81SfzrXmg==}
+  /eslint-config-ts-prefixer@1.12.6(@typescript-eslint/eslint-plugin@6.13.1)(@typescript-eslint/parser@6.13.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.0)(eslint-plugin-prettier@5.0.1)(eslint@8.55.0)(prettier@3.1.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-g2xkwsRRUzAr1LlTcYI775rV+z2iQ1jeH45UEeCLU4YqgoOEU39QHA4mnbr27pQKQZoE02SmNXbTAFDezfjsew==}
     hasBin: true
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^6.9.1
@@ -4541,7 +4535,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.10.1
+      '@types/node': 20.10.3
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
