@@ -7,10 +7,10 @@ import {
 } from '@/components/SocialIcons'
 import { getAllArticles } from '@/lib/articles'
 
-import { Article } from './_home/Article'
-import { GithubFeedList } from './_home/githubFeedList'
-import { Photos } from './_home/Photos'
-import { SocialLink } from './_home/SocialLink'
+import { Article } from './_app/Article'
+import { GithubFeedList } from './_app/githubFeedList'
+import { Photos } from './_app/Photos'
+import { SocialLink } from './_app/SocialLink'
 
 export default async function Home() {
   const articles = (await getAllArticles()).slice(0, 4)
