@@ -4,9 +4,9 @@ import {
   CardCta,
   CardTitle,
   CardEyebrow,
-} from '../../components/Card'
-import type { ArticleWithSlug } from '../../lib/articles'
-import { formatDate } from '../../lib/formatDate'
+} from '@/components/Card'
+import type { ArticleWithSlug } from '@/lib/articles'
+import { formatDate } from '@/lib/formatDate'
 
 export function Article({ article }: { article: ArticleWithSlug }) {
   return (

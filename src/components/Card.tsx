@@ -52,6 +52,7 @@ export function CardTitle<T extends React.ElementType = 'h2'>({
   as,
   children,
   href,
+  ...rest
 }: Omit<React.ComponentPropsWithoutRef<T>, 'as' | 'href'> & {
   as?: T
   href?: string
@@ -61,7 +62,7 @@ export function CardTitle<T extends React.ElementType = 'h2'>({
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
       {href ? (
-        <CardLink href={href} target="_blank">
+        <CardLink href={href} {...rest}>
           {children}
         </CardLink>
       ) : (
