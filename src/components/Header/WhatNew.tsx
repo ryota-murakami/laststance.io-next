@@ -43,6 +43,18 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2023-12-08"
+            li={[
+              <>
+                add article:{' '}
+                <Link href="https://laststance.io/articles/Why-E2E-Testing-Matter">
+                  /Why-E2E-Testing-Matter
+                </Link>
+                '
+              </>,
+            ]}
+          />
+          <List
             date="2023-11-20"
             li={[
               <>
