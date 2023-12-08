@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^2.3.0
     version: 2.3.0(webpack@5.89.0)
   '@next/eslint-plugin-next':
-    specifier: ^14.0.3
-    version: 14.0.3
+    specifier: ^14.0.4
+    version: 14.0.4
   '@next/mdx':
     specifier: 14.0.4
     version: 14.0.4(@mdx-js/loader@2.3.0)
@@ -769,8 +769,8 @@ packages:
     resolution: {integrity: sha512-irQnbMLbUNQpP1wcE5NstJtbuA/69kRfzBrpAD7Gsn8zm/CY6YQYc3HQBz8QPxwISG26tIm5afvvVbu508oBeQ==}
     dev: false
 
-  /@next/eslint-plugin-next@14.0.3:
-    resolution: {integrity: sha512-j4K0n+DcmQYCVnSAM+UByTVfIHnYQy2ODozfQP+4RdwtRDfobrIvKq1K4Exb2koJ79HSSa7s6B2SA8T/1YR3RA==}
+  /@next/eslint-plugin-next@14.0.4:
+    resolution: {integrity: sha512-U3qMNHmEZoVmHA0j/57nRfi3AscXNvkOnxDmle/69Jz/G0o/gWjXTDdlgILZdrxQ0Lw/jv2mPW8PGy0EGIHXhQ==}
     dependencies:
       glob: 7.1.7
     dev: true
