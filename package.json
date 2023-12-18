@@ -24,7 +24,7 @@
     "clean": "rimraf .next node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
     "generate-blog-templete": "node ./scripts/generate-blog-templete.mjs",
     "validate": "./scripts/validate",
-    "playwright:test": "exec playwright test",
+    "playwright": "exec playwright test",
     "playwright:ui": "exec playwright test --ui",
     "playwright:headed": "exec playwright test --headed",
     "playwright:debug": "exec playwright test --debug",
