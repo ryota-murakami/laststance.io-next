@@ -152,7 +152,7 @@ export default function Keybinds() {
                   cursorRightWordSelect
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
-                  Shift + Option + F
+                  ^ + CMD + Option + F
                 </td>
               </tr>
               <tr>
@@ -160,7 +160,7 @@ export default function Keybinds() {
                   cursorLeftWordSelect
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
-                  Shift + Option + B
+                  ^ + CMD + Option + B
                 </td>
               </tr>
               <tr>
@@ -168,7 +168,7 @@ export default function Keybinds() {
                   cursorTopBlockSelect
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
-                  Shift + Option + P
+                  ^ + CMD + Option + P
                 </td>
               </tr>
               <tr>
@@ -176,7 +176,7 @@ export default function Keybinds() {
                   cursorBottomBlockSelect
                 </td>
                 <td className="py-2 px-4 border-b border-gray-300">
-                  Shift + Option + N
+                  ^ + CMD + Option + N
                 </td>
               </tr>
               <tr>
