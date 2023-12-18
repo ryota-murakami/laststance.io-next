@@ -3,6 +3,12 @@
 @import './prism.css';
 @import 'tailwindcss/utilities';
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 @layer utilities {
   .link-hover {
     @apply hover:text-teal-500 dark:hover:text-teal-400;
