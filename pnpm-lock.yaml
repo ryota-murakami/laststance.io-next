@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^1.0.4
     version: 1.0.4
   '@argos-ci/playwright':
-    specifier: ^1.4.0
-    version: 1.4.0
+    specifier: ^1.4.1
+    version: 1.4.1
   '@clack/prompts':
     specifier: ^0.7.0
     version: 0.7.0
@@ -190,8 +190,8 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  /@argos-ci/browser@1.2.0:
-    resolution: {integrity: sha512-gqgKDvVo+Er4xanN1RAXzPO3WhHAMoQRObG8xrOrVb8FavRX64OgsqiaXs8AKlOX1JnSmg8u5bTXwmJi5zAoXA==}
+  /@argos-ci/browser@1.2.1:
+    resolution: {integrity: sha512-R+pt9+DAAQOjKUC/vBfZtW9fgA3drJCw2rBC+h0LesSd7GRW/Inqssav0npaKWku/kixZzmHJqrDXz+k7WtIQQ==}
     engines: {node: '>=16.0.0'}
     dev: true
 
@@ -223,11 +223,11 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@1.4.0:
-    resolution: {integrity: sha512-/R5IR1NO9hFGV3W6tLAMZz254muHjbGCmwlZT1che96KPgvxUvhTRi3BDyiubEOAWO5N2JLOERxrUFZ4Bcqdbw==}
+  /@argos-ci/playwright@1.4.1:
+    resolution: {integrity: sha512-SuJs3X1nkgl01y4uEjeUDm7r5G51gymRPofAkZmLHC9V5nkdlBgDiM3V3gIU1cK+E2fNgBqvqKd2yfomwnBd4w==}
     engines: {node: '>=16.0.0'}
     dependencies:
-      '@argos-ci/browser': 1.2.0
+      '@argos-ci/browser': 1.2.1
       '@argos-ci/core': 1.3.0
       '@argos-ci/util': 1.1.0
     transitivePeerDependencies:
