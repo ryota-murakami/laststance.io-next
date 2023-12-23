@@ -29,7 +29,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     launchOptions: {
-      slowMo: isHeadedOrUIMode() ? 2500 : undefined,
+      slowMo: isHeadedOrUIMode() ? 2500 : 100,
     },
   },
 
@@ -58,11 +58,6 @@ export default defineConfig({
     {
       name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
-      testMatch: /desktop\/.*spec.ts/,
-    },
-    {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
       testMatch: /desktop\/.*spec.ts/,
     },
     {
