@@ -308,7 +308,7 @@ export default function Keybinds() {
             </tr>
             <tr>
               <td className="py-2 px-4 border-b border-gray-300">
-                Wrapping selected HTML Tag(WebStorm)
+                Wrapping selected HTML Tag
               </td>
               <td className="py-2 px-4 border-b border-gray-300">
                 select children elements → ^ + S
@@ -527,7 +527,7 @@ export default function Keybinds() {
             </tr>
             <tr>
               <td className="py-2 px-4 border-b border-gray-300">
-                Copy File Path
+                Copy Relative File Path
               </td>
               <td className="py-2 px-4 border-b border-gray-300">
                 CMD + Shift + C
