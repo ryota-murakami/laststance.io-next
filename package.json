@@ -46,7 +46,7 @@
     "@vercel/analytics": "^1.1.1",
     "cheerio": "1.0.0-rc.12",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.0",
     "fast-glob": "^3.3.2",
     "feed": "^4.2.2",
     "lucide-react": "^0.303.0",
