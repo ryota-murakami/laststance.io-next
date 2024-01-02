@@ -1,5 +1,4 @@
 import rehypePrism from '@mapbox/rehype-prism'
-// import mdxLoader from '@mdx-js/loader'
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 
