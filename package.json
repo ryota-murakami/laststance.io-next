@@ -2,7 +2,6 @@
   "name": "laststance.io",
   "version": "0.1.0",
   "author": "Ryota Murakami <dojce1048@gmail.com> (https://github.com/ryota-murakami)",
-  "packageManager": "pnpm@8.10.2",
   "private": true,
   "volta": {
     "node": "20.10.0"
