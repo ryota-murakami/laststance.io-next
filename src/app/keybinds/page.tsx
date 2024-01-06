@@ -362,7 +362,6 @@ export default function Keybinds() {
                 CMD + Shift + R
               </td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 Split Editor Window
@@ -391,7 +390,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">^-x o</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 Code Jump
@@ -442,7 +440,6 @@ export default function Keybinds() {
                 Shift + CMD + G
               </td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
@@ -456,7 +453,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">^ + I</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
@@ -505,6 +501,12 @@ export default function Keybinds() {
             </tr>
             <tr>
               <td className="py-2 px-4 border-b border-gray-300">
+                Toggle File Structure
+              </td>
+              <td className="py-2 px-4 border-b border-gray-300">CMD + 2</td>
+            </tr>
+            <tr>
+              <td className="py-2 px-4 border-b border-gray-300">
                 Focus Editor
               </td>
               <td className="py-2 px-4 border-b border-gray-300">ESC</td>
@@ -533,7 +535,6 @@ export default function Keybinds() {
                 CMD + Shift + C
               </td>
             </tr>
-
             <tr>
               <td className="py-2 px-4 border-b border-gray-300">
                 {' '}
@@ -573,7 +574,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">CMD + E</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 Git
@@ -592,7 +592,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">^-G ^-H</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
@@ -633,7 +632,6 @@ export default function Keybinds() {
                 CMD + Shift + mouse coursor(VSCode)
               </td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 Copilot
@@ -664,7 +662,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">ESC</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
@@ -678,7 +675,6 @@ export default function Keybinds() {
               </td>
               <td className="py-2 px-4 border-b border-gray-300">^-x ^-R</td>
             </tr>
-
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
