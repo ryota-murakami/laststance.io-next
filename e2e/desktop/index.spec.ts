@@ -10,7 +10,7 @@ test('/', async ({ page }) => {
   ).toBeVisible()
   await expect(page.getByText('Github Feed')).toBeVisible()
   await expect(
-    page.getByText('© 2023 Laststance.io. All rights reserved.'),
+    page.getByText('© 2024 Laststance.io. All rights reserved.'),
   ).toBeVisible()
 
   await argosScreenshot(page, 'Desktop /')
