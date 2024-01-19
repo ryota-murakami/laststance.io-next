@@ -65,7 +65,7 @@
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^2.3.0",
     "@next/eslint-plugin-next": "^14.0.4",
-    "@next/mdx": "14.0.4",
+    "@next/mdx": "14.1.0",
     "@playwright/test": "^1.41.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/mdx": "^2.0.10",
