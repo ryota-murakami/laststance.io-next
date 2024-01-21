@@ -10,4 +10,4 @@ updates:
       - dependency-name: '@mdx-js/loader'
       - dependency-name: 'react'
       - dependency-name: 'react@dom'
-      - dependency-name: 'sharp'
+      - dependency-name: 'next'
