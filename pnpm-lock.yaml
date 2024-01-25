@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^1.0.6
     version: 1.0.6
   '@argos-ci/playwright':
-    specifier: ^1.6.3
-    version: 1.6.3
+    specifier: ^1.7.1
+    version: 1.7.1
   '@clack/prompts':
     specifier: ^0.7.0
     version: 0.7.0
@@ -223,12 +223,27 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@1.6.3:
-    resolution: {integrity: sha512-UBQDA+ZL6C/IbWQCtEr1V9/S42xv9adBLAfu1Ip9JE3sfKoq932AUJcJj08LVKSF9hwssI80xdr+4dlkXcqYwg==}
+  /@argos-ci/core@1.5.1:
+    resolution: {integrity: sha512-CoCe81ee+eQpah3CRi+Uxv9KAUjnfHWYFHZ3bGz0aUC/p9UkCPFKOEHvakO1W2hjx2Nj1bj6QOSod87Vavty+g==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.0
+      axios: 1.6.1(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/playwright@1.7.1:
+    resolution: {integrity: sha512-mR2tQss1lItFcCjw8NjG/sE5TowZDyX6Xi2TndKrAirvgJw/ayX53CA2zyEa1c+jIAY9cFu78KGjJ2UtfSWnXQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/browser': 1.3.0
-      '@argos-ci/core': 1.4.1
+      '@argos-ci/core': 1.5.1
       '@argos-ci/util': 1.2.0
       chalk: 5.3.0
     transitivePeerDependencies:
@@ -1921,12 +1936,6 @@ packages:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
       '@types/node': 20.11.6
-    dev: true
-
-  /@types/node@20.11.5:
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.11.6:
@@ -4612,7 +4621,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.11.6
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
