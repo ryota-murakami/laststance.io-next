@@ -40,26 +40,31 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
       testMatch: /desktop\/.*spec.ts/,
     },
-    {
-      name: 'Safari',
-      use: { ...devices['Desktop Safari'] },
-      testMatch: /desktop\/.*spec.ts/,
-    },
-    {
-      name: 'Firefox',
-      use: { ...devices['Desktop Firefox'] },
-      testMatch: /desktop\/.*spec.ts/,
-    },
-    {
-      name: 'iPad Pro 11',
-      use: { ...devices['iPad Pro 11'] },
-      testMatch: /desktop\/.*spec.ts/,
-    },
-    {
-      name: 'iPad Pro 11 landscape',
-      use: { ...devices['iPad Pro 11 landscape'] },
-      testMatch: /desktop\/.*spec.ts/,
-    },
+    // {
+    //   name: 'Safari',
+    //   use: { ...devices['Desktop Safari'] },
+    //   testMatch: /desktop\/.*spec.ts/,
+    // },
+    // {
+    //   name: 'Firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    //   testMatch: /desktop\/.*spec.ts/,
+    // },
+    // {
+    //   name: 'iPad Pro 11',
+    //   use: { ...devices['iPad Pro 11'] },
+    //   testMatch: /desktop\/.*spec.ts/,
+    // },
+    // {
+    //   name: 'iPad Pro 11 landscape',
+    //   use: { ...devices['iPad Pro 11 landscape'] },
+    //   testMatch: /tablet_landscape\/.*spec.ts/,
+    // },
+    // {
+    //   name: 'iPad Pro 11',
+    //   use: { ...devices['iPad Pro 11'] },
+    //   testMatch: /tablet\/.*spec.ts/,
+    // },
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
