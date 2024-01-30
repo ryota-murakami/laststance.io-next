@@ -29,7 +29,8 @@
     "playwright:debug": "playwright test --debug",
     "playwright:desktop:codegen": "exec playwright codegen --device 'chromium'",
     "playwright:tablet:codegen": "exec playwright codegen --device 'iPad Pro 11'",
-    "playwright:mobile:codegen": "exec playwright codegen --device 'Pixel 5'"
+    "playwright:mobile:codegen": "exec playwright codegen --device 'Pixel 5'",
+    "postinstall": "playwright install"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
