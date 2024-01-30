@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@argos-ci/cli": "^1.0.8",
-    "@argos-ci/playwright": "^1.7.1",
+    "@argos-ci/playwright": "^1.8.0",
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^2.3.0",
     "@next/eslint-plugin-next": "^14.1.0",
