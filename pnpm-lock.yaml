@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
   '@types/mdx':
-    specifier: ^2.0.10
-    version: 2.0.10
+    specifier: ^2.0.11
+    version: 2.0.11
   '@types/node':
     specifier: 20.11.10
     version: 20.11.10
@@ -752,7 +752,7 @@ packages:
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
     dependencies:
       '@types/estree-jsx': 1.0.2
-      '@types/mdx': 2.0.10
+      '@types/mdx': 2.0.11
       estree-util-build-jsx: 2.2.2
       estree-util-is-identifier-name: 2.1.0
       estree-util-to-js: 1.2.0
@@ -1903,8 +1903,8 @@ packages:
     dependencies:
       '@types/unist': 2.0.9
 
-  /@types/mdx@2.0.10:
-    resolution: {integrity: sha512-Rllzc5KHk0Al5/WANwgSPl1/CwjqCy+AZrGd78zuK+jO9aDM6ffblZ+zIjgPNAaEBmlO0RYDvLNh7wD0zKVgEg==}
+  /@types/mdx@2.0.11:
+    resolution: {integrity: sha512-HM5bwOaIQJIQbAYfax35HCKxx7a3KrK3nBtIqJgSOitivTD1y3oW9P3rxY9RkXYPUk7y/AjAohfHKmFpGE79zw==}
     dev: true
 
   /@types/ms@0.7.33:
