@@ -86,8 +86,8 @@ dependencies:
 
 devDependencies:
   '@argos-ci/cli':
-    specifier: ^1.0.8
-    version: 1.0.8
+    specifier: ^1.0.9
+    version: 1.0.9
   '@argos-ci/playwright':
     specifier: ^1.9.0
     version: 1.9.0
@@ -195,30 +195,15 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: true
 
-  /@argos-ci/cli@1.0.8:
-    resolution: {integrity: sha512-9DvRl6SgIwlRHa8QCRAB9syU7YNfO4S8rIRhvX2nu14+qXdDs35gEVepDP9Kd6MCCSQc77QMfo8kEHaUn7mSXQ==}
+  /@argos-ci/cli@1.0.9:
+    resolution: {integrity: sha512-BcOT3EOXrwp7N61fKKuXmfBv44OwJreL1TP3cybNulEpAN8sM1yqkabX5SCiHS4hDKX1LBFudlkpSuej5namZA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 1.5.1
+      '@argos-ci/core': 1.5.2
       commander: 11.1.0
       ora: 7.0.1
       update-notifier: 6.0.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@argos-ci/core@1.5.1:
-    resolution: {integrity: sha512-CoCe81ee+eQpah3CRi+Uxv9KAUjnfHWYFHZ3bGz0aUC/p9UkCPFKOEHvakO1W2hjx2Nj1bj6QOSod87Vavty+g==}
-    engines: {node: '>=16.0.0'}
-    dependencies:
-      '@argos-ci/util': 1.2.0
-      axios: 1.6.1(debug@4.3.4)
-      convict: 6.2.4
-      debug: 4.3.4
-      fast-glob: 3.3.2
-      sharp: 0.32.6
-      tmp: 0.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1929,12 +1914,6 @@ packages:
     resolution: {integrity: sha512-FpiGjk6+IOrN0lZEfUUjdra1csU1VxwYFj4S0Zj+TJpu5x5mZW30RkEZojTadrNZHNmpCHgoE62IQZAH0OeuIA==}
     dependencies:
       '@types/node': 20.11.16
-    dev: true
-
-  /@types/node@20.11.15:
-    resolution: {integrity: sha512-gscmuADZfvNULx1eyirVbr3kVOVZtpQtzKMCZpeSZcN6MfbkRXAR4s9/gsQ4CzxLHw6EStDtKLNtSDL3vbq05A==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.11.16:
@@ -4615,7 +4594,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.15
+      '@types/node': 20.11.16
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
