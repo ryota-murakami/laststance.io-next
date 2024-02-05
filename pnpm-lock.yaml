@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^1.0.9
     version: 1.0.9
   '@argos-ci/playwright':
-    specifier: ^1.9.0
-    version: 1.9.0
+    specifier: ^1.9.1
+    version: 1.9.1
   '@clack/prompts':
     specifier: ^0.7.0
     version: 0.7.0
@@ -223,12 +223,27 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@1.9.0:
-    resolution: {integrity: sha512-aOoXXBxDv8moMoh2FiVVFx45MJ0MfInarRl2RfyhYQS/MpOTXkt/PEjdJMqaXEnTjjQ8bcK8TSfna6bU8Fx1Ow==}
+  /@argos-ci/core@1.5.3:
+    resolution: {integrity: sha512-qODX23ou3CwagOFwtYZyvXPAd2fXOu5ntnH5MbQcSzP3TdK8H2wkacNaLwvLEVpOeT3jdrfoQvROInewMfbHxQ==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.0
+      axios: 1.6.1(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/playwright@1.9.1:
+    resolution: {integrity: sha512-gh9upfhE+cyxCF3XTdAMcD+DXDWfWogJlYdL6Gc7litJX7h1yckBmO+deAtsh6xT58DfUIg4SJUjOHDq/CKzDw==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/browser': 1.4.1
-      '@argos-ci/core': 1.5.2
+      '@argos-ci/core': 1.5.3
       '@argos-ci/util': 1.2.0
       chalk: 5.3.0
     transitivePeerDependencies:
