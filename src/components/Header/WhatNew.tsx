@@ -7,6 +7,7 @@ import Link from '../Link'
 import { Button } from '../ui/button'
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogHeader,
   DialogTitle,
@@ -43,6 +44,27 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2024-01-29"
+            li={[
+              <DialogClose asChild>
+                <Link
+                  replace
+                  href="/articles/Wanna-be-indie-hacker-an-ordinary-person"
+                >
+                  Wanna be indie hacker an ordinary person.
+                </Link>
+              </DialogClose>,
+            ]}
+          />
+          <List
+            date="2024-01-18"
+            li={[
+              <DialogClose asChild>
+                <Link href="/articles/just-2024-list">Just 2024 list</Link>
+              </DialogClose>,
+            ]}
+          />
+          <List
             date="2023-12-18"
             li={['Keybinds: update selection commands']}
           />
@@ -50,7 +72,7 @@ const WhatNew: React.FC = () => {
             date="2023-11-20"
             li={[
               <>
-                add article:{' '}
+                add article:
                 <Link href="https://laststance.io/articles/Trying-less-energy-coding">
                   Trying less energy coding
                 </Link>

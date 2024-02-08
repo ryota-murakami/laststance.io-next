@@ -8,6 +8,8 @@ import { cn } from '@/lib/utils'
 
 const Dialog = DialogPrimitive.Root
 
+const DialogClose = DialogPrimitive.Close
+
 const DialogTrigger = DialogPrimitive.Trigger
 
 const DialogPortal = DialogPrimitive.Portal
@@ -108,6 +110,7 @@ DialogDescription.displayName = DialogPrimitive.Description.displayName
 
 export {
   Dialog,
+  DialogClose,
   DialogPortal,
   DialogOverlay,
   DialogTrigger,
