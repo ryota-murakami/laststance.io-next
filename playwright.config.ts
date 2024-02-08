@@ -50,16 +50,14 @@ export default defineConfig({
     //   use: { ...devices['Desktop Firefox'] },
     //   testMatch: /desktop\/.*spec.ts/,
     // },
-    // {
-    //   name: 'iPad Pro 11',
-    //   use: { ...devices['iPad Pro 11'] },
-    //   testMatch: /desktop\/.*spec.ts/,
-    // },
-    // {
-    //   name: 'iPad Pro 11 landscape',
-    //   use: { ...devices['iPad Pro 11 landscape'] },
-    //   testMatch: /tablet_landscape\/.*spec.ts/,
-    // },
+    {
+      name: 'iPad Pro 11',
+      use: { ...devices['iPad Pro 11'] },
+    },
+    {
+      name: 'iPad Pro 11 landscape',
+      use: { ...devices['iPad Pro 11 landscape'] },
+    },
     // {
     //   name: 'iPad Pro 11',
     //   use: { ...devices['iPad Pro 11'] },
@@ -68,7 +66,6 @@ export default defineConfig({
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
-      testMatch: /mobile\/.*spec.ts/,
     },
     //{
     //  name: 'Mobile Chrome landscape',
