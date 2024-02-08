@@ -1,7 +1,7 @@
 import { argosScreenshot } from '@argos-ci/playwright'
 import { test, expect } from '@playwright/test'
 
-test('/', async ({ page, isMobile }, testInfo) => {
+test('/', async ({ page }, testInfo) => {
   await page.goto('http://localhost:3000/')
   await expect(
     page.getByRole('heading', {
