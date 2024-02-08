@@ -38,17 +38,14 @@ export default defineConfig({
     {
       name: 'Chrome',
       use: { ...devices['Desktop Chrome'] },
-      testMatch: /desktop\/.*spec.ts/,
     },
     // {
     //   name: 'Safari',
     //   use: { ...devices['Desktop Safari'] },
-    //   testMatch: /desktop\/.*spec.ts/,
     // },
     // {
     //   name: 'Firefox',
     //   use: { ...devices['Desktop Firefox'] },
-    //   testMatch: /desktop\/.*spec.ts/,
     // },
     {
       name: 'iPad Pro 11',
@@ -58,20 +55,10 @@ export default defineConfig({
       name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
     },
-    // {
-    //   name: 'iPad Pro 11',
-    //   use: { ...devices['iPad Pro 11'] },
-    //   testMatch: /tablet\/.*spec.ts/,
-    // },
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
     },
-    //{
-    //  name: 'Mobile Chrome landscape',
-    //  use: { ...devices['Pixel 5 landscape'] },
-    //  testMatch: /mobile\/.*spec.ts/,
-    //},
   ],
 
   /* Run your local dev server before starting the tests */

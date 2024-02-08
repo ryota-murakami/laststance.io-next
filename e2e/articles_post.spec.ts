@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test'
 
 test('/articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120', async ({
   page,
-}) => {
+}, testInfo) => {
   await page.goto(
     'http://localhost:3000/articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120',
   )
@@ -15,6 +15,6 @@ test('/articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-
 
   await argosScreenshot(
     page,
-    'Desktop articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120',
+    `${testInfo.project.name}: articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120`,
   )
 })
