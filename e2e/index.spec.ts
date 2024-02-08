@@ -20,18 +20,18 @@ test('/', async ({ page }, testInfo) => {
 
   await argosScreenshot(page, `${testInfo.project.name}: Index Page`)
 
-  // @FixMe should not has error even Mobile Chrome
-  if (testInfo.project.name !== 'Mobile Chrome') {
+  if (testInfo.project.name === 'Mobile Chrome') {
+    await page.getByRole('link', { name: 'About' }).click()
+  } else {
     await page
       .getByRole('navigation')
       .getByRole('link', { name: 'About' })
       .click()
-
-    await expect(page).toHaveURL('/about')
-    await expect(
-      page.getByText(
-        'Laststance.io is my experimental laboratory for eliminate like this. ➡️',
-      ),
-    ).toBeVisible()
   }
+  await expect(page).toHaveURL('/about')
+  await expect(
+    page.getByText(
+      'Laststance.io is my experimental laboratory for eliminate like this. ➡️',
+    ),
+  ).toBeVisible()
 })
