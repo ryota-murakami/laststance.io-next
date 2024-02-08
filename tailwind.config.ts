@@ -7,7 +7,7 @@ module.exports = {
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
   theme: {
     screens: {
-      xs: '380px',
+      xs: '390px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

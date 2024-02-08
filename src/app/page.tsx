@@ -63,9 +63,9 @@ export default async function Home() {
               <Article key={article.slug} article={article} />
             ))}
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          {/* Hide <GithubFeedList /> for Mobile */}
+          <div className="hidden md:block space-y-10 lg:pl-16 xl:pl-24">
             <GithubFeedList />
-            {/* @TODO currently unable <Newsletter /> */}
           </div>
         </div>
       </Container>
