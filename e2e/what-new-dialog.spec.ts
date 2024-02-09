@@ -10,7 +10,10 @@ test("What's New dialog", async ({ page }, testInfo) => {
   await page.getByRole('button', { name: "Waht's New？" }).click()
 
   await expect(page.getByRole('dialog')).toBeVisible()
-  await argosScreenshot(page, `${testInfo.project.name}: What's New dialog`)
+  await argosScreenshot(
+    page,
+    `[${testInfo.project.name}]:   /  What's New dialog`,
+  )
 
   await expect(page.getByLabel("What's New?")).toContainText('2023-12-18')
   await expect(page.getByText('Keybinds: update selection')).toBeVisible()

@@ -48,15 +48,15 @@ export default defineConfig({
     //   use: { ...devices['Desktop Firefox'] },
     // },
     {
-      name: 'iPad Pro 11',
+      name: 'Tablet',
       use: { ...devices['iPad Pro 11'] },
     },
     {
-      name: 'iPad Pro 11 landscape',
+      name: 'Tablet landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
     },
     {
-      name: 'Mobile Chrome',
+      name: 'Mobile',
       use: { ...devices['Pixel 5'] },
     },
   ],

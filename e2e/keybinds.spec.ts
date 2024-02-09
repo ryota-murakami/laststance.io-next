@@ -5,5 +5,5 @@ test('/keybinds', async ({ page }, testInfo) => {
   await page.goto('http://localhost:3000/keybinds')
   await expect(page.getByText('My Editor Keybinds.')).toBeVisible()
 
-  await argosScreenshot(page, `${testInfo.project.name}: /keybinds`)
+  await argosScreenshot(page, `[${testInfo.project.name}]:   /keybinds`)
 })

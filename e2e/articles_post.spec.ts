@@ -13,8 +13,5 @@ test('/articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-
     ),
   ).toBeVisible()
 
-  await argosScreenshot(
-    page,
-    `${testInfo.project.name}: articles/dropped-eslint-plugin-sort-keys-custom-order-from-eslint-config-ts-prefixerv1120`,
-  )
+  await argosScreenshot(page, `[${testInfo.project.name}]:   article`)
 })

@@ -7,5 +7,5 @@ test('/projects', async ({ page }, testInfo) => {
     page.getByText('I eliminate all unnecessary complexity from Web Dev.'),
   ).toBeVisible()
 
-  await argosScreenshot(page, `${testInfo.project.name}: /projects`)
+  await argosScreenshot(page, `[${testInfo.project.name}]:    /projects`)
 })

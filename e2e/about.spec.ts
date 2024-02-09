@@ -9,5 +9,5 @@ test('/about', async ({ page }, testInfo) => {
     ),
   ).toBeVisible()
 
-  await argosScreenshot(page, `${testInfo.project.name}: /about`)
+  await argosScreenshot(page, `[${testInfo.project.name}]:   /about`)
 })

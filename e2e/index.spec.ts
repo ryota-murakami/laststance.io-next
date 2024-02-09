@@ -18,7 +18,7 @@ test('/', async ({ page }, testInfo) => {
     page.getByText('© 2024 Laststance.io. All rights reserved.'),
   ).toBeVisible()
 
-  await argosScreenshot(page, `${testInfo.project.name}: Index Page`)
+  await argosScreenshot(page, `[${testInfo.project.name}]:   /`)
 
   if (testInfo.project.name === 'Mobile Chrome') {
     await page.getByRole('link', { name: 'About' }).click()
