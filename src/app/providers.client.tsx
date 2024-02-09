@@ -2,17 +2,9 @@
 
 import { usePathname } from 'next/navigation'
 import { ThemeProvider, useTheme } from 'next-themes'
-import { createContext, useEffect, useRef } from 'react'
+import { createContext, useEffect } from 'react'
 
-function usePrevious<T>(value: T) {
-  const ref = useRef<T>()
-
-  useEffect(() => {
-    ref.current = value
-  }, [value])
-
-  return ref.current
-}
+import { usePrevious } from '@/hooks/usePrevious'
 
 function ThemeWatcher() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -40,7 +32,7 @@ function ThemeWatcher() {
 
 export const AppContext = createContext<{ previousPathname?: string }>({})
 
-export function Providers({ children }: { children: React.ReactNode }) {
+export function ProvidersClient({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const previousPathname = usePrevious(pathname)
 

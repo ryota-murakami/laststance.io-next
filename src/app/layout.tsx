@@ -1,8 +1,9 @@
 import { Analytics } from '@vercel/analytics/react'
 import { type Metadata } from 'next'
 
-import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
+
+import { ProvidersClient } from './providers.client'
 
 import '@/styles/global.css'
 
@@ -40,11 +41,11 @@ export default function RootLayout({
         <meta name="view-transition" content="same-origin" />
       </head>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
-        <Providers>
+        <ProvidersClient>
           <div className="flex w-full">
             <Layout>{children}</Layout>
           </div>
-        </Providers>
+        </ProvidersClient>
         <Analytics />
       </body>
     </html>
