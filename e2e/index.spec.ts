@@ -20,7 +20,7 @@ test('/', async ({ page }, testInfo) => {
 
   await argosScreenshot(page, `[${testInfo.project.name}]:   /`)
 
-  if (testInfo.project.name === 'Mobile Chrome') {
+  if (testInfo.project.name === 'Mobile') {
     await page.getByRole('link', { name: 'About' }).click()
   } else {
     await page
