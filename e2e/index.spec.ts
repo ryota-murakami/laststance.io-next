@@ -8,7 +8,7 @@ test('/', async ({ page }, testInfo) => {
       name: 'Go Straightforward Web Application Development.',
     }),
   ).toBeVisible()
-  if (testInfo.project.name === 'Mobile Chrome') {
+  if (testInfo.project.name === 'Mobile') {
     expect(page.getByText('Github Feed')).not.toBeVisible()
   } else {
     expect(page.getByText('Github Feed')).toBeVisible()
