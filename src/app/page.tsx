@@ -7,10 +7,10 @@ import {
 } from '@/components/SocialIcons'
 import { getAllArticles } from '@/lib/articles'
 
-import { Article } from './_app/Article'
-import { GithubFeedList } from './_app/githubFeedList'
-import { Photos } from './_app/Photos'
-import { SocialLink } from './_app/SocialLink'
+import { Article } from './_/Article'
+import { GithubFeedList } from './_/githubFeedList'
+import { Photos } from './_/Photos'
+import { SocialLink } from './_/SocialLink'
 
 export default async function Home() {
   const articles = (await getAllArticles()).slice(0, 4)
@@ -64,7 +64,7 @@ export default async function Home() {
             ))}
           </div>
           {/* Hide <GithubFeedList /> for Mobile */}
-          <div className="hidden md:block space-y-10 lg:pl-16 xl:pl-24">
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
             <GithubFeedList />
           </div>
         </div>

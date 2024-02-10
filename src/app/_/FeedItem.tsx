@@ -1,4 +1,4 @@
-import type { Feed } from '../../lib/octokit'
+import type { Feed } from '@/lib/octokit'
 
 import './FeedItem.css'
 interface Props {
