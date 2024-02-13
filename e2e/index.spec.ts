@@ -8,11 +8,8 @@ test('/', async ({ page }, testInfo) => {
       name: 'Go Straightforward Web Application Development.',
     }),
   ).toBeVisible()
-  if (testInfo.project.name === 'Mobile') {
-    expect(page.getByText('Github Feed')).not.toBeVisible()
-  } else {
-    expect(page.getByText('Github Feed')).toBeVisible()
-  }
+
+  expect(page.getByText('Github Feed')).toBeVisible()
 
   await expect(
     page.getByText('© 2024 Laststance.io. All rights reserved.'),
