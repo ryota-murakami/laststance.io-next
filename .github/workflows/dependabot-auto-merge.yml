@@ -1,22 +1,22 @@
-name: Auto Merge Dependabot PRs on Success
+name: Dependabot auto-merge
+on: pull_request
 
-on:
-  pull_request_target:
-    types: [synchronize, opened, reopened, ready_for_review]
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  auto-merge:
+  dependabot:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]' && github.event.pull_request.draft == false
+    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Auto merge using GitHub CLI
-        run: |
-          gh api -X PUT repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/merge \
-          -f merge_method=squash \
-          -H "Accept: application/vnd.github.v3+json" \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}"
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Enable auto-merge for Dependabot PRs
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
