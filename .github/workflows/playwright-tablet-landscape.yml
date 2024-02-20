@@ -1,11 +1,11 @@
-name: Playwright E2E Tests
+name: Tablet Landscape E2E Tests
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  playwright-e2e-test:
+  tablet-landscape-e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Playwright tests
-        run: pnpm playwright
+        run: pnpm exec playwright test --project='Tablet landscape'
       - uses: actions/upload-artifact@v3
         if: always()
         with:
