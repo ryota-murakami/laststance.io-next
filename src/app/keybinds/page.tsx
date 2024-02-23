@@ -676,6 +676,14 @@ export default function Keybinds() {
               <td className="py-2 px-4 border-b border-gray-300">^-x ^-R</td>
             </tr>
             <tr>
+              <td className="py-2 px-4 border-b border-gray-300">
+                Open Keybinding.json
+              </td>
+              <td className="py-2 px-4 border-b border-gray-300">
+                Shift + CMD + .
+              </td>
+            </tr>
+            <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
                 Cursor AI Editor

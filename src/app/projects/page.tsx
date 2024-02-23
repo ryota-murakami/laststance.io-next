@@ -2,6 +2,8 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Card, CardLink, CardDescription } from '@/components/Card'
+import { Container } from '@/components/Container'
+import { LinkIcon } from '@/components/icons/LinkIcon'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import chromeLogo from '@/images/logos/icons8-chrome-48.png'
 import nextLogo from '@/images/logos/icons8-nextjs-48.png'
@@ -10,9 +12,6 @@ import reactLogo from '@/images/logos/icons8-react-a-javascript-library-for-buil
 import reduxLogo from '@/images/logos/icons8-redux-48.png'
 import shellLogo from '@/images/logos/icons8-shell-40.png'
 import viteLogo from '@/images/logos/icons8-vite-48.png'
-
-import { Container } from '../../components/Container'
-import { LinkIcon } from '../../components/icons/inkIcon'
 
 const title = 'Projects'
 

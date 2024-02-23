@@ -44,6 +44,10 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2024-02-24"
+            li={['Keybind: VSCode Open Keybinding.json']}
+          />
+          <List
             date="2024-01-29"
             li={[
               <DialogClose asChild>
