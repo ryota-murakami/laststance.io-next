@@ -48,6 +48,7 @@
     "cheerio": "1.0.0-rc.12",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "dotenv": "^16.4.5",
     "fast-glob": "^3.3.2",
     "feed": "^4.2.2",
     "lucide-react": "^0.338.0",
