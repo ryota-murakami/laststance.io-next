@@ -184,18 +184,6 @@ export default function Keybinds() {
               <td className="border-b border-gray-300"></td>
             </tr>
             <tr>
-              <td className="py-2 px-4 border-b border-gray-300">
-                Liner Scroll Up with Cursor
-              </td>
-              <td className="py-2 px-4 border-b border-gray-300">^ + U</td>
-            </tr>
-            <tr>
-              <td className="py-2 px-4 border-b border-gray-300">
-                Liner Scroll Down with Cursor
-              </td>
-              <td className="py-2 px-4 border-b border-gray-300">^ + D</td>
-            </tr>
-            <tr>
               <td className="py-2 px-4 border-b border-gray-300">Scroll Up</td>
               <td className="py-2 px-4 border-b border-gray-300">^ + V</td>
             </tr>
