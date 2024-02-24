@@ -23,6 +23,8 @@ jobs:
         run: pnpm build
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
+      - name: Set build name
+        run: echo "BUILD_NAME=Tablet" >> .env
       - name: Playwright tests
         run: pnpm exec playwright test --project='Tablet'
       - uses: actions/upload-artifact@v3

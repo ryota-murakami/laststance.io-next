@@ -30,6 +30,7 @@ export default defineConfig({
       {
         // Upload to Argos on CI only.
         uploadToArgos: !!process.env.CI,
+        buildName: process.env.BUILD_NAME || 'BUILD_NAME is empty',
       },
     ],
   ],
