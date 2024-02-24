@@ -34,4 +34,4 @@ jobs:
           path: playwright-report/
           retention-days: 30
       - name: Upload screenshots to Argos
-        run: pnpm argos upload --build-name Mobile ./screenshots
+        run: pnpm argos upload ./screenshots
