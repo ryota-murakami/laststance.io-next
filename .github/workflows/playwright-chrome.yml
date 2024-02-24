@@ -1,11 +1,11 @@
-name: Tablet E2E Tests
+name: Chrome E2E Tests
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  tablet-e2e-test:
+  chrome-e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Playwright tests
-        run: pnpm exec playwright test --project='Tablet'
+        run: pnpm exec playwright test --project='Desktop'
       - uses: actions/upload-artifact@v3
         if: always()
         with:
@@ -32,4 +32,4 @@ jobs:
           path: playwright-report/
           retention-days: 30
       - name: Upload screenshots to Argos
-        run: pnpm argos upload --build-name Tablet ./screenshots
+        run: pnpm argos upload --build-name Chrome ./screenshots

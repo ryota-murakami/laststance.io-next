@@ -23,6 +23,7 @@ export default defineConfig({
   reporter: [
     // Use "dot" reporter on CI, "list" otherwise (Playwright default)
     process.env.CI ? ['dot'] : ['list'],
+    ['html'],
     // Add Argos reporter.
     [
       '@argos-ci/playwright/reporter',
@@ -47,17 +48,17 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'Desktop',
+      name: 'Chrome',
       use: { ...devices['Desktop Chrome'] },
     },
-    // {
-    //   name: 'Safari',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
-    // {
-    //   name: 'Firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    {
+      name: 'Safari',
+      use: { ...devices['Desktop Safari'] },
+    },
+    {
+      name: 'Firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
     {
       name: 'Tablet',
       use: { ...devices['iPad Pro 11'] },
