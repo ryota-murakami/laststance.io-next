@@ -21,8 +21,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    // Use "dot" reporter on CI, "list" otherwise (Playwright default)
-    process.env.CI ? ['dot'] : ['list'],
+    ['list'],
     ['html'],
     // Add Argos reporter.
     [

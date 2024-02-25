@@ -674,7 +674,7 @@ export default function Keybinds() {
             <tr>
               <td className="py-3 border-b border-gray-300 font-bold text-xl text-right">
                 {' '}
-                Cursor AI Editor
+                Cursor Nightly
               </td>
               <td className="border-b border-gray-300"></td>
             </tr>
