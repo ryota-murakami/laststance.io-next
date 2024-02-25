@@ -6,10 +6,9 @@
 [![iPad Pro 11 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml)
 [![iPad Pro 11 landscape E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml)
 [![iPhone 14 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml)
+[![Covered by Argos Visual Testing](https://argos-ci.com/badge.svg)](https://app.argos-ci.com/ryota-murakami/laststance.io/reference)
 
-<table><tr><td valign="center"><h1>Laststance.io</h1> <a href="https://app.argos-ci.com/ryota-murakami/laststance.io/reference">
-<img src="https://argos-ci.com/badge-large.svg" alt="Covered by Argos Visual Testing" />
-</a> </td></tr></table>
+<h1>Laststance.io </h1>
 
 The [Laststance.io](https://www.laststance.io/) website built using [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
