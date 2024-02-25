@@ -1,9 +1,15 @@
 [![Build](https://github.com/ryota-murakami/laststance.io/actions/workflows/build.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/build.yml)
 [![Typecheck](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml)
 [![Lint](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml)
-[![Playwright E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright.yml)
+[![Chrome E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-chrome.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-chrome.yml)
+[![Firefox E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-firefox.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-firefox.yml)
+[![iPad Pro 11 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml)
+[![iPad Pro 11 landscape E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml)
+[![iPhone 14 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml)
 
-# Laststance.io [![Covered by Argos Visual Testing](https://argos-ci.com/badge-large.svg)](https://app.argos-ci.com/ryota-murakami/laststance.io/reference)
+<table><tr><td valign="center"><h1>Laststance.io</h1> <a href="https://app.argos-ci.com/ryota-murakami/laststance.io/reference">
+<img src="https://argos-ci.com/badge-large.svg" alt="Covered by Argos Visual Testing" />
+</a> </td></tr></table>
 
 The [Laststance.io](https://www.laststance.io/) website built using [Tailwind UI](https://tailwindui.com), [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
