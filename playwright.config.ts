@@ -71,6 +71,11 @@ export default defineConfig({
       name: 'Mobile',
       use: { ...devices['Pixel 5'] },
     },
+    // TODO fill bug report for iPhone
+    // {
+    //   name: 'iPhone 14',
+    //   use: { ...devices['iPhone 14'] },
+    // },
   ],
 
   /* Run your local dev server before starting the tests */
