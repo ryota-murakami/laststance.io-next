@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main, master]
 jobs:
-  tablet-landscape-e2e-test:
+  iPad-Pro-11-landscape-e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
