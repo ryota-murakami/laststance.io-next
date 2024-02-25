@@ -1,7 +1,7 @@
 import { argosScreenshot } from '@argos-ci/playwright'
 import { test, expect } from '@playwright/test'
 
-test('/', async ({ page }, testInfo) => {
+test('Top Page', async ({ page }, testInfo) => {
   await page.goto('http://localhost:3000/')
   await expect(
     page.getByRole('heading', {
@@ -15,9 +15,9 @@ test('/', async ({ page }, testInfo) => {
     page.getByText('© 2024 Laststance.io. All rights reserved.'),
   ).toBeVisible()
 
-  await argosScreenshot(page, `[${testInfo.project.name}]:   /`)
+  await argosScreenshot(page, `[${testInfo.project.name}]:   Top Page`)
 
-  if (testInfo.project.name === 'Mobile') {
+  if (['Pixel 5', 'iPhone 14'].includes(testInfo.project.name)) {
     await page.getByRole('link', { name: 'About' }).click()
   } else {
     await page

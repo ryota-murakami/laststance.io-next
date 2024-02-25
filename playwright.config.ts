@@ -18,7 +18,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 6,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
@@ -41,7 +41,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
     launchOptions: {
-      slowMo: isHeadedOrUIMode() ? 500 : 100,
+      slowMo: isHeadedOrUIMode() ? 500 : 0,
     },
   },
 
@@ -71,11 +71,10 @@ export default defineConfig({
       name: 'Pixel 5',
       use: { ...devices['Pixel 5'] },
     },
-    // TODO fill bug report for iPhone
-    // {
-    //   name: 'iPhone 14',
-    //   use: { ...devices['iPhone 14'] },
-    // },
+    {
+      name: 'iPhone 14',
+      use: { ...devices['iPhone 14'] },
+    },
   ],
 
   /* Run your local dev server before starting the tests */
