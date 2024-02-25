@@ -60,15 +60,15 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
     {
-      name: 'Tablet',
+      name: 'iPad Pro 11',
       use: { ...devices['iPad Pro 11'] },
     },
     {
-      name: 'Tablet landscape',
+      name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
     },
     {
-      name: 'Mobile',
+      name: 'Pixel 5',
       use: { ...devices['Pixel 5'] },
     },
     // TODO fill bug report for iPhone

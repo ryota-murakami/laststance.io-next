@@ -1,11 +1,11 @@
-name: Tablet Landscape E2E Tests
+name: iPad Pro 11 E2E Tests
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  tablet-landscape-e2e-test:
+  tablet-e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +24,9 @@ jobs:
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Set build name
-        run: echo "BUILD_NAME=Tablet Landscape" >> .env
+        run: echo "BUILD_NAME=iPad Pro 11" >> .env
       - name: Playwright tests
-        run: pnpm exec playwright test --project='Tablet landscape'
+        run: pnpm exec playwright test --project='iPad Pro 11'
       - uses: actions/upload-artifact@v3
         if: always()
         with:

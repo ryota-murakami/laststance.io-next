@@ -1,11 +1,11 @@
-name: Tablet E2E Tests
+name: Pixel 5 E2E Tests
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  tablet-e2e-test:
+  mobile-e2e-test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +24,9 @@ jobs:
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Set build name
-        run: echo "BUILD_NAME=Tablet" >> .env
+        run: echo "BUILD_NAME=Pixel 5" >> .env
       - name: Playwright tests
-        run: pnpm exec playwright test --project='Tablet'
+        run: pnpm exec playwright test --project='Pixel 5'
       - uses: actions/upload-artifact@v3
         if: always()
         with:
