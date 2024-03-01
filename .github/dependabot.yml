@@ -5,10 +5,11 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+    target-branch: 'main'
     ignore:
       - dependency-name: 'remark-gfm'
       - dependency-name: '@mdx-js/loader'
       - dependency-name: 'react'
-      - dependency-name: 'react@dom'
+      - dependency-name: 'react-dom'
       - dependency-name: 'next'
       - dependency-name: 'sharp'
