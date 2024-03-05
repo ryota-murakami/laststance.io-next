@@ -67,7 +67,7 @@
     "@argos-ci/playwright": "^1.9.3",
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^2.3.0",
-    "@next/bundle-analyzer": "^14.1.1",
+    "@next/bundle-analyzer": "^14.1.2",
     "@next/eslint-plugin-next": "^14.1.2",
     "@next/mdx": "14.1.2",
     "@playwright/test": "^1.42.1",
