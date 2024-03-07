@@ -6,6 +6,7 @@ module.exports = {
   darkMode: ['class'],
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
   theme: {
+    // TODO refactor original breakpoint with mobile first styling
     screens: {
       xs: '390px',
       sm: '640px',
