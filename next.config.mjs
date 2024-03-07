@@ -1,7 +1,7 @@
 import rehypePrism from '@mapbox/rehype-prism'
+import withBundleAnalyzerOriginal from '@next/bundle-analyzer'
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
-import withBundleAnalyzerOriginal from '@next/bundle-analyzer'
 
 const withBundleAnalyzer = withBundleAnalyzerOriginal({
   enabled: process.env.ANALYZE === 'true',
