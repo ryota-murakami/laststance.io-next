@@ -86,8 +86,8 @@ dependencies:
 
 devDependencies:
   '@argos-ci/cli':
-    specifier: ^1.0.11
-    version: 1.0.11
+    specifier: ^1.0.12
+    version: 1.0.12
   '@argos-ci/playwright':
     specifier: ^1.9.3
     version: 1.9.3
@@ -201,12 +201,12 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: true
 
-  /@argos-ci/cli@1.0.11:
-    resolution: {integrity: sha512-pZjjxljBUN22Dz3Q8n5JUUm7yzrny/XdsyJU5soMpGPGwD6oNaDdFucyyIDv07qck/qTG85GlNord/0SuqHZBA==}
+  /@argos-ci/cli@1.0.12:
+    resolution: {integrity: sha512-Hd/n6kuQwAbIMqfQg/+zzYzC4xoqekBCkfc695KdU2eFDnIokUcxyJmAnBDE9zD99VfaV2kw/0VGVAoAZnzEYA==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 1.5.4
+      '@argos-ci/core': 1.5.5
       commander: 11.1.0
       ora: 7.0.1
       update-notifier: 6.0.2
@@ -216,6 +216,21 @@ packages:
 
   /@argos-ci/core@1.5.4:
     resolution: {integrity: sha512-XgRJSJYfauCbqOGNLFFiVri70TAp0TORfKrK/6yXyt7k9NgZD6vD10hUhSMeJP7REwYrqD3wxY7l85K+wwoo3Q==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      '@argos-ci/util': 1.2.1
+      axios: 1.6.7(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.32.6
+      tmp: 0.2.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@argos-ci/core@1.5.5:
+    resolution: {integrity: sha512-m271rCtp5fnpUU89eSlS/If5WnDIUGduEHfW9YrwVHnMYWPCNBDxp2q87Wgjl3O5RTm/x+sDED3vFD9i1q+yTQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@argos-ci/util': 1.2.1
@@ -1902,12 +1917,6 @@ packages:
     resolution: {integrity: sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow==}
     dependencies:
       '@types/node': 20.11.28
-    dev: true
-
-  /@types/node@20.11.27:
-    resolution: {integrity: sha512-qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==}
-    dependencies:
-      undici-types: 5.26.5
     dev: true
 
   /@types/node@20.11.28:
@@ -4566,7 +4575,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.27
+      '@types/node': 20.11.28
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
