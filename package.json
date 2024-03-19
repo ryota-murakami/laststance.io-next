@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@argos-ci/cli": "^1.0.12",
-    "@argos-ci/playwright": "^1.9.3",
+    "@argos-ci/playwright": "^2.0.0",
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^2.3.0",
     "@next/bundle-analyzer": "^14.1.3",
