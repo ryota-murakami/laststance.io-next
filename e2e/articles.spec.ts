@@ -1,7 +1,7 @@
-import { argosScreenshot } from '@argos-ci/playwright'
+// import { argosScreenshot } from '@argos-ci/playwright'
 import { test, expect } from '@playwright/test'
 
-test('/articles', async ({ page }, testInfo) => {
+test('/articles', async ({ page }, _testInfo) => {
   await page.goto('http://localhost:3000/articles')
   await expect(
     page.getByText(
@@ -9,5 +9,5 @@ test('/articles', async ({ page }, testInfo) => {
     ),
   ).toBeVisible()
 
-  await argosScreenshot(page, `[${testInfo.project.name}]:   /articles`)
+  // await argosScreenshot(page, `[${testInfo.project.name}]:   /articles`)
 })
