@@ -1,3 +1,7 @@
+import { Article } from '@/app/_app/Article'
+import { GithubFeedList } from '@/app/_app/githubFeedList'
+import { Photos } from '@/app/_app/Photos'
+import { SocialLink } from '@/app/_app/SocialLink'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -6,11 +10,6 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import { getAllArticles } from '@/lib/articles'
-
-import { Article } from './_/Article'
-import { GithubFeedList } from './_/githubFeedList'
-import { Photos } from './_/Photos'
-import { SocialLink } from './_/SocialLink'
 
 export default async function Home() {
   const articles = (await getAllArticles()).slice(0, 4)
