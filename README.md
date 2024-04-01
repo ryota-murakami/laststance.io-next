@@ -2,7 +2,6 @@
 [![Typecheck](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/typecheck.yml)
 [![Lint](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml/badge.svg)](https://github.com/ryota-murakami/laststance.io/actions/workflows/lint.yml)
 [![Chrome E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-chrome.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-chrome.yml)
-[![Firefox E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-firefox.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-firefox.yml)
 [![iPad Pro 11 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11.yml)
 [![iPad Pro 11 landscape E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPad-Pro-11-landscape.yml)
 [![iPhone 14 E2E Tests](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml/badge.svg)](https://github.com/laststance/laststance.io/actions/workflows/playwright-iPhone-14.yml)
