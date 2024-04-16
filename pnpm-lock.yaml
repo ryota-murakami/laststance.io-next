@@ -86,8 +86,8 @@ dependencies:
 
 devDependencies:
   '@argos-ci/cli':
-    specifier: ^2.0.0
-    version: 2.0.0
+    specifier: ^2.0.1
+    version: 2.0.1
   '@argos-ci/playwright':
     specifier: ^3.0.1
     version: 3.0.1
@@ -201,30 +201,15 @@ packages:
     engines: {node: '>=18.0.0'}
     dev: true
 
-  /@argos-ci/cli@2.0.0:
-    resolution: {integrity: sha512-dtzTtfkkSVffy4/iPUQWHD3+eWro9eEWz6jgT0pRYsiyK/s2Fsq47jAM2/0GsBRrU9aAjlla5QxMcUy0adyJHw==}
+  /@argos-ci/cli@2.0.1:
+    resolution: {integrity: sha512-0bErN31icqdMgGK6Dgnh/0lxCQtotBjCRHoHnm4B+rdFotohBIEFQs8s8KymYBE/d2oB0KyV2St+rVWsnJbg8Q==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
-      '@argos-ci/core': 2.0.0
+      '@argos-ci/core': 2.1.0
       commander: 12.0.0
       ora: 8.0.1
       update-notifier: 7.0.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@argos-ci/core@2.0.0:
-    resolution: {integrity: sha512-5q29k2H5ZpCnvk9nrfE/iR4Cn65xELOwMj1a5jMenKbMKC+s3mlNva7ubQQns21XPSIJNUrG0MZEzK0iRvEwHw==}
-    engines: {node: '>=18.0.0'}
-    dependencies:
-      '@argos-ci/util': 2.0.0
-      axios: 1.6.8(debug@4.3.4)
-      convict: 6.2.4
-      debug: 4.3.4
-      fast-glob: 3.3.2
-      sharp: 0.33.3
-      tmp: 0.2.3
     transitivePeerDependencies:
       - supports-color
     dev: true
