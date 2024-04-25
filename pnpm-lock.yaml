@@ -104,8 +104,8 @@ devDependencies:
     specifier: ^14.2.2
     version: 14.2.2
   '@next/mdx':
-    specifier: 14.2.2
-    version: 14.2.2(@mdx-js/loader@2.3.0)
+    specifier: 14.2.3
+    version: 14.2.3(@mdx-js/loader@2.3.0)
   '@playwright/test':
     specifier: ^1.43.1
     version: 1.43.1
@@ -1000,8 +1000,8 @@ packages:
       glob: 10.3.10
     dev: true
 
-  /@next/mdx@14.2.2(@mdx-js/loader@2.3.0):
-    resolution: {integrity: sha512-Te60j1vMxbYWg2E1CiEuIjzWxjI8y6XKmLnhec0sYQupd7aTLm2bjFSLxei+kiQdWUYB87cmhazI9K2dbNB9wA==}
+  /@next/mdx@14.2.3(@mdx-js/loader@2.3.0):
+    resolution: {integrity: sha512-oVz7BWpoLQ9dKvCKxPIX9X6BILPTrpTJnYDn2lAsZvK7J9Ela6xNm57vNwgZ8q7xw1THSDdSlbPNgIalM7U/+A==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '>=0.15.0'
