@@ -98,8 +98,8 @@ devDependencies:
     specifier: ^2.3.0
     version: 2.3.0(webpack@5.90.3)
   '@next/bundle-analyzer':
-    specifier: ^14.2.2
-    version: 14.2.2
+    specifier: ^14.2.3
+    version: 14.2.3
   '@next/eslint-plugin-next':
     specifier: ^14.2.2
     version: 14.2.2
@@ -982,8 +982,8 @@ packages:
       - supports-color
     dev: true
 
-  /@next/bundle-analyzer@14.2.2:
-    resolution: {integrity: sha512-Zp2xG3VTPHUquOcBaRtrr0/n7mqnjKUmprGcJXPEKGgP5rAsLymIfWKm3jIVWIw5Eb4fNOfX4v+L+qiSvs+OJw==}
+  /@next/bundle-analyzer@14.2.3:
+    resolution: {integrity: sha512-Z88hbbngMs7njZKI8kTJIlpdLKYfMSLwnsqYe54AP4aLmgL70/Ynx/J201DQ+q2Lr6FxFw1uCeLGImDrHOl2ZA==}
     dependencies:
       webpack-bundle-analyzer: 4.10.1
     transitivePeerDependencies:
