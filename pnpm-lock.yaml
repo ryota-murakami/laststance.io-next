@@ -116,8 +116,8 @@ devDependencies:
     specifier: ^2.0.13
     version: 2.0.13
   '@types/node':
-    specifier: 20.12.8
-    version: 20.12.8
+    specifier: 20.12.10
+    version: 20.12.10
   '@types/react':
     specifier: 18.2.79
     version: 18.2.79
@@ -797,7 +797,7 @@ packages:
     dependencies:
       '@inquirer/type': 1.2.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
@@ -2107,7 +2107,7 @@ packages:
   /@types/jsonwebtoken@9.0.6:
     resolution: {integrity: sha512-/5hndP5dCjloafCXns6SZyESp3Ldq7YjH3zwzwczYnjxIT0Fqzk5ROSYVGfFyczIue7IUEj8hkvLbPoLQ18vQw==}
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
     dev: false
 
   /@types/mdast@3.0.15:
@@ -2125,13 +2125,19 @@ packages:
   /@types/mute-stream@0.0.4:
     resolution: {integrity: sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow==}
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
     dev: true
+
+  /@types/node@20.12.10:
+    resolution: {integrity: sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==}
+    dependencies:
+      undici-types: 5.26.5
 
   /@types/node@20.12.8:
     resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
     dependencies:
       undici-types: 5.26.5
+    dev: true
 
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
@@ -2165,7 +2171,7 @@ packages:
   /@types/xml2js@0.4.14:
     resolution: {integrity: sha512-4YnrRemBShWRO2QjvUin8ESA41rH+9nQGLUGZV/1IDhi3SL9OhdpNC/MrulTWuptXKwhx/aDxE7toV0f/ypIXQ==}
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.12.10
     dev: true
 
   /@typescript-eslint/eslint-plugin@7.8.0(@typescript-eslint/parser@7.8.0)(eslint@8.57.0)(typescript@5.4.5):
