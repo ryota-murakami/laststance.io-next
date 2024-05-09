@@ -69,7 +69,7 @@
     "@next/bundle-analyzer": "^14.2.3",
     "@next/eslint-plugin-next": "^14.2.3",
     "@next/mdx": "14.2.3",
-    "@playwright/test": "^1.43.1",
+    "@playwright/test": "^1.44.0",
     "@tailwindcss/typography": "^0.5.13",
     "@types/mdx": "^2.0.13",
     "@types/node": "20.12.11",
