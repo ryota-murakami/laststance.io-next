@@ -44,6 +44,16 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2024-05-22"
+            li={[
+              <DialogClose asChild>
+                <Link href="/articles/react-hook-form-examples">
+                  react-hook-form-offic-examples
+                </Link>
+              </DialogClose>,
+            ]}
+          />
+          <List
             date="2024-02-24"
             li={['Keybind: VSCode Open Keybinding.json']}
           />
@@ -51,10 +61,7 @@ const WhatNew: React.FC = () => {
             date="2024-01-29"
             li={[
               <DialogClose asChild>
-                <Link
-                  replace
-                  href="/articles/Wanna-be-indie-hacker-an-ordinary-person"
-                >
+                <Link href="/articles/Wanna-be-indie-hacker-an-ordinary-person">
                   Wanna be indie hacker an ordinary person.
                 </Link>
               </DialogClose>,
