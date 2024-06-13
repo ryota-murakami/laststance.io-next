@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^2.1.0
     version: 2.1.0
   '@argos-ci/playwright':
-    specifier: ^3.0.4
-    version: 3.0.4
+    specifier: ^3.1.0
+    version: 3.1.0
   '@clack/prompts':
     specifier: ^0.7.0
     version: 0.7.0
@@ -224,8 +224,8 @@ packages:
       - supports-color
     dev: true
 
-  /@argos-ci/playwright@3.0.4:
-    resolution: {integrity: sha512-AEDdNXRWoHjDaOJfnDBNkhbATSq1u3kJyqCUN+bEv7JncKkNL2zLTIJiljVnFNfIu/x3ffeST415LswKI9PpKw==}
+  /@argos-ci/playwright@3.1.0:
+    resolution: {integrity: sha512-SXsO3xhKzWHvn/Hr7DIlft9tHvzu2pM1dG6UQR+B4BtC5KE0Gc4y8X9h/g1ZUrMZ8WeEDkftuwXILdSlUiyFtA==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@argos-ci/browser': 2.1.2
