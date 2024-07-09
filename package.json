@@ -62,7 +62,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@argos-ci/cli": "^2.2.0",
+    "@argos-ci/cli": "^2.3.0",
     "@argos-ci/playwright": "^3.3.0",
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^2.3.0",
