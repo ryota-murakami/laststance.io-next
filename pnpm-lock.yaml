@@ -88,8 +88,8 @@ importers:
         version: 1.0.7(tailwindcss@3.4.4)
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^2.2.0
-        version: 2.2.0
+        specifier: ^2.3.0
+        version: 2.3.0
       '@argos-ci/playwright':
         specifier: ^3.3.0
         version: 3.3.0
@@ -197,13 +197,17 @@ packages:
     resolution: {integrity: sha512-4dpz76kW0KnXCYdxtkcdiaYUM4owmKtT9zPqrd1yPo+VuSNCNULyCZJ4mdy0aXWT716JLMMmIZ3AnQSkyaqvaA==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.2.0':
-    resolution: {integrity: sha512-znga+b+Hrn+Sh6IBU9z70B36EYNW48akcnn/Qec2MiM0Ppc9EYgo9AE0lWDJoHLKA8j9FIqe+Lb+st9qmzgong==}
+  '@argos-ci/cli@2.3.0':
+    resolution: {integrity: sha512-wSyz6P4sVAOwsW0AlQ6EQM6Mhtais+F9SEqRbX4tviogpVzog17yrZ+fN2WRWQVOaZCXjjSkiZkcODDeFqj1oQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
   '@argos-ci/core@2.3.0':
     resolution: {integrity: sha512-0mHncBeOD7GFYfGZYUEcDgLyzsvPyxK/L1MROfAurFeWcw89ODG24JEdPsECtZBSCZMmMcK8XqeJIJkZsnDGZA==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/core@2.4.0':
+    resolution: {integrity: sha512-CY8IQsc71cuIeF2U47aePzH8+YWK4ePG1j+gK5aQ0r744Wc467U4xej7gChMVrAaGlZKsgoIIeXE1ezF+rCryw==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/playwright@3.3.0':
@@ -212,6 +216,10 @@ packages:
 
   '@argos-ci/util@2.0.0':
     resolution: {integrity: sha512-wnsNQOjcNfxOi8cHWSv8+GhzUeIitDJgjhuSNR9zrfHB0Y3nDVI57S/mHRo+EMAaWwghfbrxW1ypRCXVseN0GA==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/util@2.1.0':
+    resolution: {integrity: sha512-/78zJjZJCh3i7Eh3/lo7ybXK2pzXFGUNHbK3SgJNKNbFiBDllNRfy+x0kccjvN2gCCDz877jnFOlSoZZuMK56A==}
     engines: {node: '>=18.0.0'}
 
   '@clack/core@0.3.4':
@@ -1266,9 +1274,6 @@ packages:
 
   '@types/node@20.14.10':
     resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
-
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -4155,9 +4160,9 @@ snapshots:
 
   '@argos-ci/browser@2.1.2': {}
 
-  '@argos-ci/cli@2.2.0':
+  '@argos-ci/cli@2.3.0':
     dependencies:
-      '@argos-ci/core': 2.3.0
+      '@argos-ci/core': 2.4.0
       commander: 12.1.0
       ora: 8.0.1
       update-notifier: 7.0.0
@@ -4167,6 +4172,18 @@ snapshots:
   '@argos-ci/core@2.3.0':
     dependencies:
       '@argos-ci/util': 2.0.0
+      axios: 1.7.2(debug@4.3.4)
+      convict: 6.2.4
+      debug: 4.3.4
+      fast-glob: 3.3.2
+      sharp: 0.33.4
+      tmp: 0.2.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@argos-ci/core@2.4.0':
+    dependencies:
+      '@argos-ci/util': 2.1.0
       axios: 1.7.2(debug@4.3.4)
       convict: 6.2.4
       debug: 4.3.4
@@ -4187,6 +4204,8 @@ snapshots:
       - supports-color
 
   '@argos-ci/util@2.0.0': {}
+
+  '@argos-ci/util@2.1.0': {}
 
   '@clack/core@0.3.4':
     dependencies:
@@ -5245,10 +5264,6 @@ snapshots:
       '@types/node': 20.14.10
 
   '@types/node@20.14.10':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.14.9':
     dependencies:
       undici-types: 5.26.5
 
@@ -6879,7 +6894,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
