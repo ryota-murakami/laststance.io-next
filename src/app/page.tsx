@@ -26,7 +26,7 @@ export default async function Home() {
             <a href="https://ryota-murakami.github.io/" target="_blank">
               Ryota Murakami
             </a>{' '}
-            who live in Tokyo. Currently working as a fleelance
+            who live in Tokyo. Currently working as a freelance
             React/Node/TypeScirpt developer. Here is my invididual OSS
             organization.
           </p>
