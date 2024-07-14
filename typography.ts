@@ -149,8 +149,8 @@ export default function typographyStyles({ theme }: PluginUtils) {
           borderRadius: theme('borderRadius.3xl'),
         },
         li: {
-          marginBottom: theme('spacing.6'),
-          marginTop: theme('spacing.6'),
+          marginBottom: theme('spacing.4'),
+          marginTop: theme('spacing.4'),
           paddingLeft: theme('spacing[3.5]'),
         },
         'li :is(li, p)': {
@@ -173,8 +173,8 @@ export default function typographyStyles({ theme }: PluginUtils) {
           color: 'var(--tw-prose-counters)',
         },
         p: {
-          marginBottom: theme('spacing.7'),
-          marginTop: theme('spacing.7'),
+          marginBottom: theme('spacing.4'),
+          marginTop: theme('spacing.4'),
         },
 
         // Code blocks
