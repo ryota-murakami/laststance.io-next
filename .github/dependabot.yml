@@ -7,6 +7,4 @@ updates:
       interval: 'daily'
     target-branch: 'main'
     ignore:
-      - dependency-name: 'remark-gfm'
-      - dependency-name: '@mdx-js/loader'
       - dependency-name: 'sharp'
