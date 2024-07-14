@@ -9,7 +9,4 @@ updates:
     ignore:
       - dependency-name: 'remark-gfm'
       - dependency-name: '@mdx-js/loader'
-      - dependency-name: 'react'
-      - dependency-name: 'react-dom'
-      - dependency-name: 'next'
       - dependency-name: 'sharp'
