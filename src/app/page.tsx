@@ -1,7 +1,7 @@
-import { Article } from '@/app/_app/Article'
-import { GithubFeedList } from '@/app/_app/githubFeedList'
-import { Photos } from '@/app/_app/Photos'
-import { SocialLink } from '@/app/_app/SocialLink'
+import { Article } from '@/app/page/Article'
+import { GithubFeedList } from '@/app/page/githubFeedList'
+import { Photos } from '@/app/page/Photos'
+import { SocialLink } from '@/app/page/SocialLink'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
