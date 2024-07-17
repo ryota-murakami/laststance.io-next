@@ -22,8 +22,16 @@ export const fetchGithubFeedList = async (): Promise<Array<Feed | null>> => {
     // Parse the HTML content
     const root = parse(f.content[0]._)
 
-    // filter private content
+    // Filter private content
     if (root.innerText.includes('hayashima')) return null
+    // Filter auto dependecy update by dependabot
+    if (
+      root.innerText.includes('dependabot') ||
+      (root.innerText.includes('merged') && root.innerText.includes('Bump'))
+    )
+      return null
+    // Fillter auto file backup commit
+    if (root.innerText.includes('ryota-murakami/backup-files')) return null
 
     // Update all href attributes
     root.querySelectorAll('a').forEach((link) => {
