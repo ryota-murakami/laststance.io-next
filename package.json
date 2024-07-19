@@ -4,7 +4,7 @@
   "author": "Ryota Murakami <dojce1048@gmail.com> (https://github.com/ryota-murakami)",
   "private": true,
   "volta": {
-    "node": "22.4.1"
+    "node": "20.15.1"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
