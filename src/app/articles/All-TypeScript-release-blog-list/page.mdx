@@ -1,0 +1,336 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  auhtor: 'Ryota Murakami',
+  title: 'All TypeScript release blog list',
+  date: '2024-07-26',
+  description: 'Update continues',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+  openGraph: {
+    title: article.title,
+    images: [`/api/og?title=${article.title}`],
+  },
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Personally, I often find that blog posts announcing new versions have clearer explanations than the official documentation, and I really like them. <br/>
+So, I used AI to gather links and summaries for all the version posts.
+
+I plan to update this whenever a new version comes out.
+
+## Announcing TypeScript 5.5
+
+- **Date**: 2024-06-20
+- **Summary**: This release includes features like inferred type predicates, control flow narrowing for constant indexed accesses, JSDoc `@import` tag, regular expression syntax checking, support for new ECMAScript `Set` methods, isolated declarations, and more.
+- **Link**: [Announcing TypeScript 5.5](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/)
+
+## Announcing TypeScript 5.4
+
+- **Date**: 2024-03-06
+- **Summary**: This release introduces preserved narrowing in closures, the `NoInfer` utility type, `Object.groupBy` and `Map.groupBy`, support for `require()` calls in `--moduleResolution bundler` and `--module preserve`, checked import attributes and assertions, and more.
+- **Link**: [Announcing TypeScript 5.4](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/)
+
+## Announcing TypeScript 5.3
+
+- **Date**: 2023-11-20
+- **Summary**: This release includes features like import attributes, stable support for `resolution-mode` in import types, narrowing on comparisons to booleans, `instanceof` narrowing through `Symbol.hasInstance`, checks for `super` property accesses on instance fields, and more.
+- **Link**: [Announcing TypeScript 5.3](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/)
+
+## Announcing TypeScript 5.2
+
+- **Date**: 2023-08-24
+- **Summary**: This release introduces `using` declarations, decorator metadata, named and anonymous tuple elements, easier method usage for unions of arrays, copying array methods, `symbol`s as `WeakMap` and `WeakSet` keys, type-only import paths with TypeScript implementation file extensions, and more.
+- **Link**: [Announcing TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/)
+
+## Announcing TypeScript 5.1
+
+- **Date**: 2023-06-01
+- **Summary**: This release includes easier implicit returns for `undefined`-returning functions, unrelated types for getters and setters, decoupled type-checking between JSX elements and JSX tag types, namespaced JSX attributes, `typeRoots` consulted in module resolution, linked cursors for JSX tags, and more.
+- **Link**: [Announcing TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/)
+
+## Announcing TypeScript 5.0
+
+- **Date**: 2023-03-16
+- **Summary**: This release brings new features like decorators, `const` type parameters, support for multiple configuration files in `extends`, all `enum`s as union `enum`s, `--moduleResolution bundler`, resolution customization flags, `--verbatimModuleSyntax`, support for `export type *`, `@satisfies` support in JSDoc, and more.
+- **Link**: [Announcing TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/)
+
+## Announcing TypeScript 4.9
+
+- **Date**: 2022-11-15
+- **Summary**: This release introduces the `satisfies` operator, unlisted property narrowing with the `in` operator, auto-accessors in classes, checks for equality on `NaN`, file-watching improvements, and new editor commands for removing unused imports and sorting imports.
+- **Link**: [Announcing TypeScript 4.9](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9/)
+
+## Announcing TypeScript 4.8
+
+- **Date**: 2022-08-25
+- **Summary**: This release includes improved intersection reduction, union compatibility, and narrowing, improved inference for `infer` types in template string types, performance improvements for `--build`, `--watch`, and `--incremental`, and various correctness fixes and breaking changes.
+- **Link**: [Announcing TypeScript 4.8](https://devblogs.microsoft.com/typescript/announcing-typescript-4-8/)
+
+## Announcing TypeScript 4.7
+
+- **Date**: 2022-05-24
+- **Summary**: This release introduces ECMAScript module support in Node.js, control flow analysis for destructured discriminated unions, instantiation expressions, and improved function inference in objects and methods.
+- **Link**: [Announcing TypeScript 4.7](https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/)
+
+## Announcing TypeScript 4.6
+
+- **Date**: 2022-02-28
+- **Summary**: This release includes features like control flow analysis for destructured discriminated unions, improved recursion depth checks, and better narrowing for `in` operator.
+- **Link**: [Announcing TypeScript 4.6](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/)
+
+## Announcing TypeScript 4.5
+
+- **Date**: 2021-11-17
+- **Summary**: This release introduces the `Awaited` type, template string type improvements, and support for the `import type` syntax.
+- **Link**: [Announcing TypeScript 4.5](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/)
+
+## Announcing TypeScript 4.4
+
+- **Date**: 2021-08-26
+- **Summary**: This release includes control flow analysis for destructured discriminated unions, improved recursion depth checks, and better narrowing for `in` operator.
+- **Link**: [Announcing TypeScript 4.4](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4/)
+
+## Announcing TypeScript 4.3
+
+- **Date**: 2021-05-27
+- **Summary**: This release introduces separate write types on properties, template string type improvements, and the `override` keyword.
+- **Link**: [Announcing TypeScript 4.3](https://devblogs.microsoft.com/typescript/announcing-typescript-4-3/)
+
+## Announcing TypeScript 4.2
+
+- **Date**: 2021-02-23
+- **Summary**: This release includes smarter type alias preservation, leading/middle rest elements in tuple types, and abstract construct signatures.
+- **Link**: [Announcing TypeScript 4.2](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2/)
+
+## Announcing TypeScript 4.1
+
+- **Date**: 2020-11-20
+- **Summary**: This release introduces template literal types, key remapping in mapped types, and recursive conditional types.
+- **Link**: [Announcing TypeScript 4.1](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/)
+
+## Announcing TypeScript 4.0
+
+- **Date**: 2020-08-20
+- **Summary**: This major release includes variadic tuple types, labeled tuple elements, and short-circuiting assignment operators.
+- **Link**: [Announcing TypeScript 4.0](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/)
+
+## Announcing TypeScript 3.9
+
+- **Date**: 2020-05-12
+- **Summary**: This release focuses on performance improvements, enhancements to the inference process, and better support for the `import()` syntax. It also includes improvements to the editor experience and various bug fixes.
+- **Link**: [Announcing TypeScript 3.9](https://devblogs.microsoft.com/typescript/announcing-typescript-3-9/)
+
+## Announcing TypeScript 3.8
+
+- **Date**: 2020-02-20
+- **Summary**: This release introduces ECMAScript private fields, `export * as ns` syntax, top-level `await`, and JSDoc property modifiers. It also includes various improvements and bug fixes.
+- **Link**: [Announcing TypeScript 3.8](https://devblogs.microsoft.com/typescript/announcing-typescript-3-8/)
+
+## Announcing TypeScript 3.7
+
+- **Date**: 2019-11-05
+- **Summary**: This release includes optional chaining, nullish coalescing, assertion functions, and better support for `--declaration` and `--allowJs`. It also brings improvements to the editor experience and various bug fixes.
+- **Link**: [Announcing TypeScript 3.7](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/)
+
+## Announcing TypeScript 3.6
+
+- **Date**: 2019-08-28
+- **Summary**: This release introduces stricter generators, improved UX around promises, and more accurate array spreads. It also includes various improvements and bug fixes.
+- **Link**: [Announcing TypeScript 3.6](https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/)
+
+## Announcing TypeScript 3.5
+
+- **Date**: 2019-05-29
+- **Summary**: This release focuses on type-checking performance improvements and optimizations. It also includes improvements to the `--incremental` flag and various bug fixes.
+- **Link**: [Announcing TypeScript 3.5](https://devblogs.microsoft.com/typescript/announcing-typescript-3-5/)
+
+## Announcing TypeScript 3.4
+
+- **Date**: 2019-03-28
+- **Summary**: This release introduces type inference from `as const` expressions, faster subsequent builds with the `--incremental` flag, and various improvements and bug fixes.
+- **Link**: [Announcing TypeScript 3.4](https://devblogs.microsoft.com/typescript/announcing-typescript-3-4/)
+
+## Announcing TypeScript 3.3
+
+- **Date**: 2019-01-30
+- **Summary**: This release includes improvements to the `--build` mode, better error UX, and various bug fixes.
+- **Link**: [Announcing TypeScript 3.3](https://devblogs.microsoft.com/typescript/announcing-typescript-3-3/)
+
+## Announcing TypeScript 3.2
+
+- **Date**: 2018-11-29
+- **Summary**: This release introduces stricter checking for bind, call, and apply methods on functions, and improved handling of `readonly` tuples.
+- **Link**: [Announcing TypeScript 3.2](https://devblogs.microsoft.com/typescript/announcing-typescript-3-2/)
+
+## Announcing TypeScript 3.1
+
+- **Date**: 2018-09-24
+- **Summary**: This release includes mapped types on tuples and arrays, and improvements to the `--build` mode.
+- **Link**: [Announcing TypeScript 3.1](https://devblogs.microsoft.com/typescript/announcing-typescript-3-1/)
+
+## Announcing TypeScript 3.0
+
+- **Date**: 2018-07-30
+- **Summary**: This major release introduces project references, the `unknown` type, and improvements to tuple types.
+- **Link**: [Announcing TypeScript 3.0](https://devblogs.microsoft.com/typescript/announcing-typescript-3-0/)
+
+## Announcing TypeScript 2.9
+
+- **Date**: 2018-05-31
+- **Summary**: This release introduces support for `import.meta`, improved support for `Symbol`-based types, and various improvements and bug fixes.
+- **Link**: [Announcing TypeScript 2.9](https://devblogs.microsoft.com/typescript/announcing-typescript-2-9-2/)
+
+## Announcing TypeScript 2.8
+
+- **Date**: 2018-03-27
+- **Summary**: This release includes conditional types, improved type inference for object literals, and JSX namespace improvements.
+- **Link**: [Announcing TypeScript 2.8](https://devblogs.microsoft.com/typescript/announcing-typescript-2-8-2/)
+
+## Announcing TypeScript 2.7
+
+- **Date**: 2018-01-31
+- **Summary**: This release introduces definite assignment assertions, fixed length tuples, and improvements to the `--strict` flag.
+- **Link**: [Announcing TypeScript 2.7](https://devblogs.microsoft.com/typescript/announcing-typescript-2-7/)
+
+## Announcing TypeScript 2.6
+
+- **Date**: 2017-10-31
+- **Summary**: This release includes the `strictFunctionTypes` option, improved error messages, and support for `--resolveJsonModule`.
+- **Link**: [Announcing TypeScript 2.6](https://devblogs.microsoft.com/typescript/announcing-typescript-2-6/)
+
+## Announcing TypeScript 2.5
+
+- **Date**: 2017-08-31
+- **Summary**: This release introduces optional catch binding parameters, the `--preserveSymlinks` flag, and improvements to the `--strict` flag.
+- **Link**: [Announcing TypeScript 2.5](https://devblogs.microsoft.com/typescript/announcing-typescript-2-5/)
+
+## Announcing TypeScript 2.4
+
+- **Date**: 2017-06-30
+- **Summary**: This release includes dynamic import expressions, string enums, and improved inference for generics.
+- **Link**: [Announcing TypeScript 2.4](https://devblogs.microsoft.com/typescript/announcing-typescript-2-4/)
+
+## Announcing TypeScript 2.3
+
+- **Date**: 2017-04-27
+- **Summary**: This release introduces default type arguments, async iterators, and the `--downlevelIteration` flag.
+- **Link**: [Announcing TypeScript 2.3](https://devblogs.microsoft.com/typescript/announcing-typescript-2-3/)
+
+## Announcing TypeScript 2.2
+
+- **Date**: 2017-02-23
+- **Summary**: This release includes support for `object` type, improved type inference for `this`, and various bug fixes.
+- **Link**: [Announcing TypeScript 2.2](https://devblogs.microsoft.com/typescript/announcing-typescript-2-2/)
+
+## Announcing TypeScript 2.1
+
+- **Date**: 2016-12-07
+- **Summary**: This release introduces async/await down-leveling, object spread and rest, and improved type inference for literal types.
+- **Link**: [Announcing TypeScript 2.1](https://devblogs.microsoft.com/typescript/announcing-typescript-2-1/)
+
+## Announcing TypeScript 2.0
+
+- **Date**: 2016-09-22
+- **Summary**: This major release includes non-nullable types, control flow based type analysis, and the `readonly` modifier.
+- **Link**: [Announcing TypeScript 2.0](https://devblogs.microsoft.com/typescript/announcing-typescript-2-0/)
+
+These blog posts provide detailed information on the new features and improvements introduced in each TypeScript version, along with guidance on how to get started with the latest release.
+
+## Announcing TypeScript 1.8
+
+- **Date**: 2016-02-22
+- **Summary**: This release introduces string literal types, async/await for ES5/ES3, and improved JSX support.
+- **Link**: [Announcing TypeScript 1.8](https://devblogs.microsoft.com/typescript/announcing-typescript-1-8/)
+
+## Announcing TypeScript 1.7
+
+- **Date**: 2015-11-30
+- **Summary**: This release includes async/await for ES6 targets, support for ES6 module syntax in Node.js, and various bug fixes.
+- **Link**: [Announcing TypeScript 1.7](https://devblogs.microsoft.com/typescript/announcing-typescript-1-7/)
+
+## Announcing TypeScript 1.6
+
+- **Date**: 2015-09-16
+- **Summary**: This release introduces support for JSX, class expressions, and the `--target ES6` flag.
+- **Link**: [Announcing TypeScript 1.6](https://devblogs.microsoft.com/typescript/announcing-typescript-1-6/)
+
+## Announcing TypeScript 1.5
+
+- **Date**: 2015-07-20
+- **Summary**: This release includes support for ES6 modules, destructuring, and the `let` and `const` keywords.
+- **Link**: [Announcing TypeScript 1.5](https://devblogs.microsoft.com/typescript/announcing-typescript-1-5/)
+
+## Announcing TypeScript 1.4
+
+- **Date**: 2015-01-22
+- **Summary**: This release introduces union types, type guards, and template strings.
+- **Link**: [Announcing TypeScript 1.4](https://devblogs.microsoft.com/typescript/announcing-typescript-1-4/)
+
+## Announcing TypeScript 1.3
+
+- **Date**: 2014-10-30
+- **Summary**: This release includes tuple types and the `protected` access modifier.
+- **Link**: [Announcing TypeScript 1.3](https://devblogs.microsoft.com/typescript/announcing-typescript-1-3/)
+
+## Announcing TypeScript 1.2
+
+- **Date**: 2014-07-21
+- **Summary**: This release introduces support for generics and various bug fixes.
+- **Link**: [Announcing TypeScript 1.2](https://devblogs.microsoft.com/typescript/announcing-typescript-1-2/)
+
+## Announcing TypeScript 1.1
+
+- **Date**: 2014-04-02
+- **Summary**: This release focuses on performance improvements and bug fixes.
+- **Link**: [Announcing TypeScript 1.1](https://devblogs.microsoft.com/typescript/announcing-typescript-1-1/)
+
+## Announcing TypeScript 1.0
+
+- **Date**: 2014-04-02
+- **Summary**: This is the first stable release of TypeScript, marking its readiness for production use.
+- **Link**: [Announcing TypeScript 1.0](https://devblogs.microsoft.com/typescript/announcing-typescript-1-0/)
+
+## Announcing TypeScript 1.0RC
+
+- **Date**: 2014-03-05
+- **Summary**: This release candidate includes final features and improvements leading up to the 1.0 release.
+- **Link**: [Announcing TypeScript 1.0RC](https://devblogs.microsoft.com/typescript/announcing-typescript-1-0rc/)
+
+These blog posts provide detailed information on the new features and improvements introduced in each TypeScript version, along with guidance on how to get started with the latest release.
+
+## Announcing TypeScript 0.9
+
+- **Date**: 2013-06-18
+- **Summary**: This release represents the largest update to TypeScript to date, bringing significant changes to the language, compiler, and tools. It introduces generics, a new compiler infrastructure, and numerous bug fixes and improvements.
+- **Link**: [Announcing TypeScript 0.9](https://devblogs.microsoft.com/typescript/announcing-typescript-0-9/)
+
+## Announcing TypeScript 0.8.3
+
+- **Date**: 2013-01-24
+- **Summary**: This release adds incremental polish and bug fixes to the TypeScript language and compiler. It includes improvements based on community feedback and aims to enhance the overall development experience.
+- **Link**: [Announcing TypeScript 0.8.3](https://devblogs.microsoft.com/typescript/walkthrough-interfaces/)
+
+## Announcing TypeScript 0.8.2
+
+- **Date**: 2012-12-10
+- **Summary**: This release focuses on bug fixes and minor improvements to the TypeScript language and compiler. It addresses issues reported by the community and enhances the stability of the language.
+- **Link**: [Announcing TypeScript 0.8.2](https://devblogs.microsoft.com/typescript/announcing-typescript-0-8-2/)
+
+## Announcing TypeScript 0.8.1
+
+- **Date**: 2012-10-22
+- **Summary**: This release includes various bug fixes and performance improvements. It aims to provide a more stable and efficient development experience for TypeScript users.
+- **Link**: [Announcing TypeScript 0.8.1](https://devblogs.microsoft.com/typescript/announcing-typescript-0-8-1/)
+
+## Announcing TypeScript 0.8
+
+- **Date**: 2012-10-01
+- **Summary**: This is the initial release of TypeScript, introducing the language to the world. It includes features like static typing, classes, and modules, designed to help developers build large-scale JavaScript applications.
+- **Link**: [Announcing TypeScript 0.8](https://devblogs.microsoft.com/typescript/announcing-typescript-0-8/)
+
+These blog posts provide detailed information on the new features and improvements introduced in each TypeScript version, along with guidance on how to get started with the latest release.

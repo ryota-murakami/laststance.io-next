@@ -44,6 +44,16 @@ const WhatNew: React.FC = () => {
         </DialogHeader>
         <ScrollArea className="mt-4 space-y-4">
           <List
+            date="2024-07-26"
+            li={[
+              <DialogClose asChild>
+                <Link href="/articles/All-TypeScript-release-blog-list">
+                  All TypeScript release blog list
+                </Link>
+              </DialogClose>,
+            ]}
+          />
+          <List
             date="2024-05-22"
             li={[
               <DialogClose asChild>
