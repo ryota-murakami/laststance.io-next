@@ -23,7 +23,7 @@
     "prettier": "prettier --ignore-unknown --write .",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf .next node_modules tsconfig.tsbuildinfo pnpm-lock.yaml",
-    "generate-blog-templete": "node ./scripts/generate-blog-templete.mjs",
+    "gen": "node ./scripts/generate-blog-templete.mjs",
     "validate": "./scripts/validate",
     "playwright": "playwright test",
     "playwright:ui": "playwright test --ui",
