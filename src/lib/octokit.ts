@@ -8,9 +8,9 @@ const octokit = new Octokit({
   auth: process.env.PERSONAL_ACCESS_TOKEN,
 })
 
-export const fetchGithubFeedList = async (): Promise<Array<Feed | null>> => {
+const getXml = async (page: number) => {
   const res = await octokit.request(
-    'GET https://github.com/ryota-murakami.private.actor.atom?token=ABJ7CVE5QRNVWWSAQKCSV3ODEDT2G',
+    `GET https://github.com/ryota-murakami.atom?page=${page}`,
     {
       headers: {
         'X-GitHub-Api-Version': '2022-11-28',
@@ -18,20 +18,46 @@ export const fetchGithubFeedList = async (): Promise<Array<Feed | null>> => {
     },
   )
   const xml = await parseStringPromise(res.data)
-  const feedList = xml['feed']['entry'].map((f: Feed) => {
+  return xml
+}
+
+export const fetchGithubFeedList = async (): Promise<Array<Feed | null>> => {
+  const [xml1, xml2, xml3, xml4, xml5, xml6, xml7, xml8, xml9, xml10] =
+    await Promise.all([
+      getXml(1),
+      getXml(2),
+      getXml(3),
+      getXml(4),
+      getXml(5),
+      getXml(6),
+      getXml(7),
+      getXml(8),
+      getXml(9),
+      getXml(10),
+    ])
+
+  const allEntries = [
+    ...xml1['feed']['entry'],
+    ...xml2['feed']['entry'],
+    ...xml3['feed']['entry'],
+    ...xml4['feed']['entry'],
+    ...xml5['feed']['entry'],
+    ...xml6['feed']['entry'],
+    ...xml7['feed']['entry'],
+    ...xml8['feed']['entry'],
+    ...xml9['feed']['entry'],
+    ...xml10['feed']['entry'],
+  ]
+
+  const feedList = allEntries.map((f: Feed) => {
     // Parse the HTML content
     const root = parse(f.content[0]._)
 
-    // Filter private content
-    if (root.innerText.includes('hayashima')) return null
     // Filter auto dependecy update by dependabot
-    if (
-      root.innerText.includes('dependabot') ||
-      (root.innerText.includes('merged') && root.innerText.includes('Bump'))
-    )
-      return null
-    // Fillter auto file backup commit
-    if (root.innerText.includes('ryota-murakami/backup-files')) return null
+    if (root.innerText.includes('Dependabot')) return null
+    if (root.innerText.includes('dependabot')) return null
+    if (root.innerText.includes('Bump')) return null
+    if (root.innerText.includes('bump')) return null
 
     // Update all href attributes
     root.querySelectorAll('a').forEach((link) => {
