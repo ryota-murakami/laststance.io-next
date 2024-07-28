@@ -1,6 +1,10 @@
 module.exports = {
   env: {},
-  extends: ['ts-prefixer', 'plugin:jsx-a11y/recommended'],
+  extends: [
+    'ts-prefixer',
+    'plugin:jsx-a11y/recommended',
+    'plugin:storybook/recommended',
+  ],
   globals: {},
   overrides: [],
   parser: '@typescript-eslint/parser',
