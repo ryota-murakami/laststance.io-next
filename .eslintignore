@@ -10,5 +10,7 @@ dist
 storybook-static
 **/mockServiceWorker.js
 tests-examples
+./playwright-report
+./test-results
 ./e2e/tablet
 ./e2e/tablet-landscape
