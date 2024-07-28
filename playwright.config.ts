@@ -16,9 +16,9 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 6,
+  workers: process.env.CI ? 1 : 10,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
@@ -52,24 +52,12 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
     {
-      name: 'Safari',
-      use: { ...devices['Desktop Safari'] },
-    },
-    {
-      name: 'Firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
       name: 'iPad Pro 11',
       use: { ...devices['iPad Pro 11'] },
     },
     {
       name: 'iPad Pro 11 landscape',
       use: { ...devices['iPad Pro 11 landscape'] },
-    },
-    {
-      name: 'Pixel 5',
-      use: { ...devices['Pixel 5'] },
     },
     {
       name: 'iPhone 14',

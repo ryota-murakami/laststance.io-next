@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container'
 
+// TODO Add center layout
 export function SimpleLayout({
   title,
   children,
