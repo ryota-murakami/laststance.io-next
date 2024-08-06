@@ -118,8 +118,8 @@ importers:
         specifier: ^8.2.7
         version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))
       '@storybook/addon-interactions':
-        specifier: ^8.2.6
-        version: 8.2.6(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))
+        specifier: ^8.2.7
+        version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))
       '@storybook/addon-links':
         specifier: ^8.2.6
         version: 8.2.6(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))
@@ -2209,10 +2209,10 @@ packages:
     peerDependencies:
       storybook: ^8.2.7
 
-  '@storybook/addon-interactions@8.2.6':
-    resolution: {integrity: sha512-YXpHf8jWPz9HJV+Fw4GaunaCWeE6uqF24aLXdAd8xuhN1UfWJeNV6AwAvFQ0hTLqvmz0yMhX/5JXDKeKESoYDA==}
+  '@storybook/addon-interactions@8.2.7':
+    resolution: {integrity: sha512-WZXlwpBNLE483uKuR70A7nm+ZbcZNEmuVz/J1/u7dbi0BUWzmJUa9YIgVeQ/1KTwW8KTkxvB0TuUUH3aA4ZKlA==}
     peerDependencies:
-      storybook: ^8.2.6
+      storybook: ^8.2.7
 
   '@storybook/addon-links@8.2.6':
     resolution: {integrity: sha512-CUuU3nk8wyZ3bljCmOG/OCKazan+bPuNbCph8N763zyzdEx5M/CbBxV9d3pi3zjYpix7txlqrl2/YdMCejfyFw==}
@@ -9342,11 +9342,11 @@ snapshots:
       '@storybook/global': 5.0.0
       storybook: 8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9))
 
-  '@storybook/addon-interactions@8.2.6(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))':
+  '@storybook/addon-interactions@8.2.7(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))':
     dependencies:
       '@storybook/global': 5.0.0
-      '@storybook/instrumenter': 8.2.6(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))
-      '@storybook/test': 8.2.6(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))
+      '@storybook/instrumenter': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))
+      '@storybook/test': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9)))(vitest@2.0.5(@types/node@22.1.0)(happy-dom@14.12.3)(terser@5.31.2))
       polished: 4.3.1
       storybook: 8.2.7(@babel/preset-env@7.25.0(@babel/core@7.24.9))
       ts-dedent: 2.2.0
