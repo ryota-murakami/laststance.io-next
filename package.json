@@ -74,7 +74,7 @@
     "@next/mdx": "14.2.5",
     "@playwright/test": "^1.45.3",
     "@storybook/addon-essentials": "^8.2.7",
-    "@storybook/addon-interactions": "^8.2.6",
+    "@storybook/addon-interactions": "^8.2.7",
     "@storybook/addon-links": "^8.2.6",
     "@storybook/addon-onboarding": "^8.2.7",
     "@storybook/blocks": "^8.2.7",
