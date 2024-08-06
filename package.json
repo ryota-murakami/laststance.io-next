@@ -72,7 +72,7 @@
     "@next/bundle-analyzer": "^14.2.5",
     "@next/eslint-plugin-next": "^14.2.5",
     "@next/mdx": "14.2.5",
-    "@playwright/test": "^1.45.3",
+    "@playwright/test": "^1.46.0",
     "@storybook/addon-essentials": "^8.2.7",
     "@storybook/addon-interactions": "^8.2.7",
     "@storybook/addon-links": "^8.2.7",
