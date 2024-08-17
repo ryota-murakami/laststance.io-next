@@ -119,6 +119,14 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
+          <Tool title="Cursor" href="https://www.cursor.so/">
+            Forked from VScode, it is the the best AI IDE as far as i know. It
+            can import and learn library documents and answer questions based on
+            its knowledge of the entire codebase, making it a powerful tool for
+            real-world products. Since it is a Fork of VScode, it references
+            VScode's keybinding.json and settings.json, so it can easily be used
+            with VSCode.
+          </Tool>
           <Tool
             title="WebStorm(JetBrains IDE)"
             href="https://www.jetbrains.com/webstorm/"
@@ -136,32 +144,6 @@ export default function Uses() {
             and I think the Project Tree is the easiest to use. There are almost
             no situations where I have to manually write import statements, so I
             would choose WebStorm first when writing a normal program.
-            Translated with www.DeepL.com/Translator (free version)
-          </Tool>
-          <Tool title="Cursor" href="https://www.cursor.so/">
-            Forked from VScode, it is the IDE with the best AI I know. It can
-            import and learn library documents and answer questions based on its
-            knowledge of the entire codebase, making it a powerful tool for
-            real-world products. Since it is a Fork of VScode, it references
-            VScode's keybinding.json and settings.json, so it can easily be used
-            with VSCode.
-          </Tool>
-          <Tool
-            title="Visual Studio Code"
-            href="https://code.visualstudio.com/"
-          >
-            The best TypeScirpt LSP ,`Pretty TypeScript Errors` and
-            `ts-type-expand` extensions available vs typescript gymnastics
-            weapons. Other times, when you want to use Github Copilot, or when
-            you want to use the extensions that are useful for JS/TS IDEs, as
-            they tend to appear due to their overwhelming market share. Pretty
-            TypeScriptErrors` was made available as a WebStorm first-party
-            feature with the help of Extension authors and voted by WebStorm
-            users, However, we fear for WebStorm's survival unless a mechanism
-            is created to easily migrate VSCode extensions and first-party
-            features to the JetBrains IDE, otherwise the free VSCode will be
-            clearly superior to the paid JetBtrains product. WebStorm's survival
-            is in jeopardy.
           </Tool>
           <Tool
             title="Terminal(Mac OSX Default)"
@@ -172,7 +154,7 @@ export default function Uses() {
             do what I want to do. I don't use the split screen at all, so maybe
             I don't feel inconvenienced by the default Terminal. When I launch
             multiple processes, I use tabs to manage them.
-          </Tool>{' '}
+          </Tool>
           <Tool
             title="Fish Shell"
             href="https://github.com/ryota-murakami/dotfiles/blob/master/.config/fish/config.fish"
@@ -204,13 +186,6 @@ export default function Uses() {
             resolution rule. <br /> I also use Bun from time to time, which can
             run TS directly and ise often a faster runtime than Node.js.
           </Tool>
-          <Tool title="LocatorJS" href="https://www.locatorjs.com/">
-            This is very useful when dealing with unfamiliar code bases, as it
-            allows you to open the source code of the React Component you
-            clicked on in an instant.
-          </Tool>
-        </ToolsSection>
-        <ToolsSection title="Design">
           <Tool title="Figma" href="https://www.figma.com/">
             Bridging the gap between design data and implementation code in
             component-oriented front-end development, <br /> the designer skills
@@ -223,20 +198,6 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
         <ToolsSection title="Utility">
-          <Tool title="Clipy" href="https://github.com/Clipy/Clipy">
-            This is a clipboard history saving application. The shortcut is set
-            to `CMD + 0(zero)`. <br /> Is it modern now that many people do the
-            same thing with Raycast?
-          </Tool>
-          <Tool
-            title="Spotlight (Mac OSX Default)"
-            href="https://support.apple.com/guide/mac-help/search-with-spotlight-mchlp1008/mac"
-          >
-            I use Spotlight and Raycast together. Spotlight is set to exclude
-            GUI applications in LaunchPad from its search target, and is
-            specialized for launching GUI applications such as Chrome, Notion,
-            and 1Password. The shortcut key is `Option + Space`.
-          </Tool>
           <Tool title="Raycast" href="https://www.raycast.com/">
             I am not good at remembering the spelling of English words, so what
             I use Raycast for the most is the dictionary function. <br /> I also
