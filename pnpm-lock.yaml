@@ -88,8 +88,8 @@ importers:
         version: 1.0.7(tailwindcss@3.4.10)
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^2.3.2
-        version: 2.3.2
+        specifier: ^2.3.3
+        version: 2.3.3
       '@argos-ci/playwright':
         specifier: ^3.5.0
         version: 3.5.0
@@ -259,13 +259,17 @@ packages:
     resolution: {integrity: sha512-C9/k32HrmkHkUT9KrhHuOvlli1ibPGE1nkToC6+t4cAmbJCIU8HFrVa6VG2UT3xJjLht+gpqvPwTbJAsCRXv3A==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.3.2':
-    resolution: {integrity: sha512-WhZaS8Om0mOD/K1A8yVwrvrzmvO24vu/V6nONvtbcQWXvX3tNdASXLpF4ZgVBtlX3uHDZlLWZLCQcL6qBa04AQ==}
+  '@argos-ci/cli@2.3.3':
+    resolution: {integrity: sha512-Yrcr+9N1SmugTqM5xFzn0c16ftWhj+FFbfPVAZl2baqfDs9EYGLaa2jh4v5s7zA6pkabt0Gztac1Hrhusn8Arw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
   '@argos-ci/core@2.5.0':
     resolution: {integrity: sha512-xNHKWzuSLHXm/5fhdEQv8zUwExeEkYzw6CV/Ha9rUBBTPomZL5CNxpXQ/ww1AA4mRC5dq3CfgreRq8qj7HQMVQ==}
+    engines: {node: '>=18.0.0'}
+
+  '@argos-ci/core@2.5.1':
+    resolution: {integrity: sha512-tgao3GqREG6A6E6LwEVbSTyVrChtb21nbcNGg69BS7DmqPY8pff/UV61QDoX+3Z9Kw8Cn4cI6YpLvhL77xRmCg==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/playwright@3.5.0':
@@ -6278,10 +6282,6 @@ packages:
     resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
     engines: {node: '>=12'}
 
-  string-width@7.1.0:
-    resolution: {integrity: sha512-SEIJCWiX7Kg4c129n48aDRwLbFb2LJmXXFrWBG4NGaRtMQ3myKPKbwrD1BKqQn74oCoNMBVrfDEr5M9YxCsrkw==}
-    engines: {node: '>=18'}
-
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
     engines: {node: '>=18'}
@@ -7057,9 +7057,9 @@ snapshots:
 
   '@argos-ci/browser@2.1.3': {}
 
-  '@argos-ci/cli@2.3.2':
+  '@argos-ci/cli@2.3.3':
     dependencies:
-      '@argos-ci/core': 2.5.0
+      '@argos-ci/core': 2.5.1
       commander: 12.1.0
       ora: 8.0.1
       update-notifier: 7.2.0
@@ -7067,6 +7067,19 @@ snapshots:
       - supports-color
 
   '@argos-ci/core@2.5.0':
+    dependencies:
+      '@argos-ci/api-client': 0.2.0
+      '@argos-ci/util': 2.1.1
+      axios: 1.7.5(debug@4.3.6)
+      convict: 6.2.4
+      debug: 4.3.6
+      fast-glob: 3.3.2
+      sharp: 0.33.5
+      tmp: 0.2.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@argos-ci/core@2.5.1':
     dependencies:
       '@argos-ci/api-client': 0.2.0
       '@argos-ci/util': 2.1.1
@@ -10570,7 +10583,7 @@ snapshots:
   cli-truncate@4.0.0:
     dependencies:
       slice-ansi: 5.0.0
-      string-width: 7.1.0
+      string-width: 7.2.0
 
   cli-width@4.1.0: {}
 
@@ -13269,7 +13282,7 @@ snapshots:
       is-unicode-supported: 2.0.0
       log-symbols: 6.0.0
       stdin-discarder: 0.2.2
-      string-width: 7.1.0
+      string-width: 7.2.0
       strip-ansi: 7.1.0
 
   os-browserify@0.3.0: {}
@@ -14300,12 +14313,6 @@ snapshots:
       emoji-regex: 9.2.2
       strip-ansi: 7.1.0
 
-  string-width@7.1.0:
-    dependencies:
-      emoji-regex: 10.3.0
-      get-east-asian-width: 1.2.0
-      strip-ansi: 7.1.0
-
   string-width@7.2.0:
     dependencies:
       emoji-regex: 10.3.0
@@ -15056,7 +15063,7 @@ snapshots:
   wrap-ansi@9.0.0:
     dependencies:
       ansi-styles: 6.2.1
-      string-width: 7.1.0
+      string-width: 7.2.0
       strip-ansi: 7.1.0
 
   wrappy@1.0.2: {}
