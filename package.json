@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@argos-ci/cli": "^2.3.3",
-    "@argos-ci/playwright": "^3.5.0",
+    "@argos-ci/playwright": "^3.5.1",
     "@chromatic-com/storybook": "^1.8.0",
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^3.0.1",
