@@ -91,8 +91,8 @@ importers:
         specifier: ^2.3.3
         version: 2.3.3
       '@argos-ci/playwright':
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: ^3.6.0
+        version: 3.6.0
       '@chromatic-com/storybook':
         specifier: ^1.8.0
         version: 1.8.0(react@18.3.1)
@@ -255,8 +255,8 @@ packages:
     resolution: {integrity: sha512-stqugeAtbHjD2MwezvgJ4hU0HvlEGwGDVsJvUUD4YoRS0putS8yFjXuempkc90XGeHDEfYZgvG372rcK7/FClA==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/api-client@0.4.0':
-    resolution: {integrity: sha512-csJMhcuvPS1vAO6NtfEJX8rZX7+hnm7GYQy24t9rhB9DESyegSS/KGCWoMtYGOmL+OSk9FJl0UkHdAD3tXmYdw==}
+  '@argos-ci/api-client@0.5.0':
+    resolution: {integrity: sha512-syJJmvLtJKQYXDmGYRb+ZKpzpSk/dReqhZZm2tnWn7ThxHaJRJ7Wu3J5nqDpCP3LxoYCVfvV/dmfoJO0v8+PbQ==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/browser@2.1.3':
@@ -272,12 +272,12 @@ packages:
     resolution: {integrity: sha512-tgao3GqREG6A6E6LwEVbSTyVrChtb21nbcNGg69BS7DmqPY8pff/UV61QDoX+3Z9Kw8Cn4cI6YpLvhL77xRmCg==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/core@2.7.0':
-    resolution: {integrity: sha512-k7S5aIhE3o9S27qJ+imn+5P9J1PIPM5ltKw67Tvt+xxgCLLQUlt8YbVz1YMppWY795l1MUg/4SpybySFjXorGQ==}
+  '@argos-ci/core@2.8.0':
+    resolution: {integrity: sha512-n7WUnlK+QI9L/bbPrg88xrxojGdEe//+RIJKx1iIUEqgIMp5K8f9ANcpYGSS/d9BWASg7eFoXm5d6iRCz0Mrgw==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/playwright@3.5.3':
-    resolution: {integrity: sha512-BwtbBqzsSrwVWsUT2qKSYr6fG4VcC9QlAiBSEVDscO55r7PGr7AwMmPaj58Zi4fQk1ruMC8cjOWrFzj/HAuBIA==}
+  '@argos-ci/playwright@3.6.0':
+    resolution: {integrity: sha512-Pzb0t7PlM1aHDyH7hK4YCnkca0izGHcZRsBQDiUxke0/3BZxOPGCJutIyIloyzlHsI9cp1vbpJryxmEYJf2/Rw==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/util@2.1.1':
@@ -7059,7 +7059,7 @@ snapshots:
     dependencies:
       openapi-fetch: 0.11.1
 
-  '@argos-ci/api-client@0.4.0':
+  '@argos-ci/api-client@0.5.0':
     dependencies:
       openapi-fetch: 0.11.1
 
@@ -7087,9 +7087,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/core@2.7.0':
+  '@argos-ci/core@2.8.0':
     dependencies:
-      '@argos-ci/api-client': 0.4.0
+      '@argos-ci/api-client': 0.5.0
       '@argos-ci/util': 2.1.1
       axios: 1.7.5(debug@4.3.6)
       convict: 6.2.4
@@ -7100,10 +7100,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/playwright@3.5.3':
+  '@argos-ci/playwright@3.6.0':
     dependencies:
       '@argos-ci/browser': 2.1.3
-      '@argos-ci/core': 2.7.0
+      '@argos-ci/core': 2.8.0
       '@argos-ci/util': 2.1.1
       chalk: 5.3.0
       debug: 4.3.6
