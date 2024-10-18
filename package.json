@@ -100,7 +100,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-storybook": "^0.9.0",
     "happy-dom": "^15.7.4",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
