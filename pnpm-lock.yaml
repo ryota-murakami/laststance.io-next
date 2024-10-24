@@ -100,8 +100,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0
       '@mdx-js/loader':
-        specifier: ^3.0.1
-        version: 3.0.1(webpack@5.93.0(esbuild@0.21.5))
+        specifier: ^3.1.0
+        version: 3.1.0(webpack@5.93.0(esbuild@0.21.5))
       '@next/bundle-analyzer':
         specifier: ^15.0.1
         version: 15.0.1
@@ -110,7 +110,7 @@ importers:
         version: 15.0.1
       '@next/mdx':
         specifier: 15.0.1
-        version: 15.0.1(@mdx-js/loader@3.0.1(webpack@5.93.0(esbuild@0.21.5)))(@mdx-js/react@3.0.1(@types/react@18.3.11)(react@18.3.1))
+        version: 15.0.1(@mdx-js/loader@3.1.0(webpack@5.93.0(esbuild@0.21.5)))(@mdx-js/react@3.0.1(@types/react@18.3.11)(react@18.3.1))
       '@playwright/test':
         specifier: ^1.48.1
         version: 1.48.1
@@ -1358,10 +1358,13 @@ packages:
     resolution: {integrity: sha512-ypmEaqzdrqSon5NJdPqTh79qmPK8ajAqIU9mdFhuWn3T4B/RT2nt3yH2JPcou1/Gx8DvSgJ+XP+fy60e8h3mpQ==}
     engines: {node: '>=10'}
 
-  '@mdx-js/loader@3.0.1':
-    resolution: {integrity: sha512-YbYUt7YyEOdFxhyuCWmLKf5vKhID/hJAojEUnheJk4D8iYVLFQw+BAoBWru/dHGch1omtmZOPstsmKPyBF68Tw==}
+  '@mdx-js/loader@3.1.0':
+    resolution: {integrity: sha512-xU/lwKdOyfXtQGqn3VnJjlDrmKXEvMi1mgYxVmukEUtVycIz1nh7oQ40bKTd4cA7rLStqu0740pnhGYxGoqsCg==}
     peerDependencies:
       webpack: '>=5'
+    peerDependenciesMeta:
+      webpack:
+        optional: true
 
   '@mdx-js/mdx@3.0.1':
     resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
@@ -8401,10 +8404,11 @@ snapshots:
       refractor: 3.6.0
       unist-util-visit: 2.0.3
 
-  '@mdx-js/loader@3.0.1(webpack@5.93.0(esbuild@0.21.5))':
+  '@mdx-js/loader@3.1.0(webpack@5.93.0(esbuild@0.21.5))':
     dependencies:
       '@mdx-js/mdx': 3.0.1
       source-map: 0.7.4
+    optionalDependencies:
       webpack: 5.93.0(esbuild@0.21.5)
     transitivePeerDependencies:
       - supports-color
@@ -8456,11 +8460,11 @@ snapshots:
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/mdx@15.0.1(@mdx-js/loader@3.0.1(webpack@5.93.0(esbuild@0.21.5)))(@mdx-js/react@3.0.1(@types/react@18.3.11)(react@18.3.1))':
+  '@next/mdx@15.0.1(@mdx-js/loader@3.1.0(webpack@5.93.0(esbuild@0.21.5)))(@mdx-js/react@3.0.1(@types/react@18.3.11)(react@18.3.1))':
     dependencies:
       source-map: 0.7.4
     optionalDependencies:
-      '@mdx-js/loader': 3.0.1(webpack@5.93.0(esbuild@0.21.5))
+      '@mdx-js/loader': 3.1.0(webpack@5.93.0(esbuild@0.21.5))
       '@mdx-js/react': 3.0.1(@types/react@18.3.11)(react@18.3.1)
 
   '@next/swc-darwin-arm64@14.2.15':
