@@ -69,7 +69,7 @@
     "@clack/prompts": "^0.7.0",
     "@mdx-js/loader": "^3.1.0",
     "@next/bundle-analyzer": "^15.0.3",
-    "@next/eslint-plugin-next": "^15.0.1",
+    "@next/eslint-plugin-next": "^15.0.3",
     "@next/mdx": "15.0.3",
     "@playwright/test": "^1.48.2",
     "@storybook/addon-essentials": "^8.2.8",
