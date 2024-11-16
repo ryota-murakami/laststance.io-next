@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "types": [
-      "vitest/globals",
-      "@testing-library/jest-dom",
-      "@types/webpack-env"
-    ],
+    "types": ["vitest/globals", "@types/webpack-env"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
