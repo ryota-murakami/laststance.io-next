@@ -109,7 +109,7 @@
     "sharp": "0.33.5",
     "storybook": "^8.2.9",
     "tailwindcss": "^3.4.15",
-    "typescript": "^5.6.3",
+    "typescript": "^5.7.2",
     "vitest": "^2.1.5",
     "xml2js": "^0.6.2"
   },
