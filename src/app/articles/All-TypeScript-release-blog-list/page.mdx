@@ -23,6 +23,16 @@ So, I used AI to gather links and summaries for all the version posts.
 
 I plan to update this whenever a new version comes out.
 
+## Announcing TypeScript 5.7
+
+- **Date**: 2024-11-22
+- **Summary**: This release introduces several enhancements:
+- **Checks for Never-Initialized Variables**: TypeScript now reports errors when variables are used before being assigned, even if accessed within nested functions.
+- **Path Rewriting for Relative Paths**: The new `--rewriteRelativeImportExtensions` compiler option allows TypeScript to rewrite relative import paths ending with TypeScript extensions to their corresponding JavaScript extensions during compilation.
+- **Support for `--target es2024` and `--lib es2024`**: TypeScript 5.7 adds support for targeting ECMAScript 2024, including features like `Object.groupBy`, `Map.groupBy`, and `Promise.withResolvers`.
+- **Searching Ancestor Configuration Files for Project Ownership**: The language service now continues searching for `tsconfig.json` files up the directory tree, allowing for more flexible project structures.
+- **Link**: [Announcing TypeScript 5.7](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7/)
+
 ## Announcing TypeScript 5.7 RC
 
 - **Date**: 2024-11-08
