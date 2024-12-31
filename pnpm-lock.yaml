@@ -203,8 +203,8 @@ importers:
         specifier: ^5.2.1
         version: 5.2.1(@types/eslint@9.6.1)(eslint@9.17.0(jiti@1.21.6))(prettier@3.4.2)
       happy-dom:
-        specifier: ^15.11.7
-        version: 15.11.7
+        specifier: ^16.2.6
+        version: 16.2.6
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -234,7 +234,7 @@ importers:
         version: 5.7.2
       vitest:
         specifier: ^2.1.8
-        version: 2.1.8(@types/node@22.10.1)(happy-dom@15.11.7)(terser@5.36.0)
+        version: 2.1.8(@types/node@22.10.1)(happy-dom@16.2.6)(terser@5.36.0)
       xml2js:
         specifier: ^0.6.2
         version: 0.6.2
@@ -4047,8 +4047,8 @@ packages:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
 
-  happy-dom@15.11.7:
-    resolution: {integrity: sha512-KyrFvnl+J9US63TEzwoiJOQzZBJY7KgBushJA8X61DMbNsH+2ONkDuLDnCnwUiPTF42tLoEmrPyoqbenVA5zrg==}
+  happy-dom@16.2.6:
+    resolution: {integrity: sha512-pl9wpbvThd2BGptDW/DbeZgCVjjFJAe1+rGJ4SdXd1nLhGngaklpGohKlX6bSJwLH8vSi4VDhQsC2Mqa6eiyhg==}
     engines: {node: '>=18.0.0'}
 
   has-bigints@1.0.2:
@@ -10877,9 +10877,8 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  happy-dom@15.11.7:
+  happy-dom@16.2.6:
     dependencies:
-      entities: 4.5.0
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
 
@@ -13513,7 +13512,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.36.0
 
-  vitest@2.1.8(@types/node@22.10.1)(happy-dom@15.11.7)(terser@5.36.0):
+  vitest@2.1.8(@types/node@22.10.1)(happy-dom@16.2.6)(terser@5.36.0):
     dependencies:
       '@vitest/expect': 2.1.8
       '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.10.1)(terser@5.36.0))
@@ -13537,7 +13536,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.10.1
-      happy-dom: 15.11.7
+      happy-dom: 16.2.6
     transitivePeerDependencies:
       - less
       - lightningcss
