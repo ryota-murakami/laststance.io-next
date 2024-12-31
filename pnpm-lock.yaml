@@ -92,8 +92,8 @@ importers:
         version: 1.0.7(tailwindcss@3.4.15)
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^2.5.1
-        version: 2.5.1
+        specifier: ^2.5.3
+        version: 2.5.3
       '@argos-ci/playwright':
         specifier: ^3.9.4
         version: 3.9.4
@@ -252,10 +252,6 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@argos-ci/api-client@0.7.0':
-    resolution: {integrity: sha512-oRCaqA4DZn+yxD78/dqPTcz7dJd5SIU+GwnlvqorGLw6bktQ3TMPmKND/jb/GOf8tUpOs9FrSrwxVwFjYfiVeg==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/api-client@0.7.1':
     resolution: {integrity: sha512-cJBNriNEs4aSBBpvsJH0f1D71rr9zxu/f0xRiqdEIIEN4ioFCCxs/66hNKrTxCw+lTaBnBL6LaM5vrBUkzgkzQ==}
     engines: {node: '>=18.0.0'}
@@ -264,14 +260,10 @@ packages:
     resolution: {integrity: sha512-WPJDXPG61HEkagQGvc+RLiY0vcMGg776W8Ck71WpCZ4gArUlae/Irls7lzcHxvSq2dcUQ1E2gS/5K/1kxI/Hww==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.5.1':
-    resolution: {integrity: sha512-yLv/+0P/oVFQagq1VF+XSuG05AVsJdXYoQX37M+mJKgdMkqYqw9kNxbivxhvBkPFBh9xDkPYInlL692lqtr5bA==}
+  '@argos-ci/cli@2.5.3':
+    resolution: {integrity: sha512-kXEn9xtNlELn8NMyycXaUxreVR9EmaM5as1ePREzP1eixEu9Shr13SKKEyqaLCUJ9mCRgJiPLC2TVZguRQty+A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
-
-  '@argos-ci/core@2.11.0':
-    resolution: {integrity: sha512-Dvr9iNv/yeGuptjRtVZuO9oO/Z/69Bg9Kndc55eycWhn6GLOTFgLn3yKPYsf1bsobHTFJUa7beuc3n8d/AIxPA==}
-    engines: {node: '>=18.0.0'}
 
   '@argos-ci/core@2.12.0':
     resolution: {integrity: sha512-SmJYi93Oh0DYnJ1kZVFtzM0UDr0MfrcUhOuUsBJNpYc4hV2AlCNeoi8hzWYPJvARMKh03ZcbNx4+VY5jXiGLOA==}
@@ -280,10 +272,6 @@ packages:
   '@argos-ci/playwright@3.9.4':
     resolution: {integrity: sha512-OzTSsRk7EH6Ieotc8LP8HNOgzkfwuzyHzNajJNLiUU0By55WsZFB0jJmmiIRZGkYDuwxy11u0fEbynmfXEv5fw==}
     engines: {node: '>=18.16.0'}
-
-  '@argos-ci/util@2.2.0':
-    resolution: {integrity: sha512-MLm8276zl/JkBiQKrkNUCdxQ+OcrGxffn3u61GOH7epaMd3PbxipUnD7JnptxBOt5rnXXqIObprCMl1ox7yAyw==}
-    engines: {node: '>=18.0.0'}
 
   '@argos-ci/util@2.2.1':
     resolution: {integrity: sha512-z2B3EYVhDCDYlQwg55C/P8Xvbupb+XjmRHggIYl1R3yiNEBqy/kT9X/uOVMHxFyhLsM2PXsOOruugJoT11dB7Q==}
@@ -4969,9 +4957,6 @@ packages:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
 
-  openapi-fetch@0.13.0:
-    resolution: {integrity: sha512-6Nlf/BDbtyHwHdNrLPUiyt4CZMzL3ZyAt55yWH8W7+Z+8aYWnvca4uZHQHXViy8KcnCMqAhLM/bifh2Yjjkf6w==}
-
   openapi-fetch@0.13.1:
     resolution: {integrity: sha512-8P77k9Cmp0VNyry8ml293v1mqAyr4AkN7fE9VuUJ2mR0bK1NWihDM+Vj5/Try4aIYwYpT2OyCrYS3ObIRtO4LQ==}
 
@@ -6520,13 +6505,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@argos-ci/api-client@0.7.0':
-    dependencies:
-      debug: 4.4.0
-      openapi-fetch: 0.13.0
-    transitivePeerDependencies:
-      - supports-color
-
   '@argos-ci/api-client@0.7.1':
     dependencies:
       debug: 4.4.0
@@ -6536,25 +6514,12 @@ snapshots:
 
   '@argos-ci/browser@2.2.1': {}
 
-  '@argos-ci/cli@2.5.1':
+  '@argos-ci/cli@2.5.3':
     dependencies:
-      '@argos-ci/core': 2.11.0
+      '@argos-ci/core': 2.12.0
       commander: 12.1.0
       ora: 8.1.1
       update-notifier: 7.3.1
-    transitivePeerDependencies:
-      - supports-color
-
-  '@argos-ci/core@2.11.0':
-    dependencies:
-      '@argos-ci/api-client': 0.7.0
-      '@argos-ci/util': 2.2.0
-      axios: 1.7.7(debug@4.3.7)
-      convict: 6.2.4
-      debug: 4.3.7
-      fast-glob: 3.3.2
-      sharp: 0.33.5
-      tmp: 0.2.3
     transitivePeerDependencies:
       - supports-color
 
@@ -6580,8 +6545,6 @@ snapshots:
       debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
-
-  '@argos-ci/util@2.2.0': {}
 
   '@argos-ci/util@2.2.1': {}
 
@@ -9538,14 +9501,6 @@ snapshots:
 
   axe-core@4.10.2: {}
 
-  axios@1.7.7(debug@4.3.7):
-    dependencies:
-      follow-redirects: 1.15.9(debug@4.3.7)
-      form-data: 4.0.1
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-
   axios@1.7.7(debug@4.4.0):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.0)
@@ -10726,10 +10681,6 @@ snapshots:
       keyv: 4.5.4
 
   flatted@3.3.1: {}
-
-  follow-redirects@1.15.9(debug@4.3.7):
-    optionalDependencies:
-      debug: 4.3.7
 
   follow-redirects@1.15.9(debug@4.4.0):
     optionalDependencies:
@@ -12096,10 +12047,6 @@ snapshots:
       define-lazy-prop: 2.0.0
       is-docker: 2.2.1
       is-wsl: 2.2.0
-
-  openapi-fetch@0.13.0:
-    dependencies:
-      openapi-typescript-helpers: 0.0.15
 
   openapi-fetch@0.13.1:
     dependencies:
