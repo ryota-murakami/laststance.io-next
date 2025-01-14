@@ -95,8 +95,8 @@ importers:
         specifier: ^2.5.4
         version: 2.5.4
       '@argos-ci/playwright':
-        specifier: ^3.9.4
-        version: 3.9.4
+        specifier: ^3.10.0
+        version: 3.10.0
       '@chromatic-com/storybook':
         specifier: ^3.2.3
         version: 3.2.3(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))
@@ -252,16 +252,12 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@argos-ci/api-client@0.7.1':
-    resolution: {integrity: sha512-cJBNriNEs4aSBBpvsJH0f1D71rr9zxu/f0xRiqdEIIEN4ioFCCxs/66hNKrTxCw+lTaBnBL6LaM5vrBUkzgkzQ==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/api-client@0.7.2':
     resolution: {integrity: sha512-ojKOhb4CXugJcHNzGH4Gp7G6gqqBEbhO2B5FNfU/ieBCDsYY+urE0hQ5L7+4TfmMoKb/xVpvtu2mQdEpMt4JVg==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/browser@2.2.1':
-    resolution: {integrity: sha512-WPJDXPG61HEkagQGvc+RLiY0vcMGg776W8Ck71WpCZ4gArUlae/Irls7lzcHxvSq2dcUQ1E2gS/5K/1kxI/Hww==}
+  '@argos-ci/browser@2.2.2':
+    resolution: {integrity: sha512-pxoUKAVA/3whUKZU1BV93vI4JBYD6utKOd8yfMdZk70kRBL+ZEY+wIPDgQCXiDk02/od64xTn3YiD+N20V45RA==}
     engines: {node: '>=18.0.0'}
 
   '@argos-ci/cli@2.5.4':
@@ -269,21 +265,13 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  '@argos-ci/core@2.12.0':
-    resolution: {integrity: sha512-SmJYi93Oh0DYnJ1kZVFtzM0UDr0MfrcUhOuUsBJNpYc4hV2AlCNeoi8hzWYPJvARMKh03ZcbNx4+VY5jXiGLOA==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/core@3.0.0':
     resolution: {integrity: sha512-00xNAPwE8O7sKCgn9oeiKGE0cyZYuC3ouCxN+DBAMqZLIG+8zoUZUuB+ZJsKwjMHA9un/bzFX9l8z2Z8rgkQ7w==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/playwright@3.9.4':
-    resolution: {integrity: sha512-OzTSsRk7EH6Ieotc8LP8HNOgzkfwuzyHzNajJNLiUU0By55WsZFB0jJmmiIRZGkYDuwxy11u0fEbynmfXEv5fw==}
+  '@argos-ci/playwright@3.10.0':
+    resolution: {integrity: sha512-kL83M8+KJ+A3bVbAWwPUMZNVlzP1FZMi3E5Y8Er4LnpqAutkbmL+YNeSamgX61WjOS8Zq3tIwf9923/rWvEkiQ==}
     engines: {node: '>=18.16.0'}
-
-  '@argos-ci/util@2.2.1':
-    resolution: {integrity: sha512-z2B3EYVhDCDYlQwg55C/P8Xvbupb+XjmRHggIYl1R3yiNEBqy/kT9X/uOVMHxFyhLsM2PXsOOruugJoT11dB7Q==}
-    engines: {node: '>=18.0.0'}
 
   '@argos-ci/util@2.2.2':
     resolution: {integrity: sha512-MpKAz/3dMNjsUO49sEMYfw+qZFUrEeji8EmSbr0rgL8bw+Q7hIYNesRtEIQnFPub0FgX1/AV3sRZ9yqWTgGgUw==}
@@ -2874,9 +2862,6 @@ packages:
     resolution: {integrity: sha512-RE3mdQ7P3FRSe7eqCWoeQ/Z9QXrtniSjp1wUjt5nRC3WIpz5rSCve6o3fsZ2aCpJtrZjSZgjwXAoTO5k4tEI0w==}
     engines: {node: '>=4'}
 
-  axios@1.7.7:
-    resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
-
   axios@1.7.9:
     resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
 
@@ -3046,10 +3031,6 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
-
-  chalk@5.3.0:
-    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   chalk@5.4.1:
     resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
@@ -4909,9 +4890,6 @@ packages:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
 
-  openapi-fetch@0.13.1:
-    resolution: {integrity: sha512-8P77k9Cmp0VNyry8ml293v1mqAyr4AkN7fE9VuUJ2mR0bK1NWihDM+Vj5/Try4aIYwYpT2OyCrYS3ObIRtO4LQ==}
-
   openapi-fetch@0.13.4:
     resolution: {integrity: sha512-JHX7UYjLEiHuQGCPxa3CCCIqe/nc4bTIF9c4UYVC8BegAbWoS3g4gJxKX5XcG7UtYQs2060kY6DH64KkvNZahg==}
 
@@ -6419,13 +6397,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@argos-ci/api-client@0.7.1':
-    dependencies:
-      debug: 4.4.0
-      openapi-fetch: 0.13.1
-    transitivePeerDependencies:
-      - supports-color
-
   '@argos-ci/api-client@0.7.2':
     dependencies:
       debug: 4.4.0
@@ -6433,7 +6404,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/browser@2.2.1': {}
+  '@argos-ci/browser@2.2.2': {}
 
   '@argos-ci/cli@2.5.4':
     dependencies:
@@ -6441,19 +6412,6 @@ snapshots:
       commander: 13.0.0
       ora: 8.1.1
       update-notifier: 7.3.1
-    transitivePeerDependencies:
-      - supports-color
-
-  '@argos-ci/core@2.12.0':
-    dependencies:
-      '@argos-ci/api-client': 0.7.1
-      '@argos-ci/util': 2.2.1
-      axios: 1.7.7(debug@4.4.0)
-      convict: 6.2.4
-      debug: 4.4.0
-      fast-glob: 3.3.3
-      sharp: 0.33.5
-      tmp: 0.2.3
     transitivePeerDependencies:
       - supports-color
 
@@ -6470,17 +6428,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@argos-ci/playwright@3.9.4':
+  '@argos-ci/playwright@3.10.0':
     dependencies:
-      '@argos-ci/browser': 2.2.1
-      '@argos-ci/core': 2.12.0
-      '@argos-ci/util': 2.2.1
-      chalk: 5.3.0
+      '@argos-ci/browser': 2.2.2
+      '@argos-ci/core': 3.0.0
+      '@argos-ci/util': 2.2.2
+      chalk: 5.4.1
       debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
-
-  '@argos-ci/util@2.2.1': {}
 
   '@argos-ci/util@2.2.2': {}
 
@@ -9405,14 +9361,6 @@ snapshots:
 
   axe-core@4.10.2: {}
 
-  axios@1.7.7(debug@4.4.0):
-    dependencies:
-      follow-redirects: 1.15.9(debug@4.4.0)
-      form-data: 4.0.1
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-
   axios@1.7.9(debug@4.4.0):
     dependencies:
       follow-redirects: 1.15.9(debug@4.4.0)
@@ -9617,8 +9565,6 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-
-  chalk@5.3.0: {}
 
   chalk@5.4.1: {}
 
@@ -11950,10 +11896,6 @@ snapshots:
       define-lazy-prop: 2.0.0
       is-docker: 2.2.1
       is-wsl: 2.2.0
-
-  openapi-fetch@0.13.1:
-    dependencies:
-      openapi-typescript-helpers: 0.0.15
 
   openapi-fetch@0.13.4:
     dependencies:
