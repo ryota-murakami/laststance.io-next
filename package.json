@@ -63,7 +63,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@argos-ci/cli": "^2.5.3",
+    "@argos-ci/cli": "^2.5.4",
     "@argos-ci/playwright": "^3.9.4",
     "@chromatic-com/storybook": "^3.2.3",
     "@clack/prompts": "^0.9.1",
