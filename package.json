@@ -30,7 +30,7 @@
     "playwright:ui": "playwright test --ui",
     "playwright:headed": "playwright test --headed",
     "playwright:debug": "playwright test --debug",
-    "playwright::codegen": "exec playwright codegen",
+    "playwright:codegen": "exec playwright codegen",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
