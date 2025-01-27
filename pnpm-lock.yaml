@@ -92,8 +92,8 @@ importers:
         version: 1.0.7(tailwindcss@3.4.17)
     devDependencies:
       '@argos-ci/cli':
-        specifier: ^2.5.4
-        version: 2.5.4
+        specifier: ^2.5.5
+        version: 2.5.5
       '@argos-ci/playwright':
         specifier: ^4.1.0
         version: 4.1.0
@@ -135,7 +135,7 @@ importers:
         version: 8.4.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))
       '@storybook/nextjs':
         specifier: ^8.2.8
-        version: 8.4.2(esbuild@0.24.0)(next@15.1.6(@babel/core@7.26.0)(@playwright/test@1.50.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(type-fest@4.26.1)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
+        version: 8.4.2(esbuild@0.24.0)(next@15.1.6(@babel/core@7.26.0)(@playwright/test@1.50.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(type-fest@4.33.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
       '@storybook/react':
         specifier: ^8.2.8
         version: 8.4.2(@storybook/test@8.4.2(storybook@8.4.2(prettier@3.4.2)))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(typescript@5.7.3)
@@ -252,10 +252,6 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@argos-ci/api-client@0.7.2':
-    resolution: {integrity: sha512-ojKOhb4CXugJcHNzGH4Gp7G6gqqBEbhO2B5FNfU/ieBCDsYY+urE0hQ5L7+4TfmMoKb/xVpvtu2mQdEpMt4JVg==}
-    engines: {node: '>=18.0.0'}
-
   '@argos-ci/api-client@0.8.0':
     resolution: {integrity: sha512-UHa1vAf8gwHVpkqM/RaSryrFe1juqWH6dHpPeMtT4e/ZMB9hNYwYFinaGq/KRWe88JEi2WeAu776YdoeUSZQkQ==}
     engines: {node: '>=18.0.0'}
@@ -264,14 +260,10 @@ packages:
     resolution: {integrity: sha512-dqRXWCllulbKlqzwNE2bjbCtNqxVnUUrYpI1iIJQCMvyStmPdGHOYD7BoQQQ2uNPT2pCHeDyysrxc5T3mDyScg==}
     engines: {node: '>=18.0.0'}
 
-  '@argos-ci/cli@2.5.4':
-    resolution: {integrity: sha512-M2zEIWYn9DH11nM0AklN2+T4fV87tdNukmCyI81/oErTS92cP5smcLZegzSFJbTckunpzCPAR7IgFSd+75AtIg==}
+  '@argos-ci/cli@2.5.5':
+    resolution: {integrity: sha512-T5xQ0OvNWd3ME4YUA9/PGf3xgY1LNnXBHpQUIJvA3rd0deDwbMHTa0PofmnOyDB3Ts+c/XjHevEG0xMFHsPBIQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
-
-  '@argos-ci/core@3.0.0':
-    resolution: {integrity: sha512-00xNAPwE8O7sKCgn9oeiKGE0cyZYuC3ouCxN+DBAMqZLIG+8zoUZUuB+ZJsKwjMHA9un/bzFX9l8z2Z8rgkQ7w==}
-    engines: {node: '>=18.0.0'}
 
   '@argos-ci/core@3.1.0':
     resolution: {integrity: sha512-bo/pNKk6P0pz4NRdymgU1letwQrRbMPTeFyMsUEW8fhKNdesSFnFIWZBFGsGkkh05uw75PBjl2ZN4PvQ2TxSog==}
@@ -280,10 +272,6 @@ packages:
   '@argos-ci/playwright@4.1.0':
     resolution: {integrity: sha512-7/6/fRQvs/ZObZG76qNVHRyv5nK21oBLxzzd8T1OmJMC/+UmV9omiuOO3x75H5kc5e3vlKsCc0hClFCqtbye7A==}
     engines: {node: '>=18.16.0'}
-
-  '@argos-ci/util@2.2.2':
-    resolution: {integrity: sha512-MpKAz/3dMNjsUO49sEMYfw+qZFUrEeji8EmSbr0rgL8bw+Q7hIYNesRtEIQnFPub0FgX1/AV3sRZ9yqWTgGgUw==}
-    engines: {node: '>=18.0.0'}
 
   '@argos-ci/util@2.3.0':
     resolution: {integrity: sha512-tkxnCpaj7yN9nCFzo9MX0FJ5YjUepEOGYfdvF8COQqp+EdY1qubOPpc4Z0l1B60BlC8YtjQv/oRxHSh1XzxWFg==}
@@ -3185,8 +3173,8 @@ packages:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
-  commander@13.0.0:
-    resolution: {integrity: sha512-oPYleIY8wmTVzkvQq10AEok6YcTC4sRUBl8F9gVuwchGVUCTbl/vhLTaQqutuuySYOsu8YTgV+OxKc/8Yvx+mQ==}
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
   commander@2.20.3:
@@ -4413,8 +4401,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  ky@1.7.2:
-    resolution: {integrity: sha512-OzIvbHKKDpi60TnF9t7UUVAF1B4mcqc02z5PIvrm08Wyb+yOcz63GRvEuVxNT18a9E1SrNouhB4W2NNLeD7Ykg==}
+  ky@1.7.4:
+    resolution: {integrity: sha512-zYEr/gh7uLW2l4su11bmQ2M9xLgQLjyvx58UyNM/6nuqyWFHPX5ktMjvpev3F8QWdjSsHUpnWew4PBCswBNuMQ==}
     engines: {node: '>=18'}
 
   language-subtag-registry@0.3.23:
@@ -5475,8 +5463,8 @@ packages:
     resolution: {integrity: sha512-k67Nb9jvwJcJmVpw0jPttR1/zVfnKf8Km0IPatrU/zJ5XeG3+Slx0xLXs9HByJSzXzrlz5EDvN6yLNMDc2qdnw==}
     engines: {node: '>=4'}
 
-  registry-auth-token@5.0.2:
-    resolution: {integrity: sha512-o/3ikDxtXaA59BmZuZrJZDJv8NMDGSj+6j6XaeBmHw8eY1i1qd9+6H+LjVvQXx3HN6aRCGa1cUdJ9RaJZUugnQ==}
+  registry-auth-token@5.0.3:
+    resolution: {integrity: sha512-1bpc9IyC+e+CNFRaWyn77tk4xGG4PPUyfakSmA6F6cvUDjrm58dfyJ3II+9yb10EDkHoy1LaPSmHaWLOH3m6HA==}
     engines: {node: '>=14'}
 
   registry-url@6.0.1:
@@ -6023,8 +6011,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  type-fest@4.26.1:
-    resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
+  type-fest@4.33.0:
+    resolution: {integrity: sha512-s6zVrxuyKbbAsSAD5ZPTB77q4YIdRctkTbJ2/Dqlinwz+8ooH2gd+YA7VA6Pa93KML9GockVvoxjZ2vHP+mu8g==}
     engines: {node: '>=16'}
 
   typed-array-buffer@1.0.2:
@@ -6309,8 +6297,8 @@ packages:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
     engines: {node: '>=18'}
 
-  when-exit@2.1.3:
-    resolution: {integrity: sha512-uVieSTccFIr/SFQdFWN/fFaQYmV37OKtuaGphMAzi4DmmUlrvRBJW5WSLkHyjNQY/ePJMz3LoiX9R3yy1Su6Hw==}
+  when-exit@2.1.4:
+    resolution: {integrity: sha512-4rnvd3A1t16PWzrBUcSDZqcAmsUIy4minDXT/CZ8F2mVDgd65i4Aalimgz1aQkRGU0iH5eT5+6Rx2TK8o443Pg==}
 
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
@@ -6442,13 +6430,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@argos-ci/api-client@0.7.2':
-    dependencies:
-      debug: 4.4.0
-      openapi-fetch: 0.13.4
-    transitivePeerDependencies:
-      - supports-color
-
   '@argos-ci/api-client@0.8.0':
     dependencies:
       debug: 4.4.0
@@ -6458,25 +6439,12 @@ snapshots:
 
   '@argos-ci/browser@3.0.1': {}
 
-  '@argos-ci/cli@2.5.4':
+  '@argos-ci/cli@2.5.5':
     dependencies:
-      '@argos-ci/core': 3.0.0
-      commander: 13.0.0
+      '@argos-ci/core': 3.1.0
+      commander: 13.1.0
       ora: 8.1.1
       update-notifier: 7.3.1
-    transitivePeerDependencies:
-      - supports-color
-
-  '@argos-ci/core@3.0.0':
-    dependencies:
-      '@argos-ci/api-client': 0.7.2
-      '@argos-ci/util': 2.2.2
-      axios: 1.7.9(debug@4.4.0)
-      convict: 6.2.4
-      debug: 4.4.0
-      fast-glob: 3.3.3
-      sharp: 0.33.5
-      tmp: 0.2.3
     transitivePeerDependencies:
       - supports-color
 
@@ -6502,8 +6470,6 @@ snapshots:
       debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
-
-  '@argos-ci/util@2.2.2': {}
 
   '@argos-ci/util@2.3.0': {}
 
@@ -8005,7 +7971,7 @@ snapshots:
     dependencies:
       playwright: 1.50.0
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.26.1)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
+  '@pmmmwh/react-refresh-webpack-plugin@0.5.15(react-refresh@0.14.2)(type-fest@4.33.0)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
     dependencies:
       ansi-html: 0.0.9
       core-js-pure: 3.39.0
@@ -8017,7 +7983,7 @@ snapshots:
       source-map: 0.7.4
       webpack: 5.96.1(esbuild@0.24.0)
     optionalDependencies:
-      type-fest: 4.26.1
+      type-fest: 4.33.0
       webpack-hot-middleware: 2.26.1
 
   '@pnpm/config.env-replace@1.1.0': {}
@@ -8654,7 +8620,7 @@ snapshots:
     dependencies:
       storybook: 8.4.2(prettier@3.4.2)
 
-  '@storybook/nextjs@8.4.2(esbuild@0.24.0)(next@15.1.6(@babel/core@7.26.0)(@playwright/test@1.50.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(type-fest@4.26.1)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
+  '@storybook/nextjs@8.4.2(esbuild@0.24.0)(next@15.1.6(@babel/core@7.26.0)(@playwright/test@1.50.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(type-fest@4.33.0)(typescript@5.7.3)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.26.0)
@@ -8669,7 +8635,7 @@ snapshots:
       '@babel/preset-react': 7.25.9(@babel/core@7.26.0)
       '@babel/preset-typescript': 7.26.0(@babel/core@7.26.0)
       '@babel/runtime': 7.26.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.26.1)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.15(react-refresh@0.14.2)(type-fest@4.33.0)(webpack-hot-middleware@2.26.1)(webpack@5.96.1(esbuild@0.24.0))
       '@storybook/builder-webpack5': 8.4.2(esbuild@0.24.0)(storybook@8.4.2(prettier@3.4.2))(typescript@5.7.3)
       '@storybook/preset-react-webpack': 8.4.2(@storybook/test@8.4.2(storybook@8.4.2(prettier@3.4.2)))(esbuild@0.24.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(typescript@5.7.3)
       '@storybook/react': 8.4.2(@storybook/test@8.4.2(storybook@8.4.2(prettier@3.4.2)))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.4.2(prettier@3.4.2))(typescript@5.7.3)
@@ -9397,7 +9363,7 @@ snapshots:
   atomically@2.0.3:
     dependencies:
       stubborn-fs: 1.2.5
-      when-exit: 2.1.3
+      when-exit: 2.1.4
 
   autoprefixer@10.4.20(postcss@8.4.49):
     dependencies:
@@ -9487,7 +9453,7 @@ snapshots:
       chalk: 5.4.1
       cli-boxes: 3.0.0
       string-width: 7.2.0
-      type-fest: 4.26.1
+      type-fest: 4.33.0
       widest-line: 5.0.0
       wrap-ansi: 9.0.0
 
@@ -9745,7 +9711,7 @@ snapshots:
 
   commander@12.1.0: {}
 
-  commander@13.0.0: {}
+  commander@13.1.0: {}
 
   commander@2.20.3: {}
 
@@ -10035,7 +10001,7 @@ snapshots:
 
   dot-prop@9.0.0:
     dependencies:
-      type-fest: 4.26.1
+      type-fest: 4.33.0
 
   dotenv@16.4.7: {}
 
@@ -11162,7 +11128,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  ky@1.7.2: {}
+  ky@1.7.4: {}
 
   language-subtag-registry@0.3.23: {}
 
@@ -12018,8 +11984,8 @@ snapshots:
 
   package-json@10.0.1:
     dependencies:
-      ky: 1.7.2
-      registry-auth-token: 5.0.2
+      ky: 1.7.4
+      registry-auth-token: 5.0.3
       registry-url: 6.0.1
       semver: 7.6.3
 
@@ -12524,7 +12490,7 @@ snapshots:
       unicode-match-property-ecmascript: 2.0.0
       unicode-match-property-value-ecmascript: 2.2.0
 
-  registry-auth-token@5.0.2:
+  registry-auth-token@5.0.3:
     dependencies:
       '@pnpm/npm-conf': 2.3.1
 
@@ -13132,7 +13098,7 @@ snapshots:
 
   type-fest@2.19.0: {}
 
-  type-fest@4.26.1: {}
+  type-fest@4.33.0: {}
 
   typed-array-buffer@1.0.2:
     dependencies:
@@ -13479,7 +13445,7 @@ snapshots:
 
   whatwg-mimetype@4.0.0: {}
 
-  when-exit@2.1.3: {}
+  when-exit@2.1.4: {}
 
   which-boxed-primitive@1.0.2:
     dependencies:
