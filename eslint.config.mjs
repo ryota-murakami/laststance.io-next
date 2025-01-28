@@ -17,6 +17,14 @@ const compat = new FlatCompat({
 
 export default [
   {
+    files: [
+      '**/*.ts',
+      '**/*.tsx',
+      '**/*.js',
+      '**/*.jsx',
+      '**/*.cjs',
+      '**/*.mjs',
+    ],
     ignores: [
       '**/.vscode',
       '**/node_modules',
