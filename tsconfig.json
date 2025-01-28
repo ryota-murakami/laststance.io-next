@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "types": ["vitest/globals", "@types/webpack-env"],
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": [
+      "vitest/globals",
+      "@types/webpack-env"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,21 +28,26 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   },
   "include": [
-    "./**.js",
-    "./**.ts",
-    "./**.cjs",
-    "./**.mjs",
-    "next-env.d.ts",
-    "**/*.ts",
     "**/*.js",
+    "**/*.ts",
     "**/*.tsx",
     "**/*/*.d.ts",
-    ".next/types/**/*.ts",
-    "scripts/generate-blog-templete.mjs"
+    "./**.cjs",
+    "./**.js",
+    "./**.mjs",
+    "./**.ts",
+    "next-env.d.ts",
+    "scripts/generate-blog-templete.mjs",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
 }
