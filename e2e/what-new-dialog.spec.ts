@@ -1,4 +1,5 @@
 import { argosScreenshot } from '@argos-ci/playwright'
+// eslint-disable-next-line import/named
 import { test, expect } from '@playwright/test'
 
 test("What's New dialog", async ({ page }, testInfo) => {
