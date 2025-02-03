@@ -199,8 +199,8 @@ importers:
         specifier: ^5.2.2
         version: 5.2.3(@types/eslint@9.6.1)(eslint@9.19.0(jiti@1.21.7))(prettier@3.4.2)
       happy-dom:
-        specifier: ^16.7.1
-        version: 16.7.3
+        specifier: ^16.8.1
+        version: 16.8.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -230,7 +230,7 @@ importers:
         version: 5.7.3
       vitest:
         specifier: ^3.0.4
-        version: 3.0.4(@types/debug@4.1.12)(@types/node@22.12.0)(happy-dom@16.7.3)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0)
+        version: 3.0.4(@types/debug@4.1.12)(@types/node@22.12.0)(happy-dom@16.8.1)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0)
       xml2js:
         specifier: ^0.6.2
         version: 0.6.2
@@ -3840,8 +3840,8 @@ packages:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
 
-  happy-dom@16.7.3:
-    resolution: {integrity: sha512-76uiE9jCpC849cOyYZ8YBROpPcstW/hwCKoQYd3aiZaxHeR9zdjpup4z7qYEWbt+lY8Rb3efW2gmrckyoBftKg==}
+  happy-dom@16.8.1:
+    resolution: {integrity: sha512-n0QrmT9lD81rbpKsyhnlz3DgnMZlaOkJPpgi746doA+HvaMC79bdWkwjrNnGJRvDrWTI8iOcJiVTJ5CdT/AZRw==}
     engines: {node: '>=18.0.0'}
 
   has-bigints@1.1.0:
@@ -10515,7 +10515,7 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  happy-dom@16.7.3:
+  happy-dom@16.8.1:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -13206,7 +13206,7 @@ snapshots:
       terser: 5.37.0
       yaml: 2.7.0
 
-  vitest@3.0.4(@types/debug@4.1.12)(@types/node@22.12.0)(happy-dom@16.7.3)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0):
+  vitest@3.0.4(@types/debug@4.1.12)(@types/node@22.12.0)(happy-dom@16.8.1)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0):
     dependencies:
       '@vitest/expect': 3.0.4
       '@vitest/mocker': 3.0.4(vite@6.0.11(@types/node@22.12.0)(jiti@1.21.7)(terser@5.37.0)(yaml@2.7.0))
@@ -13231,7 +13231,7 @@ snapshots:
     optionalDependencies:
       '@types/debug': 4.1.12
       '@types/node': 22.12.0
-      happy-dom: 16.7.3
+      happy-dom: 16.8.1
     transitivePeerDependencies:
       - jiti
       - less
